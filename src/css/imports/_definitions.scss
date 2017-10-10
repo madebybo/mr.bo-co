@@ -97,17 +97,15 @@ $mrbo-secondary-black:   rgb(9,7,11) !default;
    layout
    ========================================================================== */
 
-// grid definition
-$mrbo-grid-gutter:       8px;
 
-// dimensions
+// dimensions ("//" breaks the CSS)
 $mrbo-min-width:         320px !default;
 $mrbo-mobile:            398px !default;
 $mrbo-desktop:           768px !default;
 
 
 
-// "exhibit" floor height 
+/* "exhibit" floor height  */
 $mrbo-exhibit-floor-mobile: 64px;
 $mrbo-exhibit-floor-desktop: 112px;
 $mrbo-exhibit-to-floor-mobile: 96px;
@@ -137,16 +135,3 @@ $mrbo-arrow-right: '❯';
    ========================================================================== */
 
 $mrbo-primary-transition-duration: 300ms;
-
-// CSS3 effect attributes
-// $ym-scale:         1.1         !default;
-// $ym-blur-radius:   2px         !default;
-// $ym-border-radius: 3px         !default;
-// $ym-ts-property:   all         !default;
-// $ym-ts-duration:   500ms       !default;
-// $ym-ts-timing:     ease-in-out !default;
-// $ym-ts-delay:      0ms         !default;
-// $ym-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.50);
-
-// Animation Variables
-// $mrbo-ts-correction: cubic-bezier(.27,.65,.47,1.21);

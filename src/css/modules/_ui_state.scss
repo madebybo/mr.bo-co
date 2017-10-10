@@ -19,7 +19,7 @@
    ========================================================================== */
 
 .header-active {
-	// disable native scroll to begin with
+	/* disable native scroll to begin with */
 	&, body {
 		height: 100%;
 		overflow: hidden;
@@ -38,7 +38,7 @@
 		position: fixed;
 	}
 
-	// so header could transition back after pulled down
+	/* so header could transition back after pulled down */
 	.header {
 		transition: transform $mrbo-primary-transition-duration cubic-bezier(0.08, 0.4, 0.01, 0.92);
 	}
