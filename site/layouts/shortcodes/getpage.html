@@ -1,6 +1,8 @@
 <!-- You can call .Site.GetPage with two arguments: kind and kind value. -->
+
 {{ $type := .Get "type" }}
 {{ $path := .Get "path" }}
 {{ $selectedPage := .Site.GetPage $type $path }}
 
 <a target="_blank" href="{{ $selectedPage.Permalink }}">{{ .Get "name" }}</a>
+
