@@ -1,4 +1,21 @@
 {{ define "main" }}
-  <h3>list page defined in /about/list.html | {{ .Title }}</h3>
-  <p>{{ .Content }}</p>
+  <img class="anchored-portrait" src='{{ "../_images/mrbo-portrait.jpg" | absURL }}'>
+
+  <h1 class="greeting" data-keywords="nice to meet you@design with impact@music, art, literature@enpreneurship@teaching">
+  	nice to meet you
+  </h1>
+
+  <section class="bio">
+  	<p class="show" data-index="0">I’m a designer with the multidisciplinary background, a craftsman in nature and a technologist with the entrepreneurial spirit.</p>
+
+		<p data-index="1">In many ways, Design is underrated for most still view it as a pretty veneer. What I firmly believe in is, if employed in the right manner, Design could solve problems in ways that amaze us. It may sound like a cliche, but this keeps motivating me to remain curious, embrace ambiguity, step out of comfort zone, and really think deep and hard about how to do real design.</p>
+
+		<p data-index="2">Throughout my career, I've been trying to embrace and practice the notion of "T-Shaped Designer". That is, to be equipped with the depth of discipline in a single area but also a breadth empathy for other areas of design. This allows me to get down to the substance of the domain I’m designing for, but also opens the door for drawing inspirations and making associations from a wide range of areas such as music, art, fashion, technology, literature, and etc. The greatest design solutions always have an aura about serendipity, but they’re only to be seized by the prepared mind.</p>
+
+		<p data-index="3">I have taken the role as the very first designer of an early stage startup, helped to expand a design team from four people to over a dozen, built cutting-edge products that reach 75% of the US mobile users, and held pending design patents under my name. Aside from tackling large-scale design problems, I've been active in teaching about design and HCI to college students and young professionals. Leading, teaching, and mentoring are things I find myself passionate about, and I look at them as crucial ways to help others be successful.</p>
+
+		<p data-index="3">Aside from tackling large-scale design problems, I've been active in teaching about design and HCI to college students and young professionals. Leading, teaching, and mentoring are things I find myself passionate about, and I look at them as crucial ways to help others be successful.</p>
+  </section>
+
+  <script>window.section = {{ .Params.code }}</script>
 {{ end }}

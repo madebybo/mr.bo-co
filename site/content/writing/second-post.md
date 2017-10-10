@@ -1,7 +1,7 @@
 ---
 title: "second post"
 type: "writing"
-draft: false
+draft: true
 ---
 
 second post

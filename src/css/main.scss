@@ -1,10 +1,41 @@
-/**
- * You can use import statements to include partials:
- */
+
+/* ==========================================================================
+   warming up...
+   ========================================================================== */
+@import "imports/_normalize.scss";
 @import "imports/_reset.scss";
 @import "imports/_definitions.scss";
 
 
+
+
+
+/* ==========================================================================
+   common stuff among everything
+   ========================================================================== */
+
 @import "modules/_core.scss";
+
+
+/* ==========================================================================
+   modular components
+   ========================================================================== */
+
+@import "modules/_ui_state.scss"; /* don't like this */
+@import "modules/_nav_animation.scss"; /* don't like this, either */
+@import "modules/_home.scss";
+@import "modules/_about.scss";
+@import "modules/_contact.scss";
+
+
+
+
+
+
+
+/* ==========================================================================
+   all responsive logic goes here
+   ========================================================================== */
+
 @import "modules/_responsive.scss";
 

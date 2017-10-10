@@ -16,7 +16,13 @@
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
   {{ end }} -->
 
-  <link rel='stylesheet' type="text/css" href='{{ "css/main.min.css" | absURL }}' />
+  <link rel="shortcut icon" href='{{ "_images/signature.ico" | absURL }}'>
+  <link rel="apple-touch-icon" href='{{ "_images/signature.ico" | absURL }}'>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i|Ruluko">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i">
+  <link rel='stylesheet' href='{{ "css/main.min.css" | absURL }}' />
 
   {{ if .RSSLink }}
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />

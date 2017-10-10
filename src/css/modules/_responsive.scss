@@ -14,9 +14,116 @@ body {
 } 
 
 @media (--desktop) {
+  --column-num: 2;
+
   .summary-work {
-    --column-num: 2;
     font-size: 1.5rem;
     float: left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   sections: header, exhibit, first-post
+   ========================================================================== */
+
+.header {
+  .header-content {
+    height: calc(100vh - var(--exhibit-floor-mobile));
+
+    @media (min-width: $mrbo-desktop) {
+      height: calc(100vh - 160px);  /* 160 should be replaced by a variable */
+    }
+  }
+}
+
+.exhibit {
+  height: calc(100vh + var(--exhibit-floor-mobile));
+
+
+  .exhibit-inner-wrapper {
+    height: calc(100vh + var(--exhibit-floor-mobile));
+  }
+}
+
+
+/* ==========================================================================
+   inside sections
+   ========================================================================== */
+
+
+.exhibit-inner-wrapper { 
+  @media (min-width: $mrbo-desktop) {
+    height: calc(100vh + var(--exhibit-floor-desktop));
+  }
+
+  .ceiling {
+    height: var(--exhibit-floor-mobile);
+
+     @media (min-width: $mrbo-desktop) {
+      height: var(--exhibit-floor-desktop);
+    }
+  }
+
+  .frame {
+    height: calc(100vh - var(--exhibit-floor-mobile) - var(--exhibit-to-floor-mobile) - var(--exhibit-floor-mobile));
+    margin: var(--exhibit-floor-mobile) 40px var(--exhibit-to-floor-mobile) 40px;
+    border-width: 8px;
+    box-shadow: 7px 12px 12px 0 rgba(0,0,0,.2);
+    box-shadow: 6px 10px 6px 0 rgba(0,0,0,.2);
+
+    @media (min-width: $mrbo-desktop) {
+      height: calc(100vh - 464px);
+      height: calc(100vh - 160px - 192px - var(--exhibit-floor-desktop)); 
+      margin: 160px auto 192px auto;
+      border-width: 12px;
+      box-shadow: 8px 16px 20px 0 rgba(0,0,0,.3);
+      max-width: 720px;
+    }
+  }
+
+  .floor {
+    height: var(--exhibit-floor-mobile);
+
+    @media (min-width: $mrbo-desktop) {
+      height: var(--exhibit-floor-desktop);
+    }
+
+    .spectators {
+      height: 84px;
+      top: -64px;
+
+      @media (min-width: $mrbo-desktop) {
+        height: 128px;
+        top: -108px;
+      }
+    }
+  }
+}
+
+.menu {
+  .item a {
+    font-size: 28px;
+
+    @media (min-width: $mrbo-desktop) {
+      font-size: 40px;
+    }
   }
 }

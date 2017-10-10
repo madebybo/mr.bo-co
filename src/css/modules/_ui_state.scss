@@ -1,0 +1,71 @@
+/* ==========================================================================
+   ui state: user scrolling
+   ========================================================================== */
+
+.user-scrolling {
+	.nav {
+		box-shadow: 0px 0px 3px 0 rgba(0,0,0,.5) !important;
+	}
+
+	.header,
+	.exhibit,
+	.first-post {
+		transition: none !important;
+	}
+}
+
+/* ==========================================================================
+   ui state: header is active (in viewport)
+   ========================================================================== */
+
+.header-active {
+	// disable native scroll to begin with
+	&, body {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.nav {
+		visibility: hidden !important;
+
+		.nav-start,
+		.nav-icon {
+			opacity: 0 !important;
+		}
+	}
+
+	.exhibit-inner-wrapper {
+		position: fixed;
+	}
+
+	// so header could transition back after pulled down
+	.header {
+		transition: transform $mrbo-primary-transition-duration cubic-bezier(0.08, 0.4, 0.01, 0.92);
+	}
+}
+
+/* ==========================================================================
+   ui state: exhibit is active (in viewport)
+   ========================================================================== */
+
+.exhibit-active {
+	&, body {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.nav {
+		opacity: 1;
+		box-shadow: none;
+
+		.nav-start,
+		.nav-icon { 
+			opacity: 1; 
+		}
+	}
+
+	.exhibit,
+	.first-post {
+		transition: transform $mrbo-primary-transition-duration linear;
+	}
+}

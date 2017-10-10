@@ -1,5 +1,6 @@
 ---
 title: "Home"
+code: "home"
 date: 2017-09-27
 draft: false
 ---

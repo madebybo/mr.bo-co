@@ -1,7 +1,7 @@
 ---
 title: about
-website: http://amazon.jobs/
-booth: "44"
+code: "about"
+weight: 1
 ---
 
 At Amazon, our evolution has been driven by the spirit of innovation that is part of our DNA. As a new college graduate or intern, you can have multiple opportunities to innovate and solve real-world, complex technical and business problems as you join us on our journey.

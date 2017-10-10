@@ -1,7 +1,9 @@
 {{ define "main" }}
-  <h3>{{ .Title }}</h3>
+<div class="section-wrapper {{ .Params.code }}">
+  {{ partial "form" . }}
+
   {{ .Content }}
 
-
-  {{ partial "form" . }}
+  <script>window.section = {{ .Params.code }}</script>
+</div>
 {{ end }}
