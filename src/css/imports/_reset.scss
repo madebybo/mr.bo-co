@@ -301,3 +301,31 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+
+
+
+
+
+
+/* Very temporary stuff, to delete after development */
+
+.nav-start {
+  opacity: 0 !important;
+}
+
+.header-content {
+  .signature {
+    display: none;
+  }
+
+  p {
+    opacity: 0;
+  }
+}
+
+.exhibit {
+  img {
+    display: none;
+  }
+}
