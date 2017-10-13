@@ -1,20 +1,38 @@
 /* ==========================================================================
-   variables (SaSS & CSS custom properties)
+   "mr.bo & co" TYPOGRAPHY
    ========================================================================== */
 
 /* CSS variables (not actually mutable) */
-$base-size: 16px; /* it's actually the popular default as well */
-$primary-font: 'EB Garamond', serif;
-/* https://fonts.google.com/specimen/EB+Garamond?selection.family=EB+Garamond */
+$base-size: 16px; /* browser default */
 
+$header-font: 'Crimson Text', serif;
+$header-font: 'EB Garamond', serif;
+
+$content-font: Helvetica, Arial, sans-serif;
+$content-font: 'Ubuntu', Helvetica, Arial, sans-serif;
+
+
+
+/* ==========================================================================
+   "mr.bo & co" BRAND COLOR
+   ========================================================================== */
 
 /* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
-$pink: #ffbfca;
+
+$primary-white:     rgb(255,255,255);
+$primary-black:     rgb(0, 0, 0);
+
+$secondary-white:   rgb(249,247,250);
+$secondary-black:   rgb(9,7,11);
+
+$gent-pink: #ffbfca;
+$space-grey: rgb(224, 224, 224);
 
 
-/* CSS custom properties (nicknamed CSS variables) */
 
-/* they actually should be declared in responsive.scss since it's easier to refer to */
+/* ==========================================================================
+    CSS Custom Properties (nicknamed CSS variables)
+   ========================================================================== */
 
 :root {
   --gutter: 8px;
@@ -22,9 +40,10 @@ $pink: #ffbfca;
 
   --exhibit-floor-mobile: 64px;
   --exhibit-floor-desktop: 112px;
-  --exhibit-to-floor-mobile: 96px;  
-}
+  --exhibit-to-floor-mobile: 96px;
 
+  --foo-color: red;
+}
 
 
 /* ==========================================================================
@@ -32,14 +51,50 @@ $pink: #ffbfca;
    ========================================================================== */
 
 $mobile-s-width: 320px;
-$mobile-m-width: 480px;
-$mobile-l-width: 640px;
-$desktop-width: 1024px;
+$mobile-m-width: 398px;
+$mobile-l-width: 480px;
+$desktop-width: 768px;
 
-@custom-media --mobile-s (width > 320px) and (width <= 480px);
-@custom-media --mobile-m (width > 480px) and (width <= 640px);
-@custom-media --mobile-l (width > 640px) and (width <= 1024px);
-@custom-media --desktop  (width >= 1024px);
+@custom-media --mobile-s (width > 320px) and (width <= 398px);
+@custom-media --mobile-m (width > 398px) and (width <= 480px);
+@custom-media --mobile-l (width > 480px) and (width <= 768px);
+@custom-media --desktop  (width >= 768px);
+
+/* .......... */
+
+$exhibit-floor-mobile: 64px;
+$exhibit-floor-desktop: 112px;
+$exhibit-to-floor-mobile: 96px;
+$exhibit-to-floor-desktop: 160px;
+
+
+
+/* ==========================================================================
+   VISUAL
+   ========================================================================== */
+
+$box-shadow: 0px 1px 1px 0 rgba(25,25,25,0.4);
+
+
+
+
+/* ==========================================================================
+   INTERACTION
+   ========================================================================== */
+
+$mrbo-primary-transition-duration: 300ms;
+
+
+
+
+
+
+
+/* ==========================================================================
+   SYMBOLS
+   ========================================================================== */
+
+$arrow-right: '❯';
 
 
 /* ==========================================================================
@@ -62,76 +117,8 @@ $desktop-width: 1024px;
   transform: translateY(-50%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   branding color
-   ========================================================================== */
-
-$mrbo-primary-white:     rgb(255,255,255) !default;
-$mrbo-primary-black:     rgb(0, 0, 0) !default;
-
-$mrbo-secondary-white:   rgb(249,247,250) !default;
-$mrbo-secondary-black:   rgb(9,7,11) !default;
-
-/* ==========================================================================
-   layout
-   ========================================================================== */
-
-
-// dimensions ("//" breaks the CSS)
-$mrbo-min-width:         320px !default;
-$mrbo-mobile:            398px !default;
-$mrbo-desktop:           768px !default;
-
-
-
-/* "exhibit" floor height  */
-$mrbo-exhibit-floor-mobile: 64px;
-$mrbo-exhibit-floor-desktop: 112px;
-$mrbo-exhibit-to-floor-mobile: 96px;
-
-
-
-
-/* ==========================================================================
-   typography
-   ========================================================================== */
-
-$mrbo-primary-font:      Helvetica, Arial, sans-serif;
-$mrbo-primary-font:      'Ubuntu', Helvetica, Arial, sans-serif;
-$mrbo-primary-font-size: 16px !default;
-$mrbo-header-font:       'Crimson Text', serif !default;
-
-
-/* ==========================================================================
-   symbols
-   ========================================================================== */
-
-$mrbo-arrow-right: '❯';
-
-
-/* ==========================================================================
-   interaction design
-   ========================================================================== */
-
-$mrbo-primary-transition-duration: 300ms;
+@define-extend horizontal-align {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

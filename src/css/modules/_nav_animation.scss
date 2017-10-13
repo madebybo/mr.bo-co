@@ -89,3 +89,86 @@
 		}
 	}
 }
+
+
+
+
+
+.nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 8px;
+	height: 64px;
+	background-color: $primary-white;
+	box-shadow: 0px 0px 3px 0 rgba(0,0,0,.5);
+
+	.nav-start {
+		float: left;
+		height: 48px;
+		width: 52px;
+		padding: 6px 8px;
+		
+		.signature {
+			width: 100%;
+			height: 100%;
+
+			g { fill: rgb(0, 0, 0); }
+		}
+	}
+
+	.nav-icon {
+		float: right;
+		height: 17px;
+		width: 22px;
+		margin: 16px 8px;
+		text-align: center;
+
+		span {
+			background: $primary-black;
+		}
+	}
+
+
+	.expanded-menu {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		top: 64px;
+		overflow: hidden;
+
+		ul.menu {
+  		font-family: $primary-font;
+			margin: 0;
+			padding: 0;
+
+			.item {
+				margin: 16px 0;
+				list-style: none;
+			 	text-align: center;
+
+				a {
+					text-decoration: none;
+					color: $primary-black;
+					font-weight: bold;
+					font-size: 28px;
+
+					&:active,
+					&:hover {
+						text-decoration: underline;
+					}
+
+					&.current {
+						color: rgb(160, 160, 160);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.open .nav { }

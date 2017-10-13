@@ -316,11 +316,12 @@ textarea {
 
 .header-content {
   .signature {
-    display: none;
+    /* display: none; */
+    opacity: 0.2;
   }
 
   p {
-    opacity: 0;
+    /* opacity: 0; */
   }
 }
 

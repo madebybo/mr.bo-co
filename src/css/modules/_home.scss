@@ -1,181 +1,69 @@
-.nav {
-	position: fixed;
-	z-index: 10;
-	left: 0;
-	right: 0;
-	top: 0;
-	padding: 8px;
-	height: 64px;
-	background-color: $mrbo-primary-white;
-	box-shadow: 0px 0px 3px 0 rgba(0,0,0,.5);
-
-	.nav-start {
-		float: left;
-		height: 48px;
-		width: 52px;
-		padding: 6px 8px;
-		
-		.signature {
-			width: 100%;
-			height: 100%;
-
-			g { fill: rgb(0, 0, 0); }
-		}
-	}
-
-	.nav-icon {
-		float: right;
-		height: 17px;
-		width: 22px;
-		margin: 16px 8px;
-		text-align: center;
-
-		span {
-			background: $mrbo-primary-black;
-		}
-	}
-
-
-	.expanded-menu {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		top: 64px;
-		overflow: hidden;
-
-		ul.menu {
-  		font-family: $mrbo-header-font;
-  		font-family: $primary-font;
-			margin: 0;
-			padding: 0;
-
-			.item {
-				margin: 16px 0;
-				list-style: none;
-			 	text-align: center;
-
-				a {
-					text-decoration: none;
-					color: $mrbo-primary-black;
-					font-weight: bold;
-					font-size: 28px;
-
-					&:active,
-					&:hover {
-						text-decoration: underline;
-					}
-
-					&.current {
-						color: rgb(160, 160, 160);
-					}
-				}
-			}
-		}
-	}
-}
-
-
-.open .nav { }
-
-
+/* ==========================================================================
+   bespoke scroll has three parts: header, exhibit and the first featured post
+   ========================================================================== */
 
 .header {
-	background-color: $mrbo-primary-black;
+	background-color: $primary-black;
 	position: relative;
 	z-index: 100;
-	box-shadow: 0px 1px 1px 0 rgba(25,25,25,0.4);
-
-	// background-size: 200px;
-	// background-size: contain;
+	box-shadow: $box-shadow;
 
 	.header-content {
-		max-width: 760px;
-		margin: 0 auto;	
+		font-size: 1rem;
+		color: $primary-white;
 
 		.signature {
 			position: absolute;
-			width: 64px;
-			height: 64px;
-			top: 64px;
-			left: 16px;
+			width: 4em;
+			height: 4em;
+			top: 4em;
+			left: 1em;
 
-			g { fill: rgb(255, 255, 255); }
+			g { fill: $primary-white; }
 		}
 
 		summary {
-			font-size: $mrbo-primary-font-size;
-			color: rgb(255, 255, 255);
 			position: absolute;
-			bottom: 32px;
-			right: 16px;
-			left: 16px;
-			margin: 8px 0;
+			bottom: 2em;
+			right: 1em;
+			left: 1em;
+			margin: .5em 0;
 		}
 
-		&:after {
-			content: $mrbo-arrow-right;
+		&:after {			
+			content: $arrow-right;
+			font-size: 1.1em;
+			bottom: .8em;
+
+			@extend horizontal-align;
 			position: absolute;
-			font-size: 18px;
-			color: rgb(255, 255, 255);
-			bottom: 12px;
-			left: 50%;
 			transform: translateX(-50%) rotate(90deg);
 		}
 	}
 }
 
 
-.exhibit {
-
-}
-
-.featured {
-	img {
-		width: 100%;
-	}
-
-	h1 {
-		font-family: $mrbo-header-font;
-		font-weight: normal;
-		font-style: italic;
-		// position: absolute;
-		// bottom: 0;
-		padding: 16px;
-	}
-
-	* {
-		// display: none;
-	}
-}
-
-.first-post {
-  padding-top: $mrbo-exhibit-floor-mobile;
-  background: rgb(224, 224, 224);
-}
-
-/* ==========================================================================
-   base styles: exhit (frame and floor)
-   ========================================================================== */
-
 .exhibit-inner-wrapper {
-	// background-image: url("../_images/white-wall.jpg");
-	// background-size: 200px;
-	// background-size: cover;
+	/**
+	 * could apply background pattern outside of the frame
+	 * 	 background-image: url("../_images/white-wall.jpg");
+	 *   background-size: 200px;
+	 *   background-size: cover; 
+	 */
 	width: 100%;
 	top: 0;
 
 	.frame {
-		background-color: $mrbo-primary-white;
 		position: relative;
-		padding: 8px;
-		border: 8px solid rgb(0, 0, 0);
+		font-size: 1rem;
+		padding: .5em;
+		border: .5em solid $primary-black;
 	}
 
 	.floor {
     text-align: center;
-    background: rgb(224, 224, 224);
-    border-top: 2px solid rgb(204, 204, 204);
+    background: $space-grey;
+    border-top: .125em solid color($space-grey blackness(23%));;
 
     .spectators {
     	position: relative;
@@ -186,14 +74,112 @@
 				height: 100%;
 			}
 
-			.spectator-1 { left: -64px;}
-			.spectator-3 { right: -120px; }
+			.spectator-1 { left: -4em;}
     }
 	}
 }
 
 
+
 /* ==========================================================================
-   base styles: menu
+   from here, default to sane default scroll lol
    ========================================================================== */
 
+.featured-content {
+	/* font-size:  */
+	padding-top: var(--exhibit-floor-mobile);
+
+	section {
+		position: relative; /* just incase we do out-of-box styling */
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
+
+/* ==========================================================================
+   RESPONSIVE: extract "responsive" attributes from above and put'em here
+   ========================================================================== */
+
+.header-content {
+  height: calc(100vh - $exhibit-floor-mobile);
+}
+
+.exhibit,
+.exhibit-inner-wrapper {
+  height: calc(100vh + var(--exhibit-floor-mobile));
+}
+
+.exhibit-inner-wrapper { 
+  .ceiling {
+    height: $exhibit-floor-mobile;
+  }
+
+  .frame {
+    height: calc(100vh - var(--exhibit-floor-mobile) - var(--exhibit-to-floor-mobile) - var(--exhibit-floor-mobile));
+    margin: var(--exhibit-floor-mobile) 40px var(--exhibit-to-floor-mobile) 40px;
+    box-shadow: 7px 12px 12px 0 rgba(0,0,0,.2);
+    box-shadow: 6px 10px 6px 0 rgba(0,0,0,.2);
+  }
+
+  .floor {
+    height: var(--exhibit-floor-mobile);
+
+    .spectators {
+      height: 84px;
+      top: -64px;
+    }
+  }
+}
+
+
+/* forget about it for now... let's do a different layout for desktop */
+@media (--desktop) {
+	.header-content {
+		height: calc(100vh - $exhibit-floor-desktop);
+	}
+
+	.exhibit {
+		height: calc(100vh + $exhibit-floor-desktop);
+	}
+
+	.exhibit-inner-wrapper {
+		height: calc(100vh + $exhibit-floor-desktop);
+
+		.ceiling {
+			font-size: 8rem;
+		}
+
+	  .frame {
+	    margin: 160px auto 192px auto;
+	    box-shadow: 8px 16px 20px 0 rgba(0,0,0,.3);
+	    max-width: 720px;
+	  }
+
+	  .floor {
+	  }
+  }
+}
+
+
+
+
+/* ==========================================================================
+   inside sections
+   ========================================================================== */
+
+
+
+
+.menu {
+  .item a {
+    font-size: 28px;
+
+    @media (min-width: $mrbo-desktop) {
+      font-size: 40px;
+    }
+  }
+}

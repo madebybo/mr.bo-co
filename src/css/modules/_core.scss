@@ -4,17 +4,23 @@
  * 2. Size everything else in rem. (such as fixed grid gutter, etc)
  */
 
-
-/*
-  Or add your statements here:
- */
-/* The :root selector matches the document's root element. */
-
 body {
-  font-family: sans-serif;
+  background-color: $primary-white;
+  font-family: $content-font;
   font-size: $base-size;
-  text-align: center;
+  font-weight: 100;
+  margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 .grand-container,
 .section-wrapper {
@@ -51,12 +57,7 @@ body {
 
 
 
-body {
-  font-family: $mrbo-primary-font;
-  font-weight: 100;
-  background-color: $mrbo-primary-white;
-  margin: 0;
-}
+
 
 section {
   position: relative;
