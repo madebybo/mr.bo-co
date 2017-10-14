@@ -37,36 +37,31 @@ $space-grey: rgb(224, 224, 224);
 :root {
   --gutter: 8px;
   --column-num: 1;
-
-  --exhibit-floor-mobile: 64px;
-  --exhibit-floor-desktop: 112px;
-  --exhibit-to-floor-mobile: 96px;
-
-  --foo-color: red;
 }
+
 
 
 /* ==========================================================================
    Media Queries and custom media definitions
    ========================================================================== */
 
-$mobile-s-width: 320px;
-$mobile-m-width: 398px;
+$mobile-s-width: 280px;
+$mobile-m-width: 359px;
 $mobile-l-width: 480px;
 $desktop-width: 768px;
 
-@custom-media --mobile-s (width > 320px) and (width <= 398px);
-@custom-media --mobile-m (width > 398px) and (width <= 480px);
-@custom-media --mobile-l (width > 480px) and (width <= 768px);
+@custom-media --mobile-s (width > 280px) and (width <= 359px);
+@custom-media --mobile-m (width > 359px) and (width <= 408px);
+@custom-media --mobile-l (width > 408px) and (width <= 768px);
 @custom-media --desktop  (width >= 768px);
 
-/* .......... */
+
+$nav-height-mobile: 64px;
 
 $exhibit-floor-mobile: 64px;
 $exhibit-floor-desktop: 112px;
-$exhibit-to-floor-mobile: 96px;
-$exhibit-to-floor-desktop: 160px;
-
+$exhibit-elevation-mobile: 96px;
+$exhibit-elevation-desktop: 160px;
 
 
 /* ==========================================================================

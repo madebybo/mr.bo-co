@@ -7,7 +7,6 @@ import precss from "precss";
 import cleancss from "gulp-clean-css";
 import cssnext from "postcss-cssnext";
 import ifmedia from "postcss-if-media";
-import cssvariables from "postcss-css-variables";
 import sourcemaps from "gulp-sourcemaps";
 import rename from "gulp-rename";
 import BrowserSync from "browser-sync";
@@ -33,7 +32,6 @@ gulp.task("css", () => (
   gulp.src(["./src/css/*.css", "./src/css/*.scss"])
     .pipe(sourcemaps.init())
     .pipe(postcss([
-      // cssvariables(),
       precss(), // SaSS-like
       cssnext(), // all future cool stuff
       ifmedia() // one line media query, this has to go last (order matters)

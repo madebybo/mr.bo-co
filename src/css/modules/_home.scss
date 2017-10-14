@@ -55,8 +55,6 @@
 
 	.frame {
 		position: relative;
-		font-size: 1rem;
-		padding: .5em;
 		border: .5em solid $primary-black;
 	}
 
@@ -86,8 +84,10 @@
    ========================================================================== */
 
 .featured-content {
-	/* font-size:  */
-	padding-top: var(--exhibit-floor-mobile);
+	.first-post {
+		padding-top: $nav-height-mobile;
+		background: $space-grey;
+	}
 
 	section {
 		position: relative; /* just incase we do out-of-box styling */
@@ -100,40 +100,77 @@
 
 
 
+
 /* ==========================================================================
    RESPONSIVE: extract "responsive" attributes from above and put'em here
    ========================================================================== */
 
+/* FLOOR MUST BE THE SAME HEIGHT AS NAV HEIGHT, SO THERE IS NO NEED FOR FLOOR-HEIGHT VARIABLE! */
+
 .header-content {
-  height: calc(100vh - $exhibit-floor-mobile);
+  height: calc(100vh - 6em + 1em);
 }
 
-.exhibit,
-.exhibit-inner-wrapper {
-  height: calc(100vh + var(--exhibit-floor-mobile));
+.exhibit {
+  height: calc(100vh + $nav-height-mobile); /* 100vh + $exhibit-floor-mobile */
+
+  &:after {
+  	visibility: hidden;
+  }
+
+	.exhibit-inner-wrapper {
+		height: calc(100vh + $nav-height-mobile); /* 100vh + $exhibit-floor-mobile */
+
+	  .ceiling {
+	    height: $nav-height-mobile;
+	  }
+
+	  .frame {
+	    height: calc(100vh - 2*$nav-height-mobile - 6em); /* viewport - navHeight - floorHeight - elevationHeight */
+	    margin: $nav-height-mobile 40px 6em 40px; /* margin-top: navHeight, margin-bottom: elevationHeight */
+	    box-shadow: 7px 12px 12px 0 rgba(0,0,0,.2);
+	    box-shadow: 6px 10px 6px 0 rgba(0,0,0,.2);
+	  }
+
+	  .floor {
+	    height: $nav-height-mobile;
+
+	    .spectators {
+	      height: 84px;
+	      top: -64px;
+	    }
+	  }
+	}
 }
 
-.exhibit-inner-wrapper { 
-  .ceiling {
-    height: $exhibit-floor-mobile;
-  }
 
-  .frame {
-    height: calc(100vh - var(--exhibit-floor-mobile) - var(--exhibit-to-floor-mobile) - var(--exhibit-floor-mobile));
-    margin: var(--exhibit-floor-mobile) 40px var(--exhibit-to-floor-mobile) 40px;
-    box-shadow: 7px 12px 12px 0 rgba(0,0,0,.2);
-    box-shadow: 6px 10px 6px 0 rgba(0,0,0,.2);
-  }
-
-  .floor {
-    height: var(--exhibit-floor-mobile);
-
-    .spectators {
-      height: 84px;
-      top: -64px;
-    }
-  }
+@media (--mobile-s) {
+	.exhibit {
+		font-size: 1rem;
+		&:after { content: '64, 96'; } /* 4em, 6em (1em = 16) */
+	}
 }
+
+@media (--mobile-m) {
+	.exhibit {
+		font-size: 1.25rem;
+		&:after { content: '64, 120'; } /* 4em, 6em (1em = 20) */
+	}
+}
+
+@media (--mobile-l) {
+	.exhibit {
+		font-size: 1.5rem;
+		&:after { content: '64, 144'; } /* 4em, 6em (1em = 24) */
+	}
+}
+
+
+
+
+
+
+
 
 
 /* forget about it for now... let's do a different layout for desktop */
