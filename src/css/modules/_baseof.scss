@@ -66,3 +66,33 @@ section {
 .menu .writing {
   display: none;
 }
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* single-liner works like this */
+body {
+  opacity: 1 ?if media (min-width: $mobile-m-width);
+}
+
+@media (--mobile-l) {
+  .summary-work {
+    font-size: 1.25rem;
+  }
+} 
+
+@media (--desktop) {
+  --column-num: 2;
+
+  .summary-work {
+    font-size: 1.5rem;
+    float: left;
+  }
+}
+

@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   warming up...
+   warming up... 
    ========================================================================== */
 @import "imports/_normalize.scss";
 @import "imports/_reset.scss";
@@ -11,29 +11,28 @@
 
 
 /* ==========================================================================
-   common stuff among everything
+   modular components & common stuff among everything
    ========================================================================== */
 
-@import "modules/_core.scss";
-
-
-/* ==========================================================================
-   modular components
-   ========================================================================== */
-
-@import "modules/_ui_state.scss"; /* don't like this */
+@import "modules/_baseof.scss";
 @import "modules/_nav_animation.scss"; /* don't like this, either */
-@import "modules/_home.scss";
-@import "modules/_about.scss";
-@import "modules/_contact.scss";
-
 
 
 
 
 /* ==========================================================================
-   all responsive logic goes here
+   different sections
    ========================================================================== */
 
-@import "modules/_responsive.scss";
+@import "sections/_home.core.scss";
+@import "sections/_home.interaction.scss";
+@import "sections/_home.responsive.scss";
+
+
+@import "sections/_about.core.scss";
+
+
+@import "sections/_contact.core.scss";
+
+
 

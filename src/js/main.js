@@ -3,10 +3,13 @@ $(function() {
   var mrbo = {
     modules: {
       navigation: require('./modules/_navigation'),
-      detectMobile: require('./modules/_detectMobile'),
-      bespokeScroll: require('./modules/_bespokeScroll'),
-      aboutDisplay: require('./modules/_aboutDisplay'),
-      contactPage: require('./modules/_contactPage')
+      detectMobile: require('./modules/_detectMobile')
+    },
+
+    sections: {
+      bespokeScroll: require('./sections/_bespokeScroll'),
+      aboutDisplay: require('./sections/_aboutDisplay'),
+      contactPage: require('./sections/_contactPage')
     },
 
     // TODO: use throttle for scroll and touchmove?
@@ -28,15 +31,15 @@ $(function() {
 
       // only implement bespokeScroll for home page mobile version
       if (window.section === 'home' && this.modules.detectMobile().isMobile) {
-        this.modules.bespokeScroll.init();
+        this.sections.bespokeScroll.init();
       }
 
       if (window.section === 'about') {
-        this.modules.aboutDisplay.init();
+        this.sections.aboutDisplay.init();
       }
 
       if (window.section === 'contact') {
-        this.modules.contactPage.init();
+        this.sections.contactPage.init();
       }     
     }
   };

@@ -4,9 +4,9 @@
 
 var bespokeScroll = {
 	modules: {
-		getUIElements: require('./_getUIElements'),
-		detectMobile: require('./_detectMobile'),
-		setComponentsHeight: require('./_setComponentsHeight')
+		getUIElements: require('../modules/_getUIElements'),
+		detectMobile: require('../modules/_detectMobile'),
+		setComponentsHeight: require('../modules/_setComponentsHeight')
 	},
 
 	state: {
