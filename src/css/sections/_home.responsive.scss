@@ -2,18 +2,14 @@
    RESPONSIVE: extract "responsive" attributes from above and put'em here
    ========================================================================== */
 
-/* FLOOR MUST BE THE SAME HEIGHT AS NAV HEIGHT, SO THERE IS NO NEED FOR FLOOR-HEIGHT VARIABLE! */
+/* ceiling height = floor height = nav height */
 
 .header-content {
-  height: calc(100vh - 6em + 1em);
+  height: calc(100vh - 6em + 1em); /* viewport - margin bottom (elevation) height + base height */
 }
 
 .exhibit {
-  height: calc(100vh + $nav-height-mobile); /* 100vh + $exhibit-floor-mobile */
-
-  &:after {
-  	visibility: hidden;
-  }
+  height: calc(100vh + $nav-height-mobile); /* viewport + floor height */
 
 	.exhibit-inner-wrapper {
 		height: calc(100vh + $nav-height-mobile); /* 100vh + $exhibit-floor-mobile */
@@ -23,8 +19,8 @@
 	  }
 
 	  .frame {
-	    height: calc(100vh - 2*$nav-height-mobile - 6em); /* viewport - navHeight - floorHeight - elevationHeight */
-	    margin: $nav-height-mobile 40px 6em 40px; /* margin-top: navHeight, margin-bottom: elevationHeight */
+	    height: calc(100vh - $nav-height-mobile - 4em - 6em); /* viewport - ceilingHeight - marginTop - marginBottom */
+	    margin: 4em 40px 6em 40px; /* margin-top: navHeight, margin-bottom: elevationHeight */
 	    box-shadow: 7px 12px 12px 0 rgba(0,0,0,.2);
 	    box-shadow: 6px 10px 6px 0 rgba(0,0,0,.2);
 	  }
@@ -44,21 +40,18 @@
 @media (--mobile-s) {
 	.exhibit {
 		font-size: 1rem;
-		&:after { content: '64, 96'; } /* 4em, 6em (1em = 16) */
 	}
 }
 
 @media (--mobile-m) {
 	.exhibit {
-		font-size: 1.25rem;
-		&:after { content: '64, 120'; } /* 4em, 6em (1em = 20) */
+		font-size: 1.125rem;
 	}
 }
 
 @media (--mobile-l) {
 	.exhibit {
-		font-size: 1.5rem;
-		&:after { content: '64, 144'; } /* 4em, 6em (1em = 24) */
+		font-size: 1.25rem;
 	}
 }
 

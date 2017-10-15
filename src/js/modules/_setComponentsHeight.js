@@ -4,27 +4,30 @@ function setComponentsHeight() {
 		headerContent: document.querySelector('.header-content'),
 		exhibit: document.querySelector('#exhibit'),
 		exhibitInnerWrapper: document.querySelector('.exhibit-inner-wrapper'),
-		frame: document.querySelector('.frame')
+		frame: document.querySelector('.frame'),
+		floor: document.querySelector('.floor'),
+		ceiling: document.querySelector('.ceiling')
 	};
 
 	var exhibitParams = window.getComputedStyle(elements.exhibit, ':after').getPropertyValue('content').split(',');
 
 	// todo, use $(window).width() to get tablet sizes
-	var keyVariables = {
-		cushion: 16,
-		navHeight: parseInt($(elements.nav).css('height')),
-		exhibitFloorHeight: Number(exhibitParams[0].match(/\d+/)[0]) || 64,
-		exhibitElevationHeight: Number(exhibitParams[1].match(/\d+/)[0]) || 96,
+	var params = {
+		cushion: parseInt($(elements.exhibit).css('fontSize')),
+		ceilingHeight: parseInt($(elements.ceiling).css('height')),
+		floorHeight: parseInt($(elements.floor).css('height')),
 		frameBorderWidth: parseInt($(elements.frame).css('borderWidth')),
-		framePadding: parseInt($(elements.frame).css('padding'))
+		frameMarginTopHeight: parseInt($(elements.frame).css('marginTop')),
+		frameMarginBottomHeight: parseInt($(elements.frame).css('marginBottom'))
 	};
 
-	// need to refine this...
-	var frameHeight = $(window).height() - 2*keyVariables.navHeight - keyVariables.exhibitElevationHeight - 2*keyVariables.frameBorderWidth;
+	// frome height = viewport height - ceiling height - margin heights
+	var frameHeight = $(window).height() 
+		- params.ceilingHeight - params.frameMarginTopHeight - params.frameMarginBottomHeight - 2*params.frameBorderWidth;
 
-	$(elements.headerContent).height($(window).height() - keyVariables.exhibitElevationHeight + keyVariables.cushion); // 16 px more room for the human figure
-	$(elements.exhibitInnerWrapper).height($(window).height() + keyVariables.exhibitFloorHeight);
-	$(elements.exhibit).height($(window).height() + keyVariables.exhibitFloorHeight);
+	$(elements.headerContent).height($(window).height() - params.frameMarginBottomHeight + params.cushion); // 16 px more room for the human figure
+	$(elements.exhibitInnerWrapper).height($(window).height() + params.floorHeight);
+	$(elements.exhibit).height($(window).height() + params.floorHeight);
 	$(elements.frame).height(frameHeight);
 }
 
