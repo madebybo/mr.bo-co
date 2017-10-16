@@ -9,8 +9,6 @@ function setComponentsHeight() {
 		ceiling: document.querySelector('.ceiling')
 	};
 
-	var exhibitParams = window.getComputedStyle(elements.exhibit, ':after').getPropertyValue('content').split(',');
-
 	// todo, use $(window).width() to get tablet sizes
 	var params = {
 		cushion: parseInt($(elements.exhibit).css('fontSize')),

@@ -20,7 +20,7 @@
 
 	  .frame {
 	    height: calc(100vh - $nav-height-mobile - 4em - 6em); /* viewport - ceilingHeight - marginTop - marginBottom */
-	    margin: 4em 40px 6em 40px; /* margin-top: navHeight, margin-bottom: elevationHeight */
+	    margin: 4em 2.5em 6em 2.5em; /* margin-top: 4em, margin-bottom: 6em */
 	    box-shadow: 7px 12px 12px 0 rgba(0,0,0,.2);
 	    box-shadow: 6px 10px 6px 0 rgba(0,0,0,.2);
 	  }
