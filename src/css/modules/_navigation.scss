@@ -1,0 +1,152 @@
+.nav {
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	left: 0;
+	top: 0;
+	padding: .5em;
+	background-color: $primary-white;
+	box-shadow: $box-shadow;
+
+	.nav-start {
+		float: left;
+		height: 3em;
+		width: 3.25em;
+		padding: .5em;
+		
+		.signature {
+			width: 100%;
+			height: 100%;
+
+			g { fill: $primary-black; }
+		}
+	}
+
+	.nav-icon {
+		position: relative;
+		float: right;
+		height: 1.1em;
+		width: 1.4em;
+		margin: 1em .5em;
+		text-align: center;
+		cursor: pointer;
+
+		span {
+			background: $primary-black;
+			display: block;
+			position: absolute;
+			height: 2px;
+		}
+	}
+
+	.expanded-menu {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		top: 4em;
+		overflow: hidden;
+
+		ul.menu {
+  		font-family: $header-font;
+			margin-top: 4em;
+			padding: 0;
+
+			.item {
+				margin: 1em 0;
+				list-style: none;
+			 	text-align: center;
+
+				a {
+					text-decoration: none;
+					color: $primary-black;
+					font-weight: bold;
+					font-size: 1.8em;
+
+					&:active,
+					&:hover {
+						text-decoration: underline;
+					}
+
+					&.current {
+						color: $space-grey;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Interactions
+   ========================================================================== */
+
+/* 1. The persistent navigation top bar */
+.nav {
+	height: 4em;
+	transition: background 350ms linear,height 350ms ease-in;
+}
+.open .nav {
+	height: 100%;
+	transition: background 350ms linear,height 350ms ease-in 200ms;
+	/* TODO: a subtle background color animation? */
+}
+
+
+/* 2. The mr.bo signature */
+.nav .nav-start { transition: opacity 300ms ease-in-out; }
+.open .nav .nav-start { /* TODO: the logo SVG animates every time menu is toggled */ }
+
+
+/* 3. The navigation "hamburger icon" */
+.nav .nav-icon {
+	span:nth-child(1) { top: 0px;  left:0; width: 100%; transform: rotate(0deg); }
+	span:nth-child(2) { top: 7px;  left:0; width: 100%; transform: rotate(0deg); }
+	span:nth-child(3) { top: 7px;  left:0; width: 100%; transform: rotate(0deg); }
+	span:nth-child(4) { top: 14px; left:0; width: 100%; transform: rotate(0deg); }
+
+	span { transition: .25s ease-in-out; }
+}
+.open .nav .nav-icon {
+	span:nth-child(1) { top: 18px; left: 50%; width: 0%; }
+	span:nth-child(2) { transform: rotate(45deg); }
+	span:nth-child(3) { transform: rotate(-45deg); }
+	span:nth-child(4) { top: 18px; left: 50%; width: 0%; }
+}
+
+
+/* 4. The expanded menu */
+.nav .expanded-menu {
+	visibility: hidden;
+	transition: visibility 0s linear 800ms;
+
+	ul.menu {
+		li.item {
+			opacity: 0;
+			transform: scale(1.1) translateY(-24px);
+			transition: opacity 350ms ease-out, transform 350ms ease-out;
+		}
+
+		li.item:nth-child(1) { transition-delay: 200ms, 200ms }
+		li.item:nth-child(2) { transition-delay: 150ms, 150ms }
+		li.item:nth-child(3) { transition-delay: 100ms, 100ms }
+		li.item:nth-child(4) { transition-delay: 50ms, 50ms }
+	}
+}
+.open .nav .expanded-menu {
+	visibility: visible;
+	transition-delay: 0s;
+
+	ul.menu {
+		li.item {
+			opacity: 1;
+			transform: none;
+		}
+
+		li.item:nth-child(1) { transition-delay: 300ms, 300ms }
+		li.item:nth-child(2) { transition-delay: 350ms, 350ms }
+		li.item:nth-child(3) { transition-delay: 400ms, 400ms }
+		li.item:nth-child(4) { transition-delay: 450ms, 450ms }
+	}
+}

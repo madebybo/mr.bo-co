@@ -42,7 +42,10 @@ var bespokeScroll = {
 		$(this.ui.navStart).on('click', this.navStartClicked.bind(this));
 	},
 
-	navStartClicked: function() {
+	navStartClicked: function(e) {
+		// disable redirection on home page, use programmatic scroll instead
+		e.preventDefault();
+
 		// takes longer to complete the whole thing, since it'll be a 2 step process
 		if (this.state.scrollStage >= 3) {
 			this.toSpecialScrollMode(0, function() { this.initScrollStage(); }.bind(this));
