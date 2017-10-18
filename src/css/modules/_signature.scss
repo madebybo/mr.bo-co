@@ -1,0 +1,36 @@
+/* TODO: scale down the SVG original size, now the huge size leads to ridiculous stroke-width */
+/* https://css-tricks.com/almanac/properties/s/stroke-width/ */
+/* https://css-tricks.com/svg-line-animation-works/ */
+
+.signature path {
+  stroke-width: 200px;
+  stroke-dasharray: 31032px;
+  stroke-dashoffset: -31032px;
+  fill: transparent;
+  transition: stroke-dashoffset 0.5s linear, fill 0.4s ease 0.5s, stroke-width 0.4s ease 0.5s;
+}
+
+.init.signature path {
+  stroke-width: 0px;
+  stroke-dashoffset: 0px;
+}
+
+.header-content .signature {
+  path {
+    stroke: $primary-white;
+  }
+
+  &.init path {
+    fill: $primary-white;
+  }
+}
+
+.nav-start .signature {
+  path {
+    stroke: $primary-black;
+  }
+
+  &.init path {
+    fill: $primary-black;
+  }
+}
