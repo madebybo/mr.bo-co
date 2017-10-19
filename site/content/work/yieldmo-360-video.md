@@ -2,6 +2,7 @@
 title: "360 video"
 type: "work"
 timeline: "March 2017 - August 2017"
+images: ['360-video-feature.png', '360-video-1st', '360-video-2nd']
 draft: false
 ---
 

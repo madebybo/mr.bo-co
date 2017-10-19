@@ -1,5 +1,5 @@
 <!-- this goes inside of a range .Data.Pages loop -->
-<div class="summary-work">
+<div class="package-work">
   <h3><a href="{{ .URL }}">{{.Title}}</a></h3>
   <!-- <i>{{ .Permalink }} | {{ .RelPermalink }} | {{ .URL }}</i>> -->
   <!-- <div class="date metadata">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div> -->
@@ -16,5 +16,12 @@
   </div>
   {{ end }}
 
-  {{ .Summary }}{{ if .Truncated }}<a href="{{ .RelPermalink }}">read more...</a>{{ end }}
+  {{ with .Params.images }}
+    {{ $featureImageURL := index . 0 }}
+     <img src="/_images/work/{{ $featureImageURL }}">
+  {{ end }}
+
+  <span class="summary">{{ .Summary }}</span>
+
+  {{ if .Truncated }}<span class="ellipsis">...</span><a href="{{ .RelPermalink }}">read more</a>{{ end }}
 </div>

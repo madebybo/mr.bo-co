@@ -58,8 +58,8 @@
 
 	.floor {
     text-align: center;
-    background: $space-grey;
-    border-top: .125em solid color($space-grey blackness(23%));;
+    background: $linen-grey;
+    border-top: .125em solid color($linen-grey blackness(23%));;
 
     .spectators {
     	position: relative;
@@ -82,7 +82,7 @@
 .featured-content {
 	.first-post {
 		padding-top: $nav-height-mobile;
-		background: $space-grey;
+		background: $linen-grey;
 	}
 
 	section {

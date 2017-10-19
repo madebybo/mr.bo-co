@@ -1,13 +1,26 @@
 .site-wrapper.work {
-	.summary-work {
+	.package-work {
 	  font-size: 1rem;
 	  border: .125em solid black;
 	  margin: 1em 0;
 	  padding: 1em;
-	  /* width: calc(((100 / var(--column-num)) * 1%) - 1em); /* niiiiice */ */
+	  /* width: calc(((100 / var(--column-num)) * 1%) - 1em); /* niiiiice */
+	  img {
+	  	width: 100%;
+	  }
+
+
+	  /* work around to deal with the auto wrapped <p> tag */
+	  span.summary p {
+	  	display: inline;
+	  }
+
+	  span.ellipsis {
+	  	margin-right: .5em;
+	  }
 
 	  .metadata {
-	    color: $pink; 
+	    color: $gent-pink; 
 	    font-size:.75rem;
 	    margin: .5em; /* the margin is always half of the font size */
 	  }

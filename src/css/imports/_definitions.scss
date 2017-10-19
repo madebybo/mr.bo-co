@@ -19,16 +19,17 @@ $content-font: 'Ubuntu', Helvetica, Arial, sans-serif;
 
 /* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
 
-$primary-white:     rgb(255,255,255);
-$primary-black:     rgb(0, 0, 0);
+$primary-black: rgb(0, 0, 0);
+$secondary-black: rgb(9,7,11);
 
-$secondary-white:   rgb(249,247,250);
-$secondary-black:   rgb(9,7,11);
+$primary-white: rgb(255,255,255);
+$secondary-white: rgb(249,247,250);
 
-$gent-pink: #ffbfca;
-$space-grey: rgb(224, 224, 224);
-
-
+$gent-pink: rgb(255, 191, 202);
+$linen-grey: rgb(224, 224, 224);
+$sweet-green: rgb(129, 158, 10);
+$soothing-yellow: rgb(254,211,95);
+/* $sunflower-gold:  */
 
 /* ==========================================================================
     CSS Custom Properties (nicknamed CSS variables)

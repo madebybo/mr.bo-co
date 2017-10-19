@@ -1,5 +1,7 @@
 ---
-title: about
+title: a<u>bo</u>ut
+title: a·bo·ut
+title: a.bo.ut
 code: "about"
 weight: 1
 ---

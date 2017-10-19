@@ -15,7 +15,7 @@
   <div id="expendedMenu" class="expanded-menu">
     <ul class="menu">
 		{{ range .Site.Sections.ByWeight }}
-		  <li class="item {{ .Params.code }}"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+		  <li class="item {{ .Params.code }}"><a href="{{ .Permalink }}">{{ .Title | safeHTML }}</a></li>
 		{{ end }}
     </ul>
   </div>

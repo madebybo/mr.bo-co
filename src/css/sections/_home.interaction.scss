@@ -69,3 +69,24 @@
 		transition: transform $mrbo-primary-transition-duration linear;
 	}
 }
+
+
+/* ==========================================================================
+   ui state: exhibit is active (in viewport)
+   ========================================================================== */
+
+.spectators img {
+	transition: filter 2s;
+}
+
+.header-active {
+	.spectators img {
+		filter: brightness(23%) !important;
+	}
+}
+
+.exhibit-active {
+	.spectators img {
+		filter: brightness(100%);
+	}
+}
