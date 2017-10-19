@@ -12,46 +12,10 @@ body {
   margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-.grand-container,
-.section-wrapper {
-  margin-top: 64px; /* TODO: use em instead */
-  padding: 32px 16px;
-}
-
-.block-main {
-  font-size: 1rem;
-  border: .125em solid green;
-  margin: 0 1em;
+.site-wrapper {
+  margin: 4em 0 0 0;
   padding: 1em;
 }
-
-.summary-work {
-  font-size: 1rem;
-  border: .125em solid black;
-  margin: 1em .5em;
-  padding: 1em;
-  width: calc(((100 / var(--column-num)) * 1%) - 1em); /* niiiiice */
-
-  .metadata {
-    color: $pink; 
-    font-size:.75rem;
-    margin: .5em; /* the margin is always half of the font size */
-  }
-}
-
-
-
-
 
 
 

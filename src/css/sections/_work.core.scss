@@ -1,0 +1,15 @@
+.site-wrapper.work {
+	.summary-work {
+	  font-size: 1rem;
+	  border: .125em solid black;
+	  margin: 1em 0;
+	  padding: 1em;
+	  /* width: calc(((100 / var(--column-num)) * 1%) - 1em); /* niiiiice */ */
+
+	  .metadata {
+	    color: $pink; 
+	    font-size:.75rem;
+	    margin: .5em; /* the margin is always half of the font size */
+	  }
+	}
+}

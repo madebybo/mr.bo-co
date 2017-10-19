@@ -71,22 +71,22 @@
 
 	.exhibit {
 		height: calc(100vh + $exhibit-floor-desktop);
-	}
+	
+		.exhibit-inner-wrapper {
+			height: calc(100vh + $exhibit-floor-desktop);
 
-	.exhibit-inner-wrapper {
-		height: calc(100vh + $exhibit-floor-desktop);
+			.ceiling {
+				font-size: 8rem;
+			}
 
-		.ceiling {
-			font-size: 8rem;
-		}
+		  .frame {
+		    margin: 160px auto 192px auto;
+		    box-shadow: 8px 16px 20px 0 rgba(0,0,0,.3);
+		    max-width: 720px;
+		  }
 
-	  .frame {
-	    margin: 160px auto 192px auto;
-	    box-shadow: 8px 16px 20px 0 rgba(0,0,0,.3);
-	    max-width: 720px;
-	  }
-
-	  .floor {
+		  .floor {
+		  }
 	  }
   }
 }

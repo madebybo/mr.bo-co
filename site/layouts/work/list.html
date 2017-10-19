@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <h3>list page defined in /work/list.html | {{ .Title }}</h3>
+<div class="site-wrapper {{ .Params.code }}">
 
   {{ range .Data.Pages }}
     {{ .Render "summary"}}
@@ -7,5 +7,6 @@
 
   {{ .Content }}
 
-  <script>window.section = {{ .Params.code }}</script>
+  <script> window.section = {{ .Params.code }} </script>
+</div>
 {{ end }}
