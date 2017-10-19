@@ -66,12 +66,9 @@
     	z-index: 1;
 
 			img {
-				position: relative;
-				height: 120%;
-				margin-top: -23px;
+				position: absolute;
+				height: 100%;
 			}
-
-			.spectator-1 { left: -4em;}
     }
 	}
 }

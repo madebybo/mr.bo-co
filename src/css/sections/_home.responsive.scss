@@ -29,8 +29,14 @@
 	    height: $nav-height-mobile;
 
 	    .spectators {
-	      height: 84px;
-	      top: -64px;
+	      height: 6em;
+	      top: -5em;
+
+	      img {
+	      	height: 105%;
+	      	top: .1em;
+	      	left: 5em;
+	      }
 	    }
 	  }
 	}
