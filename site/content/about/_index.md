@@ -1,7 +1,6 @@
 ---
-title: a<u>bo</u>ut
-title: a·bo·ut
-title: a.bo.ut
+title: a<i>·</i>bo<i>·</i>ut
+title: a<i>.</i>bo<i>.</i>ut
 code: "about"
 weight: 1
 ---
