@@ -1,8 +1,10 @@
 ---
-title: "the \"Rapt\" Demo "
+title: "the \"Rapt\" Demo"
 type: "work"
 timeline: "November 2015 - Feburary 2016"
 tags: ["interaction", "design", "research"]
+images:
+  - "Weather-and-Time.jpg"
 draft: false
 ---
 

@@ -3,6 +3,8 @@ title: "spray"
 type: "work"
 timeline: "March 2016"
 tags: ["interaction", "design", "research", "mobile"]
+images:
+  - "screen-layers.png"
 draft: false
 ---
 

@@ -2,6 +2,8 @@
 title: "mobile commerce research"
 type: "work"
 timeline: "November 2015 - Feburary 2016"
+images:
+  - "music-player.png"
 draft: false
 ---
 
