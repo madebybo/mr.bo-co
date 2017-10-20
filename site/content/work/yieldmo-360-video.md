@@ -3,6 +3,7 @@ title: "360 video"
 type: "work"
 timeline: "March 2017 - August 2017"
 images:
+  - "Stacked.gif"
   - "mobile-ui-detail.png"
   - "360-video-immersive-experience.png"
   - "360-video-handheld.jpg"
