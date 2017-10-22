@@ -1,9 +1,11 @@
 ---
 title: "mobile commerce research"
+code: "mcommerce"
 type: "work"
 timeline: "November 2015 - Feburary 2016"
 images:
-  - "music-player.png"
+  showcase:
+    - "music-player.png"
 draft: false
 ---
 

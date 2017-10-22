@@ -1,10 +1,12 @@
 ---
 title: "the \"Rapt\" Demo"
+code: "rapt"
 type: "work"
 timeline: "November 2015 - Feburary 2016"
 tags: ["interaction", "design", "research"]
 images:
-  - "Weather-and-Time.jpg"
+  showcase:
+    - "Weather-and-Time.jpg"
 draft: false
 ---
 

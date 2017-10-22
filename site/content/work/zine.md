@@ -1,5 +1,6 @@
 ---
 title: "zine"
+code: "zine"
 type: "work"
 timeline: "Feburary 2016 - April 2016"
 draft: false

@@ -4,6 +4,29 @@
   <!-- <i>{{ .Permalink }} | {{ .RelPermalink }} | {{ .URL }}</i>> -->
   <!-- <div class="date metadata">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div> -->
 
+  <img class="garnish" src="/_images/work/clouds.png">
+
+  <div class="featured {{ .Params.code }} clearfix">
+    <div class="mask-group">
+    {{ with .Params.images }}
+      {{ with .background }}<img class="background" src="/_images/work/{{ . }}">{{ end }}
+
+      {{ $featureImageURL := index .showcase 0 }}
+      <img class="format" src="/_images/work/{{ $featureImageURL }}">
+    {{ end }}
+    </div>
+  </div>
+
+  <!-- maybe reserve video for desktop -->
+  {{ with .Params.video }}
+    <!-- <video class="featured" src="/_images/work/{{ . }}" muted autoplay loop></video> -->
+  {{ end }}
+
+
+  {{ block "featured" . }}{{ end }}
+
+  <span class="summary">{{ .Summary }}</span>
+
   {{ with .Params.timeline }}
   <div class="timeline metadata">
     <strong>timeline: </strong>{{ . }}
@@ -15,13 +38,6 @@
     <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
   </div>
   {{ end }}
-
-  {{ with .Params.images }}
-    {{ $featureImageURL := index . 0 }}
-     <img src="/_images/work/{{ $featureImageURL }}">
-  {{ end }}
-
-  <span class="summary">{{ .Summary }}</span>
 
   {{ if .Truncated }}<span class="ellipsis">...</span><a href="{{ .RelPermalink }}">read more</a>{{ end }}
 </div>

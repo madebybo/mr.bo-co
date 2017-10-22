@@ -1,10 +1,14 @@
 ---
-title: "hyperplay & windowplay"
+title: "windowplay"
+code: "reelplay"
 type: "work"
 timeline: "April 2016 - August 2016"
 tags: ["video", "mobile", "design"]
 images:
-  - "map-detail.png"
+  background: "iphone-upright.jpg"
+  showcase: 
+    - "windowplay.gif"
+weight: 1
 draft: false
 ---
 
