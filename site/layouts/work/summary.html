@@ -1,6 +1,6 @@
 <!-- this goes inside of a range .Data.Pages loop -->
 <div class="package-work">
-  <h3><a href="{{ .URL }}">{{.Title}}</a></h3>
+  <h3 data-role="title"><a href="{{ .URL }}">{{.Title}}</a></h3>
   <!-- <i>{{ .Permalink }} | {{ .RelPermalink }} | {{ .URL }}</i>> -->
   <!-- <div class="date metadata">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div> -->
 
@@ -9,10 +9,16 @@
   <div class="featured {{ .Params.code }} clearfix">
     <div class="mask-group">
     {{ with .Params.images }}
-      {{ with .background }}<img class="background" src="/_images/work/{{ . }}">{{ end }}
 
       {{ $featureImageURL := index .showcase 0 }}
       <img class="format" src="/_images/work/{{ $featureImageURL }}">
+
+      {{ if .background }}
+        <img class="background" src='/_images/work/{{ .background }}'>
+      {{ else }}
+        <div class="format" data-role="layer"></div>
+      {{ end }}
+
     {{ end }}
     </div>
   </div>

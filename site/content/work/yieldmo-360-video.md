@@ -4,6 +4,7 @@ code: "panorama"
 type: "work"
 timeline: "March 2017 - August 2017"
 images:
+  background: "google-pixel.png"
   showcase:
     - "mobile-ui-detail.png"
     - "360-video-immersive-experience.png"

@@ -1,5 +1,16 @@
 .site-wrapper.work {
+	background-color: color($linen-grey lightness(92%));
+	background-color: $linen-grey;
+
+	.list-header {
+		background-color: $primary-black;
+		color: $primary-white;
+		padding: 6em 0;
+		display: none;
+	}
+
 	.package-work {
+		background-color: $primary-white;
 		position: relative;
 	  font-size: 1rem;
 	  /* border: .125em solid black; */
@@ -8,9 +19,7 @@
 
 	  h3 {
 	  	font-size: 2rem;
-	  	padding: 2em;
-	  	text-align: center;
-	  	font-family: $header-font;
+	  	padding: 1em;
 
 	  	a {		
 		  	color: black;
@@ -33,33 +42,17 @@
 	    display: none;
 	  }
 
-	  .featured.reelplay {
-	  	padding: 4em 0;
+	  .featured {
+	  	padding: 2em 0;
 
 	  	.mask-group {
 		  	position: relative;
-		  	/* float: right; */
 		  	margin: 0 auto;
-		  	width: 320px;
-		  	height: 363px;
-		  	overflow: hidden;
-		  	perspective: 1800px;
-		  	box-shadow: $box-shadow;
 
-			  img.background {
-			  	position: absolute;
-			  	width: 320px;
-			  	top: -70px;
-			  }
-
-			  img.format {
-			  	position: absolute;
-			  	top: -8px;
-			  	left: -14px;
-			  	width: 305px;
-
-			  	transform: rotateX(0deg) rotateY(-28deg) rotateZ(0deg);
-			  }
+		  	.background,
+		  	.format {
+			  	position: absolute;	
+		  	}
 	  	}
 	  }
 
@@ -84,3 +77,64 @@
 	  }
 	}
 }
+
+
+/* ==========================================================================
+   "feature" styling for each project
+   ========================================================================== */
+
+.featured.reelplay {
+	.mask-group {
+  	width: 250px;
+  	height: 285px;
+  	perspective: 1800px;
+  	box-shadow: $box-shadow;
+		overflow: hidden;
+
+	  img.background {
+	  	top: -183px;
+	  }
+
+	  img.format {
+	  	z-index: 10;
+	  	top: -5px;
+	  	left: -10px;
+	  	width: 238px;
+
+	  	transform: rotateX(0deg) rotateY(-28deg) rotateZ(0deg);
+	  }
+	}
+}
+
+.featured.zine {
+	.mask-group {
+		/* width: 320px; */
+		height: 600px;
+		perspective: 600px;
+		perspective-origin: right bottom;
+		perspective-origin: left bottom;
+
+		.format {
+			z-index: 10;
+			transform: rotateX(14deg) rotateY(-2deg) rotateZ(16deg);
+			transform: rotateX(10deg) rotateY(2deg) rotateZ(-10deg);
+			width: 200px;
+			right: 0;
+			left: 0;
+			top: 0;
+			margin: 0 auto;
+			box-shadow: 1px 2px 1px 1px rgba(25,25,25,0.4);
+			box-shadow: -1px 2px 1px 0px rgba(25,25,25,0.3);
+			outline: 1px solid $linen-grey;
+
+			&[data-role="layer"] {
+				z-index: 1;
+				height: 276px;
+				transform: rotateX(10deg) rotateY(2deg) rotateZ(-10deg) translate3d(-20px, 56px, 0);
+				background-color: $linen-grey;
+				box-shadow: 0 1px 1px 2px rgba(25,25,25,.2);
+			}
+		}
+	}
+}
+

@@ -3,6 +3,11 @@ title: "zine"
 code: "zine"
 type: "work"
 timeline: "Feburary 2016 - April 2016"
+images:
+  _background: "google-pixel.png"
+  showcase:
+    - "zine.gif"
+weight: 2
 draft: false
 ---
 
