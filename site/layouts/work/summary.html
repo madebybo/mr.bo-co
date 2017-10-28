@@ -1,22 +1,24 @@
 <!-- this goes inside of a range .Data.Pages loop -->
-<div class="package-work">
-  <h3 data-role="title"><a href="{{ .URL }}">{{.Title}}</a></h3>
+<div class="package-work {{ .Params.code }}">
+  {{ with .Params.images.background }}
+    <figure class="background"><img src='/_images/work/{{ . }}'></figure>
+  {{ end }}
+
+  <h3 class="title" data-role="title">{{ .Title }}</h3>
   <!-- <i>{{ .Permalink }} | {{ .RelPermalink }} | {{ .URL }}</i>> -->
   <!-- <div class="date metadata">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div> -->
 
-  <img class="garnish" src="/_images/work/clouds.png">
-
-  <div class="featured {{ .Params.code }} clearfix">
+  <div class="featured clearfix">
     <div class="mask-group">
     {{ with .Params.images }}
 
       {{ $featureImageURL := index .showcase 0 }}
       <img class="format" src="/_images/work/{{ $featureImageURL }}">
 
-      {{ if .background }}
-        <img class="background" src='/_images/work/{{ .background }}'>
+      {{ if .device }}
+        <img class="device" src='/_images/work/{{ .device }}'>
       {{ else }}
-        <div class="format" data-role="layer"></div>
+        <!-- <div class="format" data-role="layer" src='/_images/work/{{ .background }}'></div> -->
       {{ end }}
 
     {{ end }}
@@ -29,21 +31,27 @@
   {{ end }}
 
 
+  <!-- maybe for better flexibility? -->
   {{ block "featured" . }}{{ end }}
 
-  <span class="summary">{{ .Summary }}</span>
+  <div class="more-info">
+    {{ with .Params.timeline }}
+    <div class="timeline metadata">
+      <strong>timeline: </strong>{{ . }}
+    </div>
+    {{ end }}
 
-  {{ with .Params.timeline }}
-  <div class="timeline metadata">
-    <strong>timeline: </strong>{{ . }}
+    {{ with .Params.tags }}
+    <div class="tags metadata">
+      <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="summary">
+      <span>{{ .Summary }}</span>{{ if .Truncated }}<span class="ellipsis">...</span>{{ end }}
+    </div>
+
+    <a class="read-more" href="{{ .RelPermalink }}">read more</a>
   </div>
-  {{ end }}
 
-  {{ with .Params.tags }}
-  <div class="tags metadata">
-    <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
-  </div>
-  {{ end }}
-
-  {{ if .Truncated }}<span class="ellipsis">...</span><a href="{{ .RelPermalink }}">read more</a>{{ end }}
 </div>

@@ -98,25 +98,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -303,12 +284,29 @@ textarea {
 }
 
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* to deal with the auto wrapped <p> tag in Hugo blackfriday Markdown template */
+span p {
+  display: inline;
+}
+
+span.ellipsis {
+  margin-right: .5em;
+}
 
 
 
-
-
-/* Very temporary stuff, to delete after development */
+/* ==========================================================================
+   Very temporary stuff, to delete after development 
+   ========================================================================== */
 
 .nav-start {
   /* opacity: 0 !important; */

@@ -4,13 +4,14 @@ code: "panorama"
 type: "work"
 timeline: "March 2017 - August 2017"
 images:
-  background: "google-pixel.png"
+  background: "360-video-background.png"	
+  device: "device-iPhone-X-horizontal.png"
   showcase:
+    - "360-video.gif"
     - "mobile-ui-detail.png"
     - "360-video-immersive-experience.png"
     - "360-video-handheld.jpg"
     - "360-video-warp.png"
-    - "Stacked.gif"
 video: "Windowplay.mov"
 weight: 100
 draft: false

@@ -5,7 +5,8 @@ type: "work"
 timeline: "April 2016 - August 2016"
 tags: ["video", "mobile", "design"]
 images:
-  background: "iphone-upright-gold.jpg"
+  background: "windowplay-background.png"
+  device: "device-iPhone-upright-gold.jpg"
   showcase: 
     - "windowplay.gif"
 weight: 1

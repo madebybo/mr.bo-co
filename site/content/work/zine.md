@@ -4,7 +4,8 @@ code: "zine"
 type: "work"
 timeline: "Feburary 2016 - April 2016"
 images:
-  _background: "google-pixel.png"
+  background: "zine-background.jpg"
+  device: "device-Samsung-Galaxy-S8.png"
   showcase:
     - "zine.gif"
 weight: 2

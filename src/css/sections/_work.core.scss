@@ -1,79 +1,71 @@
 .site-wrapper.work {
-	background-color: color($linen-grey lightness(92%));
-	background-color: $linen-grey;
+	/* background-color: color($linen-grey lightness(92%)); */
+	/* background-color: $linen-grey; */
 
 	.list-header {
 		background-color: $primary-black;
 		color: $primary-white;
-		padding: 6em 0;
-		display: none;
+		padding: 6em 1em;
+		font-weight: 100;
+		/* display: none; */
 	}
 
 	.package-work {
 		background-color: $primary-white;
 		position: relative;
 	  font-size: 1rem;
-	  /* border: .125em solid black; */
-	  margin: 1em 0;
+	  margin: 4em 0;
 	  /* width: calc(((100 / var(--column-num)) * 1%) - 1em); /* niiiiice */
-
-	  h3 {
-	  	font-size: 2rem;
-	  	padding: 1em;
-
-	  	a {		
-		  	color: black;
-		  	text-decoration: none;
-	  	}
-	  }
-
 
 	  img {
 	  	width: 100%;
 	  }
 
-	  img.garnish {
-	    filter: brightness(90%);
-	    position: absolute;
-	    width: 150%;
-	    left: -20%;
-	    top: 0px;
-	    z-index: -1;
-	    display: none;
+
+	  figure.background {
+	  	position: absolute;
+	  	top: 0;
+	  	width: 100%;
+
+			img { filter: blur(10px); }
+	  }
+	  
+
+	  .title {
+	  	position: relative;
+	  	padding: 1.5em;
+	  	z-index: 1;
+	  	font-size: 2.5em;
 	  }
 
 	  .featured {
-	  	padding: 2em 0;
+	  	padding: 0 0 2em 0;
 
 	  	.mask-group {
 		  	position: relative;
 		  	margin: 0 auto;
 
-		  	.background,
+		  	.device,
 		  	.format {
 			  	position: absolute;	
 		  	}
 	  	}
 	  }
 
+	  .more-info {
+	  	padding: 3em 1.5em;
 
-	  /* work around to deal with the auto wrapped <p> tag */
-	  span.summary p {
-	  	display: inline;
-	  }
+	  	.summary {
+	  		margin: 1em 0;
+	  	}
 
-	  span.ellipsis {
-	  	margin-right: .5em;
-	  }
+		  .metadata {
+		  	display: none;
 
-
-
-	  .metadata {
-	  	display: none;
-
-	    color: $gent-pink; 
-	    font-size:.75rem;
-	    margin: .5em; /* the margin is always half of the font size */
+		    color: $gent-pink; 
+		    font-size:.75rem;
+		    margin: .5em; /* the margin is always half of the font size */
+		  }
 	  }
 	}
 }
@@ -82,57 +74,91 @@
 /* ==========================================================================
    "feature" styling for each project
    ========================================================================== */
+.reelplay {
+	.featured {
+		.mask-group {
+	  	width: 250px;
+	  	height: 285px;
+	  	perspective: 1800px;
+	  	box-shadow: $box-shadow;
+			overflow: hidden;
 
-.featured.reelplay {
-	.mask-group {
-  	width: 250px;
-  	height: 285px;
-  	perspective: 1800px;
-  	box-shadow: $box-shadow;
-		overflow: hidden;
+		  .device {
+		  	top: -183px;
+		  }
 
-	  img.background {
-	  	top: -183px;
-	  }
+		  .format {
+		  	z-index: 10;
+		  	top: -5px;
+		  	left: -10px;
+		  	width: 238px;
 
-	  img.format {
-	  	z-index: 10;
-	  	top: -5px;
-	  	left: -10px;
-	  	width: 238px;
-
-	  	transform: rotateX(0deg) rotateY(-28deg) rotateZ(0deg);
-	  }
+		  	transform: rotateX(0deg) rotateY(-28deg) rotateZ(0deg);
+		  }
+		}
 	}
 }
 
-.featured.zine {
-	.mask-group {
-		/* width: 320px; */
-		height: 600px;
+
+.zine {
+	.title {
+		padding-bottom: .5em !important;
+		color: $primary-white;
+	}
+
+	.featured {
 		perspective: 600px;
-		perspective-origin: right bottom;
 		perspective-origin: left bottom;
 
-		.format {
-			z-index: 10;
-			transform: rotateX(14deg) rotateY(-2deg) rotateZ(16deg);
-			transform: rotateX(10deg) rotateY(2deg) rotateZ(-10deg);
-			width: 200px;
-			right: 0;
-			left: 0;
-			top: 0;
-			margin: 0 auto;
-			box-shadow: 1px 2px 1px 1px rgba(25,25,25,0.4);
-			box-shadow: -1px 2px 1px 0px rgba(25,25,25,0.3);
-			outline: 1px solid $linen-grey;
+		.mask-group {
+			width: 224px;
+			height: 355px;
 
-			&[data-role="layer"] {
+			overflow: hidden;
+			transform: rotateX(10deg) rotateY(2deg) rotateZ(-10deg);
+			transform: rotateX(12deg) rotateY(5deg) rotateZ(-12deg);
+
+			.format {
 				z-index: 1;
-				height: 276px;
-				transform: rotateX(10deg) rotateY(2deg) rotateZ(-10deg) translate3d(-20px, 56px, 0);
-				background-color: $linen-grey;
-				box-shadow: 0 1px 1px 2px rgba(25,25,25,.2);
+				left: 6px;
+				top: 26px;
+				width: 214px;
+	   		box-shadow: 0 1px 1px 2px rgba(25,25,25,.8);
+				outline: 1px solid transparent;
+
+				&[data-role="layer"] {}
+			}
+
+			.device {
+				z-index: 10;
+			}
+		}
+	}
+}
+
+.panorama {
+	figure.background img {
+		filter: blur(1px) !important;
+	}
+
+	.title {
+		color: $primary-white;
+	}
+
+	.featured {
+		.mask-group {
+			width: 280px;
+			height: 160px;
+
+			.format {
+				width: 272px;
+				left: 4px;
+				top: 8px;
+				border-radius: 12px;
+			}
+
+			.device {
+				z-index: 10;
 			}
 		}
 	}
