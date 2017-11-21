@@ -293,6 +293,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 /* to deal with the auto wrapped <p> tag in Hugo blackfriday Markdown template */
 span p {
   display: inline;
@@ -330,6 +334,6 @@ span.ellipsis {
 }
 
 .anchored-portrait {
-  display: none;
+  /* display: none; */
 }
 

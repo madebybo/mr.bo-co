@@ -5,7 +5,7 @@
 	left: 0;
 	top: 0;
 	padding: .5em;
-	background-color: $primary-white;
+	background-color: color($primary-white a(95%));
 	box-shadow: $box-shadow;
 
 	.nav-start {
@@ -58,7 +58,7 @@
 				a {
 					text-decoration: none;
 					color: $primary-black;
-					font-weight: bold;
+					font-weight: 700;
 					font-size: 1.8em;
 
 					&:active,
@@ -87,10 +87,21 @@
 }
 .open .nav {
 	height: 100%;
-	transition: background 350ms linear,height 350ms ease-in 200ms;
+	background-color: $primary-white;
+	transition: background-color 350ms linear,height 350ms ease-in 200ms;
+	transition: height 350ms ease-in 200ms;
 	/* TODO: a subtle background color animation? */
+	animation: reflex 600ms;
 }
 
+
+@keyframes reflex {
+	60% {
+		background-color: color($primary-white a(60%));
+	} 100% {
+		background-color: $primary-white;
+	}
+}
 
 /* 2. The mr.bo signature */
 .nav .nav-start { transition: opacity 300ms ease-in-out; }

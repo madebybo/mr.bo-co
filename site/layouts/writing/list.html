@@ -9,5 +9,9 @@
   {{ $selectedPage := .Site.GetPage "section" "writing" }}
   <h6>Site.GetPage "section" "writing":  {{ $selectedPage.Title }} </h6>
 
+    <div class="summary">
+      <span>{{ .Summary }}</span>{{ if .Truncated }}<span class="ellipsis">...</span>{{ end }}
+    </div>
+
   <h3>back <a href="{{ .Site.BaseURL }}">home</a></h3>
 {{ end }}

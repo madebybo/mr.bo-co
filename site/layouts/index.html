@@ -3,10 +3,10 @@
 	<header id="header" class="header">
 	  <div class="header-content">
 	  	{{ partial "svg/signature.svg" . }}
-	    <summary>
-	      <p>.. is Creative Lead for Google’s Material Design studio in New York, where he manages projects that include design outreach efforts like the SPAN Design & Technology Conference and design.google.com along with the expansion and development of the Material Design system itself.</p>
+	    <div class="summary">
+	      <p>Bo Wang is the Creative Lead for Google’s Material Design studio in New York, where he manages projects that include design outreach efforts like the SPAN Design & Technology Conference and design.google.com along with the expansion and development of the Material Design system itself.</p>
 	      <p>social profiles and contact info goes here</p>
-	    </summary>
+	    </div>
 	  </div>
 	</header>
 
@@ -19,7 +19,7 @@
 
 	    <div class="floor">
 	      <div class="spectators">
-	        <img class="spectator-1" src='{{ "_images/plant-lighter.png" | absURL }}'>
+	        <img class="spectator-1" src='{{ "_images/objects/plant-lighter.png" | absURL }}'>
 	        <!-- http://leibal.com/products/vide-poche-2/ -->
 	      </div>
 	    </div>
@@ -28,13 +28,13 @@
 
 	<div class="featured-content">
 		<section id="firstPost" class="first-post">
-		  <img src='{{ "_images/color-card.jpg" | absURL }}'>
-		  <h1>design is the act of making things that are intended to be both sensible and beautiful</h1>
+		  <img src='{{ "_images/-color-card.jpg" | absURL }}'>
+		  <h4 class="headline">design is the act of making things that are intended to be both sensible and beautiful</h4>
 		</section>
 
 		<section class="featured" data-index="1">
-		  <img src='{{ "_images/scott-webb-258983.jpg" | absURL }}'>
-		  <h1>“Take in the objects around you. Deliberately restrained, yet emotionally expressive, they reflect the aesthetics of China’s Song dynasty, regarded by connoisseurs as a pinnacle of Chinese art and culture. Song China was prosperous, vibrant, and advanced. Moveable type, paper money, and printed books were all part of urban life. The first Song capital 汴京 (today’s 开封) was the most populous city in the world; its multicultural population included Buddhists, Daoists, Muslims, Jews, and Christians. Refined and deeply considered, Song aesthetics were defined by penetrating thinkers - scholars, critics, poets, statesmen - and circulated throughout China’s imperial and urban realms. Song taste continues to permeate art even today."</h1>
+		  <img src='{{ "_images/-scott-webb-258983.jpg" | absURL }}'>
+		  <h4 class="headline">“Take in the objects around you. Deliberately restrained, yet emotionally expressive, they reflect the aesthetics of China’s Song dynasty, regarded by connoisseurs as a pinnacle of Chinese art and culture. Song China was prosperous, vibrant, and advanced. Moveable type, paper money, and printed books were all part of urban life. The first Song capital 汴京 (today’s 开封) was the most populous city in the world; its multicultural population included Buddhists, Daoists, Muslims, Jews, and Christians. Refined and deeply considered, Song aesthetics were defined by penetrating thinkers - scholars, critics, poets, statesmen - and circulated throughout China’s imperial and urban realms. Song taste continues to permeate art even today."</h4>
 		</section>
 
 		<section>
@@ -45,6 +45,4 @@
 
 
   {{ .Content }}
-
-  <script>window.section = {{ .Params.code }}</script>
 {{ end }}

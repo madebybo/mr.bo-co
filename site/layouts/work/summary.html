@@ -1,57 +1,34 @@
 <!-- this goes inside of a range .Data.Pages loop -->
 <div class="package-work {{ .Params.code }}">
+  <a href="{{ .Permalink }}">
+    <h3 class="headline">{{ .Title }}</h3>
+  </a>
+
   {{ with .Params.images.background }}
     <figure class="background"><img src='/_images/work/{{ . }}'></figure>
   {{ end }}
-
-  <h3 class="title" data-role="title">{{ .Title }}</h3>
-  <!-- <i>{{ .Permalink }} | {{ .RelPermalink }} | {{ .URL }}</i>> -->
-  <!-- <div class="date metadata">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div> -->
-
+  
   <div class="featured clearfix">
     <div class="mask-group">
     {{ with .Params.images }}
-
-      {{ $featureImageURL := index .showcase 0 }}
-      <img class="format" src="/_images/work/{{ $featureImageURL }}">
-
+      {{ if .showcase }}
+        {{ $featureImageURL := index .showcase 0 }}
+        <img class="format" src="/_images/work/{{ $featureImageURL }}">
+      {{ end }}
       {{ if .device }}
         <img class="device" src='/_images/work/{{ .device }}'>
-      {{ else }}
-        <!-- <div class="format" data-role="layer" src='/_images/work/{{ .background }}'></div> -->
       {{ end }}
+    {{ end }}
 
+    <!-- maybe reserve video for desktop -->
+    {{ with .Params.video }}
+      <!-- <video class="featured" src="/_images/work/{{ . }}" muted autoplay loop></video> -->
     {{ end }}
     </div>
   </div>
 
-  <!-- maybe reserve video for desktop -->
-  {{ with .Params.video }}
-    <!-- <video class="featured" src="/_images/work/{{ . }}" muted autoplay loop></video> -->
-  {{ end }}
-
-
-  <!-- maybe for better flexibility? -->
-  {{ block "featured" . }}{{ end }}
-
-  <div class="more-info">
-    {{ with .Params.timeline }}
-    <div class="timeline metadata">
-      <strong>timeline: </strong>{{ . }}
-    </div>
-    {{ end }}
-
-    {{ with .Params.tags }}
-    <div class="tags metadata">
-      <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
-    </div>
-    {{ end }}
-
-    <div class="summary">
-      <span>{{ .Summary }}</span>{{ if .Truncated }}<span class="ellipsis">...</span>{{ end }}
-    </div>
-
-    <a class="read-more" href="{{ .RelPermalink }}">read more</a>
-  </div>
+  <a href="{{ .Permalink }}">
+    <div class="neo-quote mod">{{ .Summary }}</div>
+  </a>
 
 </div>

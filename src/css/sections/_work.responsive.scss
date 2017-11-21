@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+	.section-wrapper.work .package-work {
+		.featured {
+			margin-top: -6rem;
+		}
+	}
+
+	.section-wrapper.work .zine {
+		.featured {
+			margin-top: -8rem;
+		}
+	}
+
+	.section-wrapper.work .panorama {
+		.featured {
+			margin-top: -4.5rem;
+		}
+	}
+
+	.section-wrapper.work .lookbook {
+		.featured {
+			margin-top: -8rem;
+		}
+	}
+
+	.section-wrapper.work .carousel {
+		.featured {
+			margin-top: -8rem;
+		}
+	}
+
+	.section-wrapper.work .map {
+		.featured {
+			margin-top: -5rem;
+		}
+	}
+
+	.section-wrapper.work .stack {
+		.featured {
+			margin-top: -7rem;
+		}
+	}
+
+	.section-wrapper.work .wrapper,
+	.section-wrapper.work .mcommerce,
+	.section-wrapper.work .rapt,
+	.section-wrapper.work .spray {
+		.featured {
+			margin-top: 0;
+			right: 20px;
+		}
+	}	
+}
+
+@media (--mobile-m) {
+
+}
+
+@media (--tablet) {
+	.section-wrapper.work .package-work {
+		.featured {
+			margin-top: -10rem;
+		}
+
+		.mod.neo-quote {
+			max-width: none;
+		}
+	}	
+
+	.section-wrapper.work .wrapper,
+	.section-wrapper.work .mcommerce,
+	.section-wrapper.work .rapt,
+	.section-wrapper.work .spray {
+		.featured {
+			margin-top: 0;
+		}
+	}	
+}
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+}
+
+@media (--desktop-m) {
+}

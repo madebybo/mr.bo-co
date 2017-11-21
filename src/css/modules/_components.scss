@@ -1,0 +1,40 @@
+/* ==========================================================================
+   .neo-quote: The subtitle which features the「 」symbol 
+   ========================================================================== */
+
+.neo-quote {
+	position: relative;
+	padding: 2em;
+	max-width: 18em;
+	margin: 0 auto;
+	display: inline-block;
+	left: 50%;
+	transform: translateX(-50%);
+
+	p {
+		margin: 0;
+		font-family: $header-font;
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+
+	&:before {
+		content: $neo-quote-left;
+		color: $primary-black;
+		font-size: 1.5rem;
+		position: absolute;
+		left: -0.5rem;
+		top: 1rem;
+		font-weight: 100;
+	}
+
+	&:after {
+		content: $neo-quote-right;
+		color: $primary-black;
+		font-size: 1.5rem;
+		position: absolute;
+		right: -0.5rem;
+		bottom: 1rem;
+		font-weight: 100;
+	}
+}

@@ -5,10 +5,16 @@
 /* CSS variables (not actually mutable) */
 $base-size: 16px; /* browser default */
 
-$header-font: 'Crimson Text', serif;
-$header-font: 'EB Garamond', serif;
 
-$content-font: Helvetica, Arial, sans-serif;
+/* hosted font */
+@font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-100-normal.ttf') format('truetype'); font-weight: 100; font-style: normal; }
+@font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-100-italic.ttf') format('truetype'); font-weight: 100; font-style: italic; }
+/* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-200-normal.ttf') format('truetype'); font-weight: 200; font-style: normal; } */
+/* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-200-italic.ttf') format('truetype'); font-weight: 200; font-style: italic; } */
+/* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-300-normal.ttf') format('truetype'); font-weight: 300; font-style: normal; } */
+/* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-300-italic.ttf') format('truetype'); font-weight: 300; font-style: italic; } */
+
+$header-font: Caslon, 'EB Garamond', 'Crimson Text', serif;
 $content-font: 'Ubuntu', Helvetica, Arial, sans-serif;
 
 
@@ -31,16 +37,6 @@ $sweet-green: rgb(129, 158, 10);
 $soothing-yellow: rgb(254,211,95);
 /* $sunflower-gold:  */
 
-/* ==========================================================================
-    CSS Custom Properties (nicknamed CSS variables)
-   ========================================================================== */
-
-:root {
-  --gutter: 8px;
-  --column-num: 1;
-}
-
-
 
 /* ==========================================================================
    Media Queries and custom media definitions
@@ -48,21 +44,18 @@ $soothing-yellow: rgb(254,211,95);
 
 $mobile-s-width: 280px;
 $mobile-m-width: 359px;
-$mobile-l-width: 480px;
-$desktop-width: 768px;
+$mobile-l-width: 408px;
+$tablet-width: 640px;
+$desktop-width-s: 960px;
+$desktop-width-m: 1440px;
 
-@custom-media --mobile-s (width > 280px) and (width <= 359px);
-@custom-media --mobile-m (width > 359px) and (width <= 408px);
-@custom-media --mobile-l (width > 408px) and (width <= 768px);
-@custom-media --desktop  (width >= 768px);
-
-
-$nav-height-mobile: 64px;
-
-$exhibit-floor-mobile: 64px;
-$exhibit-floor-desktop: 112px;
-$exhibit-elevation-mobile: 96px;
-$exhibit-elevation-desktop: 160px;
+/* @custom-media --mobile-s (width <= 359px); */
+@custom-media --mobile-m  (width >= 359px);
+@custom-media --mobile-l  (width >= 408px);
+@custom-media --tablet    (width >= 640px);
+@custom-media --desktop-s (width >= 960px);
+@custom-media --desktop-m (width >= 1440px);
+@custom-media --desktop-l (width >= 1920px);
 
 
 /* ==========================================================================
@@ -70,7 +63,7 @@ $exhibit-elevation-desktop: 160px;
    ========================================================================== */
 
 $box-shadow: 0px 1px 1px 0 rgba(25,25,25,0.4);
-
+$box-shadow-heavy: 0 2px 4px 0 rgba(0,0,0,0.50);
 
 
 
@@ -91,6 +84,8 @@ $mrbo-primary-transition-duration: 300ms;
    ========================================================================== */
 
 $arrow-right: '❯';
+$neo-quote-left: '「';
+$neo-quote-right: '」';
 
 
 /* ==========================================================================

@@ -8,8 +8,6 @@
 
 
 
-
-
 /* ==========================================================================
    modular components & common stuff among everything
    ========================================================================== */
@@ -17,7 +15,7 @@
 @import "modules/_baseof.scss";
 @import "modules/_signature.scss";
 @import "modules/_navigation.scss";
-
+@import "modules/_components.scss";
 
 
 
@@ -29,14 +27,15 @@
 @import "sections/_home.interaction.scss";
 @import "sections/_home.responsive.scss";
 
-
 @import "sections/_about.core.scss";
-
+@import "sections/_about.responsive.scss";
 
 @import "sections/_contact.core.scss";
-
+@import "sections/_contact.responsive.scss";
 
 @import "sections/_work.core.scss";
+@import "sections/_work.responsive.scss";
 
-
+@import "sections/_tnt.core.scss";
+@import "sections/_tnt.responsive.scss";
 

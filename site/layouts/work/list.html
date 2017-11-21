@@ -1,18 +1,14 @@
 {{ define "main" }}
-<div class="site-wrapper {{ .Params.code }}">
+<div class="section-wrapper {{ .Params.code }}">
 
 	<div class="list-header">
-		<h2 data-role="title">
-			"Everyone designs who devises courses of action aimed at changing existing situations into preferred ones." - Herbert Simon
-		</h2>
+		<div class="header-holder">
+			<h5 class="headline">"Everyone designs who devises courses of action aimed at changing existing situations into preferred ones." - Herbert Simon</h5>
+		</div>
 	</div>
 
   {{ range .Data.Pages }}
     {{ .Render "summary"}}
   {{ end }}
-
-  {{ .Content }}
-
-  <script> window.section = {{ .Params.code }} </script>
 </div>
 {{ end }}

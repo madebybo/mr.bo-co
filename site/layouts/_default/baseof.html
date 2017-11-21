@@ -10,6 +10,9 @@
     <!-- end of site content -->
 
     {{ block "footer" . }}{{ partial "site-footer" . }}{{ end }}
-    {{ block "scripts" . }}{{ partial "site-scripts" . }}{{ end }}
+
+    <!-- site-wide scripts and optional scripts -->
+    {{ partial "site-scripts" . }}
+    {{ block "section-scripts" . }}{{ end }}
   </body>
 </html>

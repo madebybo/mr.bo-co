@@ -13,9 +13,7 @@ body.about {
 .greeting {
 	margin-top: $mrbo-exhibit-floor-mobile;
 	font-weight: 600;
-	font-family: $mrbo-header-font;
-	// font-family: $mrbo-primary-font;
-	// font-family: helvetica;
+	font-family: $header-font;
 
 
 	position: fixed;
@@ -35,12 +33,6 @@ body.about {
 	padding: 340px 0 calc(340px - 144px) 0; /* adjust based on break points */
 	margin: 0 24px;
 	margin-right: 80px;
-
-	p {
-		margin: 0;
-		font-size: 14px;
-		font-weight: 400;
-	}
 
 	p:last-child {
 		// margin-bottom: 0;
