@@ -1,18 +1,19 @@
 {{ define "main" }}
-<div class="section-wrapper {{ .Params.code }}">
-  <h3>/work/single.html | {{ .Title }}</h3>
+<div class="section-wrapper work single {{ .Params.code }}">
+  {{ with .Params.tags }}
+  <div class="tags metadata">
+    <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Params.timeline }}
+  <div class="timeline metadata">
+    <strong>timeline: </strong>{{ . }}
+  </div>
+  {{ end }}
+
+  {{ .Render "summary"}}
+
   {{ .Content }}
-
-    {{ with .Params.tags }}
-    <div class="tags metadata">
-      <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
-    </div>
-    {{ end }}
-
-    {{ with .Params.timeline }}
-    <div class="timeline metadata">
-      <strong>timeline: </strong>{{ . }}
-    </div>
-    {{ end }}
 </div>
 {{ end }}
