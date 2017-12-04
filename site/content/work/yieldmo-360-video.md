@@ -1,5 +1,6 @@
 ---
 title: "360 video"
+subtitle: A new take on 360 video
 code: "panorama"
 type: "work"
 timeline: "March 2017 - August 2017"
@@ -17,9 +18,6 @@ weight: 3
 draft: false
 ---
 
-A new take on 360 video
-
-<!--more-->
 talk more about 360 video, how to utilize technology for prototying
 
 In {{< getpage name="hyperplay & windowplay" type="page" path="windowplay.md" >}}, it is mentioned that...

@@ -42,3 +42,26 @@
 		max-width: 20rem;
 	}
 }
+
+
+/* ==========================================================================
+   .metadata: The metadata entry in single page 
+   ========================================================================== */
+
+.metadata {
+	color: $primary-white;
+	margin: 1rem 0;
+
+	h6 {
+		font-family: $content-font;
+		/* text-transform: uppercase; */
+		font-weight: 500;
+		font-size: .9em;
+		color: #aaa;
+	}
+
+	p {
+		/* margin: .25rem 0 0 0; */
+	}
+}
+

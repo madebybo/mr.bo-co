@@ -1,5 +1,6 @@
 ---
 title: "lookbook"
+subtitle: A lookbook is a collection of photographs compiled to show off a model, a photographer, a style, or stylist or a clothing line.
 code: "lookbook"
 type: "work"
 timeline: "April 2016 - August 2016"
@@ -12,6 +13,3 @@ images:
 weight: 4
 draft: false
 ---
-
-A lookbook is a collection of photographs compiled to show off a model, a photographer, a style, or stylist or a clothing line.
-<!--more-->

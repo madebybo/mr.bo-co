@@ -28,7 +28,9 @@
   </div>
 
   <a href="{{ .Permalink }}">
-    <div class="neo-quote mod">{{ .Summary }}</div>
+    <div class="neo-quote mod">
+      <p>{{ .Params.subtitle }}</p>
+    </div>
   </a>
 
 </div>

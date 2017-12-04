@@ -1,5 +1,6 @@
 ---
 title: "map"
+subtitle: Interactive, thoroughly customizable maps in native Android, iOS.
 code: "map"
 type: "work"
 timeline: "April 2016 - August 2016"
@@ -12,6 +13,3 @@ images:
 weight: 6
 draft: false
 ---
-
-Interactive, thoroughly customizable maps in native Android, iOS.
-<!--more-->

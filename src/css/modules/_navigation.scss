@@ -111,18 +111,18 @@
 
 /* 3. The navigation "hamburger icon" */
 .nav .nav-icon {
-	span:nth-child(1) { top: 0px;  left:0; width: 100%; transform: rotate(0deg); }
-	span:nth-child(2) { top: 7px;  left:0; width: 100%; transform: rotate(0deg); }
-	span:nth-child(3) { top: 7px;  left:0; width: 100%; transform: rotate(0deg); }
-	span:nth-child(4) { top: 14px; left:0; width: 50%; transform: rotate(0deg); }
+	span:nth-child(1) { top: 0px;  right:0; width: 100%; transform: rotate(0deg); }
+	span:nth-child(2) { top: 7px;  right:0; width: 100%; transform: rotate(0deg); }
+	span:nth-child(3) { top: 7px;  right:0; width: 100%; transform: rotate(0deg); }
+	span:nth-child(4) { top: 14px; right:0; width: 50%; transform: rotate(0deg); }
 
-	span { transition: .25s ease-in-out; }
+	span { transition: 300ms ease-in-out; }
 }
 .open .nav .nav-icon {
-	span:nth-child(1) { top: 18px; left: 50%; width: 0%; }
+	span:nth-child(1) { top: 7px; right: 50%; width: 0%; }
 	span:nth-child(2) { transform: rotate(45deg); }
 	span:nth-child(3) { transform: rotate(-45deg); }
-	span:nth-child(4) { top: 18px; left: 50%; width: 0%; }
+	span:nth-child(4) { top: 7px; right: 50%; width: 0%; }
 }
 
 

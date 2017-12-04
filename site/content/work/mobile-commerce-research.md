@@ -1,5 +1,6 @@
 ---
 title: "mCommerce research"
+subtitle: How do people shop on mobile?
 code: "mcommerce"
 type: "work"
 timeline: "November 2015 - Feburary 2016"
@@ -11,8 +12,4 @@ weight: 9
 draft: false
 ---
 
-How do people shop on mobile?
-
-<!--more-->
-Design Research & Marketing Artifacts (transform to a long one pager)
 
