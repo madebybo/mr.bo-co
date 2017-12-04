@@ -1,11 +1,7 @@
 {{ define "main" }}
-<div class="grand-container">
-  <h3>{{ .Title }}</h3>
-
+<div class="section-wrapper {{ .Params.code }} clearfix">
   {{ range .Data.Pages }}
-    <h3><a href="{{ .URL }}">{{.Title}}</a></h3>
+    {{ .Render "summary"}}
   {{ end }}
-
-  <p>{{ .Content }}</p>
 </div>
 {{ end }}

@@ -3,9 +3,39 @@
    ========================================================================== */
 
 @media (--mobile-m) {
+	.section-wrapper.tnt {
+		width: $content-width-mobile-m;	
+
+		.package-tnt {
+			.featured {
+				figure.poster {
+					width: calc(100% - 1.5rem);
+				}
+			}
+
+			.summary {
+				margin: 2rem 1.5rem;
+			}
+		}
+	}
 }
 
-@media (--mobile-m) {
+@media (--mobile-l) {
+	.section-wrapper.tnt {
+		width: 21rem;	
+
+		.package-tnt {
+			.featured {
+				figure.poster {
+					width: calc(100% - 2rem);
+				}
+			}
+
+			.summary {
+				margin: 2rem;
+			}
+		}
+	}
 }
 
 @media (--tablet) {

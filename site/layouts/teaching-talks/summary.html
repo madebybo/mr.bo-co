@@ -1,0 +1,16 @@
+<!-- this goes inside of a range .Data.Pages loop -->
+<div class="package-tnt {{ .Params.code }} clearfix">
+  
+  <div class="featured clearfix">
+    <a href="{{ .Permalink }}">
+      <h4 class="headline">{{ .Title | safeHTML }}</h4>
+    </a>
+
+    {{ with .Params.images.poster }}
+      <figure class="poster"><img src='/_images/tnt/{{ . }}'></figure>
+    {{ end }}
+  </div>
+
+  <a class="summary" href="{{ .Permalink }}">{{ .Summary }}</a>
+
+</div>

@@ -46,7 +46,7 @@ var aboutDisplay = {
 		var paragraphHeight;
 
 		bioPaddingTop = parseInt($(window).height()/2);
-		bioPaddingBottom = parseInt(($(window).height() - this.props.disappearThreshold)/2);
+		bioPaddingBottom = parseInt(($(window).height() - this.props.disappearThreshold)/2) - 96;
 		paragraphHeight = (window.screen.height - this.props.disappearThreshold);
 
 		$(this.ui.bio).css('padding', bioPaddingTop + 'px' + ' 0 ' + bioPaddingBottom + 'px 0');
@@ -77,6 +77,7 @@ var aboutDisplay = {
 				// getting the opacity value based on active paragraph position
 				opacity = (topPos - this.props.disappearThreshold)/60;
 
+				// TODO: disable opacity whatsoever when it comes to the last paragraph
 				$(this.ui.paragraphs[i]).css('opacity', opacity);
 
 				if (this.state.activeSection !== i) {

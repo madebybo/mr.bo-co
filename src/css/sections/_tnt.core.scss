@@ -1,41 +1,139 @@
-body.about {
-	background: $mrbo-primary-white;
-}
+/* ==========================================================================
+   Common Style for the Teaching & Talks List Page
+   ========================================================================== */
 
-.anchored-portrait {
-	position: fixed;
-	bottom: 0;
-	width: 80%;
-	right: -1%;
-	bottom: 0;
-}
+.section-wrapper.tnt {
+	width: $content-width-mobile-s;
+	margin-left: auto;
+	margin-right: auto;
 
-.greeting {
-	margin-top: $mrbo-exhibit-floor-mobile;
-	font-weight: 600;
-	font-family: $header-font;
+	.package-tnt {
+		position: relative;
+		margin: 4em 0 6em 0;
+		font-size: .8rem;
 
+	  &:after {
+	  	content: "▾";
+	  	display: block;
+	  	position: absolute;
+	  	width: 100%;
+	  	bottom: 0;
+	  	text-align: center;
+	  	transform: translateY(2rem);
+	  }
 
-	position: fixed;
-	height: 80px;
-	z-index: 1;
-	width: 100%;
-	padding: 24px 24px 12px 24px;
-	margin: 64px 0 0 0;
-	top: 64px;
-	margin: 0;
-	// background: $mrbo-secondary-black;
-	// color: $mrbo-primary-black;
-}
+	  &:last-child:after {
+	  	content: "●";
+	  }
 
-.bio {
-	// color: $mrbo-primary-black;
-	padding: 340px 0 calc(340px - 144px) 0; /* adjust based on break points */
-	margin: 0 24px;
-	margin-right: 80px;
+		.featured {
+			position: relative;
 
-	p:last-child {
-		// margin-bottom: 0;
-		height: auto !important;
+			.headline {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: left;
+				z-index: 1;
+			}
+
+			figure.poster {
+				position: relative;
+				width: calc(100% - 1rem);
+				box-shadow: $box-shadow-heavy;
+
+				&:after {
+					content: "";
+					position: absolute;
+					width: 50%;
+					height: 100%;
+					opacity: 0.75;
+				}
+			}
+		}
+
+		.summary {
+			display: block;
+			margin: 2rem 1rem;
+			width: calc(100% - 1rem);
+		}
+	}
+
+	.package-tnt:nth-child(2n+1) {
+		.featured {
+			.headline { right: 0; }
+			figure.poster { float: left; }
+			figure.poster:after { right: 0; }
+		}
+
+		.summary { margin-left: 0; }
+	}
+
+	.package-tnt:nth-child(2n) {
+		.featured {
+			.headline { left: 0; }
+			figure.poster { float: right; }
+			figure.poster:after { left: 0; }
+		}
+
+		.summary { margin-right: 0; }
 	}
 }
+
+/* ==========================================================================
+   Individual Styling for Each Item
+   ========================================================================== */
+
+.section-wrapper.tnt .hcd {
+	.featured {
+	}
+}
+
+.section-wrapper.tnt .vdf {
+	.featured {
+	}
+}
+
+.section-wrapper.tnt .hci {
+	.featured {
+		figure.poster:after {
+			background-color: #a88a8b;
+		}
+	}
+}
+
+.section-wrapper.tnt .h4d {
+	.featured {
+		figure.poster:after {
+			background-color: rgb(120, 120, 120);
+		}
+	}
+}
+
+.section-wrapper.tnt .browser {
+	.featured {
+		figure.poster:after {
+			background-color: #45b2e5;
+		}
+	}
+}
+
+.section-wrapper.tnt .dic {
+	.featured {
+		figure.poster:after {
+			background-color: #FDDA00;
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Interior Page for Each Item
+   ========================================================================== */
+
+.tnt-interior {
+	.headline {
+		br { display: none; }
+	}
+}
+

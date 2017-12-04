@@ -2,6 +2,8 @@
    "mr.bo & co" TYPOGRAPHY
    ========================================================================== */
 
+/* archive: https://github.com/madebybo/mr.bo-co/blob/96ddf6f5f4168c8493bffa530db4df1cd9ab74cc/src/css/imports/_definitions.scss */
+
 /* CSS variables (not actually mutable) */
 $base-size: 16px; /* browser default */
 
@@ -9,8 +11,8 @@ $base-size: 16px; /* browser default */
 /* hosted font */
 @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-100-normal.ttf') format('truetype'); font-weight: 100; font-style: normal; }
 @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-100-italic.ttf') format('truetype'); font-weight: 100; font-style: italic; }
-/* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-200-normal.ttf') format('truetype'); font-weight: 200; font-style: normal; } */
-/* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-200-italic.ttf') format('truetype'); font-weight: 200; font-style: italic; } */
+@font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-200-normal.ttf') format('truetype'); font-weight: 200; font-style: normal; }
+@font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-200-italic.ttf') format('truetype'); font-weight: 200; font-style: italic; }
 /* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-300-normal.ttf') format('truetype'); font-weight: 300; font-style: normal; } */
 /* @font-face {font-family: Caslon; src: url('../_fonts/Caslon-Pro-300-italic.ttf') format('truetype'); font-weight: 300; font-style: italic; } */
 
@@ -56,6 +58,18 @@ $desktop-width-m: 1440px;
 @custom-media --desktop-s (width >= 960px);
 @custom-media --desktop-m (width >= 1440px);
 @custom-media --desktop-l (width >= 1920px);
+
+
+$nav-height-mobile: 64px;
+
+$exhibit-floor-mobile: 64px;
+$exhibit-floor-desktop: 112px;
+$exhibit-elevation-mobile: 96px;
+$exhibit-elevation-desktop: 160px;
+
+
+$content-width-mobile-s: 18rem;
+$content-width-mobile-m: 20rem;
 
 
 /* ==========================================================================
