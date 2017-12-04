@@ -1,6 +1,9 @@
 {{ define "main" }}
+<div class="section-wrapper work tnt writing">
+
   <!-- e.g., http://mrbo.co/tags/design/ -->
   {{ range .Data.Pages }}
     {{ .Render "summary"}}
   {{ end }}
+</div>
 {{ end }}

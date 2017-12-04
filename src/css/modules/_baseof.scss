@@ -51,7 +51,7 @@ section {
 footer {
   background-color: $primary-black;
   margin-top: 4em;
-
+  
   .footer-inner {
     position: relative;
     width: $content-width-mobile-s;
@@ -72,6 +72,11 @@ footer {
       text-align: left;
       font-weight: 100;
     }
+
+  .headline {
+    padding: 1em;
+    color: $secondary-black;
+    display: none;
   }
 }
 
