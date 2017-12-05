@@ -165,7 +165,7 @@
 }
 
 .section-wrapper.work .lookbook {
-	figure.background img { filter: blur(6px) !important; }
+	figure.background img { filter: blur(6px) }
 	.headline { color: $primary-black; }
 
 	.featured {
@@ -412,8 +412,9 @@
 			display: none;
 		}
 
-		.background img {
+		figure.background img {
 			/* transform: scale(1.4); */
+			filter: none;
 		}
 	}
 
