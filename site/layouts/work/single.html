@@ -2,6 +2,13 @@
 <div class="section-wrapper work single">
   {{ .Render "summary"}}
 
+  <div class="project-header">
+    <h3 class="headline">{{ .Title }}</h3>
+    <div class="neo-quote mod">
+      <p>{{ .Params.subtitle }}</p>
+    </div>
+  </div>
+
   <div class="snapshot clearfix">
     <div class="snapshot-inner">
       <div class="metadata">
@@ -20,7 +27,6 @@
       </div>      
     </div>
   </div>
-
 
   <div class="content">
     {{ .Content }}

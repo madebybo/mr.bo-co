@@ -405,9 +405,24 @@
 	/* TODO: scroll and the feature page image scale down */
 	.package-work {
 		margin-top: 2rem;
+		margin-top: 0;
+
+		> a,
+		&:after {
+			display: none;
+		}
 
 		.background img {
-			transform: scale(1.3);
+			/* transform: scale(1.4); */
+		}
+	}
+
+	.project-header {
+		width: $content-width-mobile-s;
+		margin: 3rem auto;
+
+		.headline {
+			margin: 1em 0;
 		}
 	}
 
@@ -416,7 +431,7 @@
 		color: $primary-white;
 
 		.snapshot-inner {
-			width: 14rem;
+			width: $content-width-mobile-s;
 			margin: 2em auto;
 		}
 	}
