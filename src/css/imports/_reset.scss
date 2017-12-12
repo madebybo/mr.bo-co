@@ -288,9 +288,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+p {
+  font-family: $content-font;
+  font-size: .85rem;
+  font-weight: 300;
+}
+
 a {
+  font-family: $header-font;
   color: #000;
-  text-decoration: none;
 }
 
 img {

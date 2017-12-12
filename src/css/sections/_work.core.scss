@@ -31,7 +31,7 @@
 	  margin: 4em 0;
 
 	  &:after {
-	  	content: "▾";
+	  	content: $triangle-down;
 	  	display: block;
 	  	position: absolute;
 	  	width: 100%;
@@ -41,7 +41,7 @@
 	  }
 
 	  &:last-child:after {
-	  	content: "●";
+	  	content: $closing-circle;
 	  }
 
 	  .headline {
@@ -72,6 +72,7 @@
 
 	  .mod.neo-quote {
 	  	margin-top: 2rem;
+	  	margin-bottom: 1rem;
 	  }
 	}
 }
@@ -403,9 +404,9 @@
 
 .work.single {
 	/* TODO: scroll and the feature page image scale down */
-	.package-work {
-		margin-top: 2rem;
-		margin-top: 0;
+	> .package-work {
+		margin-top: 0rem;
+		margin-bottom: 3rem;
 
 		> a,
 		&:after {
@@ -423,7 +424,7 @@
 		margin: 3rem auto;
 
 		.headline {
-			margin: 1em 0;
+			margin: .5em 0;
 		}
 	}
 
@@ -437,23 +438,83 @@
 		}
 	}
 
+	/* Markdown Content */
 	.content {
-		.headlines,
-		p {
+		position: relative;
+		padding-bottom: 3em;
+
+		> h2 {
 			width: $content-width-mobile-s;
-			margin: 0 auto;
+			font-family: $header-font;
+			color: color($secondary-black lightness(50%)); 
+			margin: 3.5rem auto 1.5rem auto;
 		}
 
-		.headlines {
-			margin: 2rem auto;
+		> p { 
+			width: $content-width-mobile-s;
+			margin: 1em auto; 
+			padding-left: 2.5rem;
+		}
 
-			h2 {
-				font-family: $header-font;
-				color: rgb(100, 100, 100);
-				margin: .5rem 0;
+		h2 + p {
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: .5rem;			
+				left: 0;
+				width: 1.5rem;
+				border-bottom: 2px solid $primary-black;
 			}
+		}
+
+		/* the cushion for image */
+		> div {
+			margin: 2em 0;
+		}
+
+		.tags {
+			margin: 2em auto;
+		}
+
+	  &:after {
+	  	content: $closing-circle;
+	  	display: block;
+	  	position: absolute;
+	  	width: 100%;
+	  	bottom: 1em;
+	  	text-align: center;
+	  }
+	}
+
+	.related {
+		background-color: $linen-grey;
+		padding: 2em 0;
+
+		> .headline {
+			margin: 1rem 0;
+		}
+
+		.package-work {
+			/* background-color: transparent; */
+			margin: 0 auto;
+			overflow: hidden;
+			transform: scale(.9);
+			box-shadow: $box-shadow;
+			max-width: 20rem; /* keep it the same size as smallest phone version */
+
+			&:after { display: none; }
 		}
 	}
 
-	.tags { display: none; }
+	.cross-reference {
+		padding: 3rem 0;
+
+		.headline {
+			width: $content-width-mobile-s;
+			margin: 0 auto;
+			text-align: left;
+		}
+	}
 }

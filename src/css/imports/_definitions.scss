@@ -33,8 +33,11 @@ $secondary-black: #212121;
 $primary-white: rgb(255,255,255);
 $secondary-white: rgb(249,247,250);
 
+
+$linen-grey: #F2F2F2;
+
+
 $gent-pink: rgb(255, 191, 202);
-$linen-grey: rgb(245, 246, 247);
 $sweet-green: rgb(129, 158, 10);
 $soothing-yellow: rgb(254,211,95);
 /* $sunflower-gold:  */
@@ -68,7 +71,7 @@ $exhibit-elevation-mobile: 96px;
 $exhibit-elevation-desktop: 160px;
 
 
-$content-width-mobile-s: 18rem;
+$content-width-mobile-s: 16rem;
 $content-width-mobile-m: 20rem;
 
 
@@ -87,12 +90,6 @@ $box-shadow-heavy: 0 2px 4px 0 rgba(0,0,0,0.50);
 
 $mrbo-primary-transition-duration: 300ms;
 
-
-
-
-
-
-
 /* ==========================================================================
    SYMBOLS
    ========================================================================== */
@@ -100,6 +97,9 @@ $mrbo-primary-transition-duration: 300ms;
 $arrow-right: '❯';
 $neo-quote-left: '「';
 $neo-quote-right: '」';
+$triangle-down: '▾';
+$triangle-left: '◂';
+$closing-circle: '●';
 
 
 /* ==========================================================================

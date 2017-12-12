@@ -4,8 +4,8 @@
 
 .neo-quote {
 	position: relative;
-	padding: 2em;
-	max-width: 18rem;
+	padding: 1.5em;
+	max-width: 14em;
 	margin: 0 auto;
 	display: inline-block;
 	left: 50%;
@@ -14,47 +14,71 @@
 	p {
 		margin: 0;
 		font-family: $header-font;
-		font-size: 1.1rem;
+		font-size: 1em;
 		font-weight: bold;
 	}
 
 	&:before {
 		content: $neo-quote-left;
 		color: $primary-black;
-		font-size: 1.5rem;
+		font-size: 1.5em;
 		position: absolute;
-		left: -0.5rem;
-		top: 1rem;
+		left: -0.5em;
+		top: .5em;
 		font-weight: 100;
 	}
 
 	&:after {
 		content: $neo-quote-right;
 		color: $primary-black;
-		font-size: 1.5rem;
+		font-size: 1.5em;
 		position: absolute;
-		right: -0.5rem;
-		bottom: 1rem;
+		right: -0.5em;
+		bottom: .5em;
 		font-weight: 100;
 	}
 
 	@media (--mobile-m) {
-		max-width: 20rem;
+		/* max-width: 20rem; */
 	}
 }
 
+
+/* ==========================================================================
+   .nav-back: Simple link to nav back to parent directory 
+   ========================================================================== */
+
+.nav-back {
+	position: relative;
+	width: 17.5rem; /* wider than the usual content width */
+	margin: 0 auto;
+	padding-left: 1.2rem;
+
+	a {
+		font-size: 1.2rem;
+		font-weight: 900;
+	}
+
+	&:before {
+		position: absolute;
+		content: $triangle-left;
+		left: 0;
+		font-size: 2em;
+		line-height: .6;
+		font-weight: 100;
+		text-decoration: none;
+	}
+}
 
 /* ==========================================================================
    .metadata: The metadata entry in single page 
    ========================================================================== */
 
 .metadata {
-	color: $primary-white;
 	margin: 1rem 0;
 
 	h6 {
 		font-family: $content-font;
-		/* text-transform: uppercase; */
 		font-weight: 500;
 		font-size: .9em;
 		color: #aaa;
@@ -64,4 +88,17 @@
 		/* margin: .25rem 0 0 0; */
 	}
 }
+
+/* ==========================================================================
+   .tags: Tags for the entry 
+   ========================================================================== */
+
+.tags { 
+	/* display: none;  */
+	width: $content-width-mobile-s;
+	font-family: $header-font;
+	font-size: 1.2rem;
+}
+
+
 

@@ -2,6 +2,8 @@
 <div class="section-wrapper work single">
   {{ .Render "summary"}}
 
+  <div class="nav-back"><a href="/work">work</a></div>
+
   <div class="project-header">
     <h3 class="headline">{{ .Title }}</h3>
     <div class="neo-quote mod">
@@ -30,13 +32,25 @@
 
   <div class="content">
     {{ .Content }}
+
+    {{ with .Params.tags }}
+    <div class="tags metadata">
+      <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
+    </div>
+    {{ end }}
   </div>
 
+  <!-- related projects -->
+  <div class="related clearfix">
+    <h4 class="headline">related work</h4>
 
-  {{ with .Params.tags }}
-  <div class="tags metadata">
-    <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
+    {{ range where .Site.Pages "Params.related" .Params.code }}
+       {{ .Render "summary"}}
+    {{ end }}    
   </div>
-  {{ end }}
+
+  <div class="cross-reference">
+    <h4 class="headline">interested in my speaking engagements?</h4>
+  </div>
 </div>
 {{ end }}

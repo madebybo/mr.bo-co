@@ -26,16 +26,9 @@ body {
   h6& { font-size: .9em;   }
 }
 
-p {
-  font-family: $content-font;
-  font-size: .85rem;
-  font-weight: 300;
-}
-
 .section-wrapper {
   margin: 4em 0 0 0;
 }
-
 
 section {
   position: relative;
@@ -50,7 +43,6 @@ section {
 
 footer {
   background-color: $secondary-black;
-  margin-top: 4em;
 
   .footer-inner {
     position: relative;
