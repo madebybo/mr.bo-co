@@ -13,9 +13,6 @@ images:
 weight: 1
 overview: Uber began six years ago as a way for 100 friends in San Francisco to get luxury rides — everyone’s private driver. Today, we’re a transportation network spanning 450 cities in 72 countries. That network delivers food and packages as well as people, all at the push of a button.      
 role: Design Lead
-related:
-  prev: stack.md
-  next: wrapper.md
 draft: false
 ---
 

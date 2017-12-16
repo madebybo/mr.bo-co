@@ -509,12 +509,16 @@
 	}
 
 	.cross-reference {
+		width: $content-width-mobile-s;
+		margin: 0 auto;
 		padding: 3rem 0;
 
 		.headline {
-			width: $content-width-mobile-s;
-			margin: 0 auto;
 			text-align: left;
+		}
+
+		.learn-more {
+			margin-top: 2rem;
 		}
 	}
 }

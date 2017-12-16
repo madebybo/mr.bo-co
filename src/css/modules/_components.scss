@@ -70,6 +70,33 @@
 	}
 }
 
+
+/* ==========================================================================
+   .metadata: The metadata entry in single page 
+   ========================================================================== */
+
+.learn-more {
+	position: relative;
+	padding-right: 1.2rem;
+	display: inline-block;
+	font-size: 2rem;
+
+	a { font-weight: 200; }
+
+	&:after {
+		position: absolute;
+		content: $triangle-right;
+		font-size: .8em;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		line-height: .6;
+		font-weight: 100;
+		text-decoration: none;
+	}
+}
+
+
 /* ==========================================================================
    .metadata: The metadata entry in single page 
    ========================================================================== */
