@@ -1,5 +1,5 @@
 ---
-title: "360 video"
+title: 360 video
 subtitle: A new take on 360 video
 code: "panorama"
 type: "work"
@@ -30,3 +30,7 @@ In [windowplay]({{< ref "windowplay.md#about" >}}), it is mentioned that...
 #photo2: as if you're in that situation
 
 {{< youtube h8mwhm0PoKc >}}
+
+## outcome
+
+Fucking awesome. Patent Bitch!

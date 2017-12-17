@@ -18,6 +18,13 @@
         <p>{{ .Params.overview }}</p>
       </div>
       
+      {{ with .Params.team }}
+      <div class="metadata">
+        <h6>team</h6>
+        <p>{{ . | safeHTML }}</p>
+      </div>
+      {{ end }}
+
       <div class="metadata">
         <h6>role</h6>
         <p>{{ .Params.role }}</p>

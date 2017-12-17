@@ -441,7 +441,9 @@
 	/* Markdown Content */
 	.content {
 		position: relative;
-		padding-bottom: 3em;
+		padding-bottom: 6em;
+
+		a { font-family: $content-font; }
 
 		> h2 {
 			width: $content-width-mobile-s;
@@ -450,10 +452,17 @@
 			margin: 3.5rem auto 1.5rem auto;
 		}
 
-		> p { 
+		> p{ 
 			width: $content-width-mobile-s;
 			margin: 1em auto; 
 			padding-left: 2.5rem;
+		}
+
+		> ul,
+		> ol {
+			width: $content-width-mobile-s;
+			margin: 1em auto; 
+			padding-left: 3.5rem;
 		}
 
 		h2 + p {
@@ -475,7 +484,10 @@
 		}
 
 		.tags {
+			display: none;
 			margin: 2em auto;
+
+			a { font-family: $header-font; }
 		}
 
 	  &:after {
@@ -483,7 +495,7 @@
 	  	display: block;
 	  	position: absolute;
 	  	width: 100%;
-	  	bottom: 1em;
+	  	bottom: 2.5em;
 	  	text-align: center;
 	  }
 	}

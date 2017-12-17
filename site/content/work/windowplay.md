@@ -1,37 +1,69 @@
 ---
-title: "windowplay"
-subtitle: An outstream video wrapped in eye-catching, interactive brand imagery and CTA.
-code: "windowplay"
-type: "work"
-timeline: "April 2016 - August 2016"
+title: windowplay
+subtitle: An interactive “scroll to control” video format with maximum brand exposure.
+code: windowplay
+type: work
+timeline: April 2016 - August 2016
 tags: ["video", "mobile", "design"]
 images:
-  background: "format-windowplay-background.png"
-  device: "device-iPhone-upright-gold.jpg"
+  background: windowplay/windowplay-background.png
+  device: device-iPhone-upright-gold.jpg
   showcase: 
-    - "format-windowplay.gif"
+    - windowplay/windowplay.gif
 weight: 1
-overview: Uber began six years ago as a way for 100 friends in San Francisco to get luxury rides — everyone’s private driver. Today, we’re a transportation network spanning 450 cities in 72 countries. That network delivers food and packages as well as people, all at the push of a button.      
-role: Design Lead
+overview: Windowplay packs a powerful brand punch. Give your vertical, horizontal, or square video assets the added bonus of complementary brand imagery and CTA overlay. The surrounding brand imagery is revealed bit by bit as customers scroll the page, creating the simulation of an image "behind" the page. This eye-catching effect increases engagement with advertising campaign, making sure the brand leaves a lasting impression.
+team: ux researcher <br> ux designers <br> engineers <br> product manager <br> a/b testing analyst
+role: design lead
 draft: false
 ---
 
 ## the challenge
 
-Uber’s original premise was simple: “Push a button, get a ride.” You didn’t need to set your destination, you didn’t need to select a product, you just hit a button or two and you were off.
+The Yieldmo design team have seen impressive success with their [window](https://formats.yieldmo.com/#/demo/window) format, which leverages position-aware technology to simulate an image "behind" the page a user is on. 
 
-Simple shopping cart implementation wasn’t the answer for this brand, as the high level of product customization and 13 different collections needing commercialization required a different approach.
+As video continues to gain remarkable growth on mobile, it's inevitably intriguing to ask: how might we apply that proven design principle to a much richer medium?
 
-<div><img src="/_images/work/inspiration-screen-layers.png"></div>
+<div><img src="/_images/work/windowplay/components.jpg"></div>
 
 ## ideation
 
-We began by making a precise 3D model of the pier. This allowed us to form our designs around the existing physical structure and test how installations would fit in real-time while allowing the structural engineer to assess feasibility.
+We began by digging deeper about following two questions: 
 
-Obtaining life insurance has always been an important step to help protect a family’s financial future, yet often the application process can seem time-consuming and complex. After interviewing families in Houston and across the country, MassMutual, one of the largest life insurance companies, discovered that a significant number of people thought life insurance was important, but that the application process was too complicated and they couldn’t afford it.
+* What makes the window format so successful? 
+* What makes a video experience successful?
 
-## prototype
+After several interviews and contextual inquiry sessions, it became clear that the secret sauce lies in Yieldmo's proprietary "scroll-to-reveal" interaction pattern. Such interactions provide a native way to break out of an in-content ad unit’s confined real estate without resorting to obnoxious pop-ups or fullscreen takeovers.
 
-To ensure that our designs were structurally sound, we relied on 3D printing and CNC methods to make models that we tested before mass fabricating. We rented a small warehouse in Burlingame where we could create prototypes quickly.
+<div><img src="/_images/work/windowplay/x-ray-sequence.jpg"></div>
 
-<div><img src="/_images/work/inspiration-Weather-and-Time.jpg"></div>
+When it comes to consuming video on mobile, one key principle is to minimize disruption. Specifically, that means:
+
+1. Play video inline by default. 
+2. Give user the option to have finer control over the progress of the video.
+3. Expand to full screen only if initiated by user.
+
+<div><img src="/_images/work/windowplay/mobile-video-ux.png"></div>
+
+## user flows
+
+The design team went great length in exploring various factors that could affect a enjoyable Windowplay experience. Such factors include network connection, inline vs. full-screen transition, window view animation and brand overlay effect. 
+
+The interplay of aforementioned factors made it possible for highly complex user flows. We made sure all critical user scenarios are accounted for.
+
+<div><img src="/_images/work/windowplay/user-flows.jpg"></div>
+
+## versatility
+
+Windowplay is designed to accommodate videos with a wide range of aspect ratios. It works great on all kinds of brand verticals.
+
+<div><img src="/_images/work/windowplay/brands.png"></div>
+
+## iteration & outcome
+
+In its first shipped version, our A/B tests showed significant uplift in both engagement and conversion compared to standard outstream video format:
+
+<div><img src="/_images/work/windowplay/windowplay-outcome.png"></div>
+
+We also designed [Hyperplay](https://formats.yieldmo.com/#/demo/hyperplay), an alternative mobile video format based on the same design principle. Here's the result for an early iteration of the Hyperplay format:
+
+<div><img src="/_images/work/windowplay/hyperplay-outcome.png"></div>

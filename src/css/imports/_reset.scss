@@ -288,7 +288,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-p {
+p,
+ul,
+ol {
   font-family: $content-font;
   font-size: .85rem;
   font-weight: 300;
