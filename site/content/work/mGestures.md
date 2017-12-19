@@ -11,7 +11,14 @@ images:
   showcase: 
     - "format-stack.gif"
 related: [windowplay]
-weight: 7
+weight: 20
 draft: false
 ---
 
+## challenge
+
+How might we utilize native mobile interactioin patterns? - (Stack, Shadowbox)
+
+https://formats.yieldmo.com/#/format/shadowbox
+
+Marketplace (human carousel)?

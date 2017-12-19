@@ -9,6 +9,7 @@ images:
   background: "spray-background.png"
   showcase: 
     - "spray.gif"
+weight: 11
 draft: false
 ---
 

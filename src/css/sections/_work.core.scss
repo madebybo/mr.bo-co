@@ -463,6 +463,10 @@
 			width: $content-width-mobile-s;
 			margin: 1em auto; 
 			padding-left: 3.5rem;
+
+			li {
+				margin-bottom: .25em;
+			}
 		}
 
 		h2 + p {
