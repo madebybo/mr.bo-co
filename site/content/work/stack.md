@@ -10,7 +10,7 @@ images:
   device: "device-iPhone-upright-black.png"
   showcase: 
     - "format-stack.gif"
-related: windowplay
+related: [windowplay]
 weight: 7
 draft: false
 ---

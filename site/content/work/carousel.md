@@ -10,7 +10,7 @@ images:
   device: device-iPhone-X-carousel.png
   showcase:
     - format-carousel-m.gif
-related: windowplay
+related: [windowplay]
 weight: 5
 draft: false
 ---

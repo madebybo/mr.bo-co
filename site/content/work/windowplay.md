@@ -13,6 +13,7 @@ images:
 weight: 1
 overview: Windowplay packs a powerful brand punch. Give your vertical, horizontal, or square video assets the added bonus of complementary brand imagery and CTA overlay. The surrounding brand imagery is revealed bit by bit as customers scroll the page, creating the simulation of an image "behind" the page. This eye-catching effect increases engagement with advertising campaign, making sure the brand leaves a lasting impression.
 team: ux researcher <br> ux designers <br> engineers <br> product manager <br> a/b testing analyst
+related: [panorama, mcommerce]
 role: design lead
 draft: false
 ---
