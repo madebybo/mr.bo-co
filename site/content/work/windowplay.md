@@ -54,7 +54,11 @@ The interplay of aforementioned factors made it possible for highly complex user
 
 ## versatility
 
-Windowplay is designed to accommodate videos with a wide range of aspect ratios. It works great on all kinds of brand verticals.
+Windowplay is designed to accommodate videos with a wide range of aspect ratios. 
+
+<div><img src="/_images/work/windowplay/anatomy.jpg"></div>
+
+It works great on all kinds of brand verticals. Here are three examples from airline, TV series, and consumer goods, respectively.
 
 <div><img src="/_images/work/windowplay/brands.png"></div>
 
