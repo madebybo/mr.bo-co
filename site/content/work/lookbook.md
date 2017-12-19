@@ -10,12 +10,17 @@ images:
   device: device-Samsung-Galaxy-S8.png
   showcase: 
     - lookbook/lookbook.gif
-overview: Windowplay packs a powerful brand punch. Give your vertical, horizontal, or square video assets the added bonus of complementary brand imagery and CTA overlay. The surrounding brand imagery is revealed bit by bit as customers scroll the page, creating the simulation of an image "behind" the page. This eye-catching effect increases engagement with advertising campaign, making sure the brand leaves a lasting impression.
-team: ux researcher <br> ux designers <br> engineers <br> product manager <br> a/b testing analyst
-role: design lead
+overview: A concept that came out of primary consumer design research on how people discover and purchase brands/products, Lookbook presents a group of products in their natural setting (a room of furniture, a model wearing clothing items, etc.), and allows individual items to be clicked to explore more within the format.
+team: business opration <br> ux researcher <br> ux designers <br> engineers <br> a/b testing analyst
+role: product lead
+related: work/windowplay.md
 weight: 4
 draft: false
 ---
+
+## challenge
+
+Many brands have aspirational images of their products being used for their catalogs or websites. How might we leverage these assets to create a "shoppable" experience?
 
 ## storyboard
 
@@ -51,6 +56,8 @@ That email thread about this research
 <div><img src="/_images/work/lookbook/versatility.jpg"></div>
 
 ## future iteration
+
+Since we designed initial Lookbook concepts, there has been validation of this type of experience with [Instagram shoppable ads](http://www.adweek.com/digital/retailers-can-now-make-instagram-posts-much-more-shoppable/) and [Pinterest](https://blog.pinterest.com/en/search-outside-box-new-pinterest-visual-discovery-tools), so it is worth developing further iterations that is distinct in Yieldmo's design language.
 
 We also designed two concepts for future iteration. 
 

@@ -21,7 +21,7 @@ draft: false
 
 The Yieldmo design team have seen impressive success with their [window](https://formats.yieldmo.com/#/demo/window) format, which leverages position-aware technology to simulate an image "behind" the page a user is on. 
 
-As video continues to gain remarkable growth on mobile, it's inevitably intriguing to ask: how might we apply that proven design principle to a much richer medium?
+As video continues to gain remarkable growth on mobile, it's inevitably intriguing to ask: how might we apply that proven design principle to a much richer medium? (TODO: Project Brief)
 
 <div><img src="/_images/work/windowplay/components.jpg"></div>
 

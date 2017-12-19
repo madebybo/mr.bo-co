@@ -51,9 +51,24 @@
   <div class="related clearfix">
     <h4 class="headline">related work</h4>
 
+<!-- pick 2 random work pages and make sure it is not the same one -->
+
+                <ul class="post-rels">
+                    {{ $page_link := .Permalink }}
+                    {{ $tags := .Params.tags }}
+                    {{ range $.Site.Pages }}
+                    {{ $page := . }}
+                    {{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
+                    {{ if and $has_common_tags (ne $page_link $page.Permalink) }}
+                    <li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+
+
     {{ range where .Site.Pages "Params.related" .Params.code }}
-       {{ .Render "summary"}}
-    {{ end }}    
+      {{ .Render "summary"}}
+    {{ end }}
   </div>
 
   <div class="cross-reference">
