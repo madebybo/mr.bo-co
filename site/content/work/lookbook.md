@@ -40,6 +40,10 @@ The role will help to shape teams and the way we work. We're looking for design 
 <div><img src="/_images/work/lookbook/wireframe.png"></div>
 
 
+## interaction design
+
+<div><img src="/_images/work/lookbook/interactions.png"></div>
+
 ## amazon mechanical turk
 
 The team conducted a [comsumer research](https://www.surveymonkey.com/r/LookbookMTurkPreview) using Amazon Mechanical Turk to understand a few aspects of the product:
