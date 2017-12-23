@@ -1,15 +1,15 @@
 ---
-title: "stack"
+title: mGestures
 subtitle: A swipeable stack of cards that conveys brand message, fun and captivating to interact with.
-code: "stack"
-type: "work"
+code: mgestures
+type: work
 timeline: "April 2016 - August 2016"
 tags: ["mcommerce", "mobile", "design"]
 images:
-  background: "format-stack-background.jpg"
-  device: "device-iPhone-upright-black.png"
+  background: stack-background.jpg
+  device: iPhone-upright-black.png
   showcase: 
-    - "format-stack.gif"
+    - stack.gif
 related: [windowplay]
 weight: 20
 draft: false

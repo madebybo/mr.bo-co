@@ -5,10 +5,10 @@ code: "zine"
 type: "work"
 timeline: "Feburary 2016 - April 2016"
 images:
-  background: "format-zine-background.jpg"
-  device: "device-Samsung-Galaxy-S8.png"
+  background: zine-background.jpg
+  device: Samsung-Galaxy-S8.png
   showcase:
-    - "format-zine.gif"
+    - zine.gif
 weight: 2
 draft: false
 ---

@@ -13,3 +13,4 @@ draft: false
 ---
 
 
+not to collide with: https://www.yiming-bao.com/projects/understanding-mobile-consumer-

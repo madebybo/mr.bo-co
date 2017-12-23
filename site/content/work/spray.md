@@ -1,9 +1,9 @@
 ---
-title: "spray"
-subtitle: Systematically Prototyping Responsive Animation in Yieldmo.
-code: "spray"
-type: "work"
-timeline: "March 2016"
+title: spray
+subtitle: building a point of view for motion design language for mobile advertising
+code: spray
+type: work
+timeline: March 2016
 tags: ["interaction", "design", "research", "mobile"]
 images:
   background: "spray-background.png"
@@ -13,6 +13,12 @@ weight: 11
 draft: false
 ---
 
-Also talk about the motion design "theoritical" research, a lot of good content in Google Docs
+Systematically Prototyping Responsive Animation in Yieldmo.
+
+Expand to the entire point of view for motion design!
 
 Spray (motion design language)
+
+not to collide with: https://www.yiming-bao.com/projects/motion-design-framework
+
+Mention this: https://medium.com/@yimingbao/dissecting-motion-design-with-the-7-w-s-dd82815e61c7

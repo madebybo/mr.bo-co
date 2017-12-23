@@ -6,11 +6,11 @@ type: work
 timeline: April 2016 - August 2016
 tags: ["mcommerce", "mobile", "design"]
 images:
-  background: format-carousel-background.jpg
-  device: device-iPhone-X-carousel.png
+  background: carousel-background.jpg
+  device: iPhone-X-carousel.png
   showcase:
-    - format-carousel-m.gif
-related: [windowplay]
+    - carousel-m.gif
+related: [windowplay, stack]
 weight: 5
 draft: false
 ---

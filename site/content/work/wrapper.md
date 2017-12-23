@@ -6,9 +6,9 @@ type: work
 timeline: "April 2015 - July 2015"
 tags: ["video", "mobile", "design"]
 images:
-  background: "format-wrapper.png"
+  background: wrapper.png
   showcase: 
-    - "format-wrapper.png"
+    - wrapper.png
 weight: 8
 draft: false
 ---

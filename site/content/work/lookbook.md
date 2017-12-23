@@ -6,10 +6,10 @@ type: work
 timeline: April 2016 - August 2016
 tags: [mcommerce, mobile, design]
 images:
-  background: lookbook/lookbook-background.png
-  device: device-Samsung-Galaxy-S8.png
+  background: lookbook-background.png
+  device: Samsung-Galaxy-S8.png
   showcase: 
-    - lookbook/lookbook.gif
+    - lookbook.gif
 overview: A concept that came out of primary consumer design research on how people discover and purchase brands/products, Lookbook presents a group of products in their natural setting (a room of furniture, a model wearing clothing items, etc.), and allows individual items to be clicked to explore more within the format.
 team: business opration <br> ux research <br> ux design <br> engineering <br> a/b testing <br> data insights
 role: product lead
@@ -22,7 +22,7 @@ draft: false
 
 Many brands have aspirational images of their products being used for their catalogs or websites. How might we leverage these assets to create a "shoppable" experience?
 
-<div><img src="/_images/work/lookbook/versatility.jpg"></div>
+<div><img src="/work/lookbook/versatility.jpg"></div>
 
 ## storyboard
 
@@ -30,19 +30,19 @@ Advocate for users in a fast-paced environment, imparting day-to-day design lead
 
 Lookbook is a result from the [mCommerce Research](/work/mobile-commerce-research/)
 
-<div><img src="/_images/work/lookbook/lookbook-storyboard.jpg"></div>
+<div><img src="/work/lookbook/lookbook-storyboard.jpg"></div>
 
 ## userflow and wireframe 
 
 The role will help to shape teams and the way we work. We're looking for design managers who are excited to localize our product for the Chinese audience, build new products for the market and help Chinese travelers explore the world through our local experiences, personable hosts, and unique accommodations. 
 
-<div><img src="/_images/work/lookbook/userflow.jpg"></div>
-<div><img src="/_images/work/lookbook/wireframe.png"></div>
+<div><img src="/work/lookbook/userflow.jpg"></div>
+<div><img src="/work/lookbook/wireframe.png"></div>
 
 
 ## interaction design
 
-<div><img src="/_images/work/lookbook/interactions.png"></div>
+<div><img src="/work/lookbook/interactions.png"></div>
 
 ## amazon mechanical turk
 
@@ -51,7 +51,7 @@ The team conducted a [comsumer research](https://www.surveymonkey.com/r/Lookbook
 - Hot-spot recognition and usage
 - Expected brand favorability and in-store visit intent
 
-<div><img src="/_images/work/lookbook/mturk-1.jpg"></div>
+<div><img src="/work/lookbook/mturk-1.jpg"></div>
 
 The research provided qualitative data to understand consumer behavior on a large scale (259 U.S.-based respondents). It was highly valuable in informing design iterations and a/b testing directions. 
 
@@ -62,7 +62,7 @@ Combined with the insights from MTurk, the team also run numberous A/B tests to 
 - Idea 1: Format is coming into view, hotspots are already on there, pulsating. Hotspots continue to pulsate as user continues to scroll.
 - Idea 2: Format is coming into view, but there are no hotspots. As user continutes to scroll, the hotspots are intruduced and pulsating.
 
-<div><img src="/_images/work/lookbook/ab-test.jpg"></div>
+<div><img src="/work/lookbook/ab-test.jpg"></div>
 
 
 ## future iteration
@@ -71,5 +71,5 @@ Since we designed initial Lookbook concepts, there has been validation of this t
 
 We also designed two concepts for future iteration. 
 
-<div><img src="/_images/work/lookbook/slider.jpg"></div>
-<div><img src="/_images/work/lookbook/payment.jpg"></div>
+<div><img src="/work/lookbook/slider.jpg"></div>
+<div><img src="/work/lookbook/payment.jpg"></div>

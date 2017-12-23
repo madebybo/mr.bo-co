@@ -1,11 +1,12 @@
 <!-- this goes inside of a range .Data.Pages loop -->
-<div class="package-work {{ .Params.code }}">
+{{ $code := .Params.code }}
+<div class="package-work {{ $code }}">
   <a href="{{ .Permalink }}">
-    <h3 class="headline">{{ .Title }}</h3>
+    <h3 class="headline">{{ .Title | safeHTML }}</h3>
   </a>
 
   {{ with .Params.images.background }}
-    <figure class="background"><img src='/_images/work/{{ . }}'></figure>
+    <figure class="background"><img src="/work/{{ $code }}/{{ . }}"></figure>
   {{ end }}
   
   <div class="featured clearfix">
@@ -13,10 +14,10 @@
     {{ with .Params.images }}
       {{ if .showcase }}
         {{ $featureImageURL := index .showcase 0 }}
-        <img class="format" src="/_images/work/{{ $featureImageURL }}">
+        <img class="format" src="/work/{{ $code }}/{{ $featureImageURL }}">
       {{ end }}
       {{ if .device }}
-        <img class="device" src='/_images/work/{{ .device }}'>
+        <img class="device" src="/_images/devices/{{ .device }}">
       {{ end }}
     {{ end }}
 
