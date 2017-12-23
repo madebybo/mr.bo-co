@@ -3,18 +3,19 @@ title: windowplay
 subtitle: An interactive “scroll to control” video format with maximum brand exposure.
 code: windowplay
 type: work
-timeline: April 2016 - August 2016
-tags: ["video", "mobile", "design"]
 images:
   background: windowplay-background.png
   device: iPhone-upright-gold.jpg
   showcase: 
     - windowplay.gif
-weight: 1
-overview: Windowplay packs a powerful brand punch. Give your vertical, horizontal, or square video assets the added bonus of complementary brand imagery and CTA overlay. The surrounding brand imagery is revealed bit by bit as customers scroll the page, creating the simulation of an image "behind" the page. This eye-catching effect increases engagement with advertising campaign, making sure the brand leaves a lasting impression.
-team: ux researcher <br> ux designers <br> engineers <br> product manager <br> a/b testing analyst
+snapshot:
+  overview: Windowplay packs a powerful brand punch. Give your vertical, horizontal, or square video assets the added bonus of complementary brand imagery and CTA overlay. The surrounding brand imagery is revealed bit by bit as customers scroll the page, creating the simulation of an image "behind" the page. This eye-catching effect increases engagement with advertising campaign, making sure the brand leaves a lasting impression.
+  team: ux research <br> ux design <br> engineering <br> product management <br> a/b testing
+  role: design lead
+  timeline: April 2016 - August 2016
 related: [panorama, mcommerce]
-role: design lead
+tags: ["video", "mobile", "design"]
+weight: 1
 draft: false
 ---
 

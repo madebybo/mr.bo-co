@@ -13,27 +13,14 @@
 
   <div class="snapshot clearfix">
     <div class="snapshot-inner">
+    {{ with .Params.snapshot }}
+      {{ range $index, $element := . }}
       <div class="metadata">
-        <h6>overview</h6>
-        <p>{{ .Params.overview }}</p>
-      </div>
-      
-      {{ with .Params.team }}
-      <div class="metadata">
-        <h6>team</h6>
-        <p>{{ . | safeHTML }}</p>
+        <h6>{{ $index }}</h6>
+        <p>{{ $element | safeHTML }}</p>
       </div>
       {{ end }}
-
-      <div class="metadata">
-        <h6>role</h6>
-        <p>{{ .Params.role }}</p>
-      </div>    
-
-      <div class="metadata">
-        <h6>timeline</h6>
-        <p>{{ .Params.timeline }}</p>
-      </div>      
+    {{ end }}
     </div>
   </div>
 
