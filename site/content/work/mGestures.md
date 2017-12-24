@@ -11,7 +11,7 @@ images:
   showcase: 
     - stack.gif
 related: [windowplay]
-weight: 20
+weight: 4
 draft: false
 ---
 
@@ -22,3 +22,8 @@ How might we utilize native mobile interactioin patterns? - (Stack, Shadowbox)
 https://formats.yieldmo.com/#/format/shadowbox
 
 Marketplace (human carousel)?
+
+
+## patent
+
+https://patents.google.com/patent/USD785643S1/en

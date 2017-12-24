@@ -14,3 +14,6 @@ related: [windowplay, stack]
 weight: 5
 draft: false
 ---
+
+
+https://patents.google.com/patent/USD793424S1/en
