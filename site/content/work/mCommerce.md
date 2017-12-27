@@ -12,7 +12,7 @@ snapshot:
   team: Design Research <br> UX Prototype <br> Analytics <br> Product Management
   role: Project Co-lead
   timeline: November 2015 - Feburary 2016
-related: [carousel, mcommerce]
+related: [carousel, spray]
 tags: [mcommerce, mobile, design]
 weight: 9
 draft: false

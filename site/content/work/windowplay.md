@@ -25,7 +25,7 @@ The Yieldmo design team have seen impressive success with their [window](https:/
 
 As video continues to gain remarkable growth on mobile, it's inevitably intriguing to ask: how might we apply that proven design principle to a much richer medium? (TODO: Project Brief)
 
-<div><img src="/work/windowplay/components.jpg"></div>
+<div><img src="/work/windowplay/windowplay-components.gif"></div>
 
 ## ideation
 
