@@ -1,5 +1,5 @@
 ---
-title: Yieldmo Rebrand
+title: Yieldmo Rebranding
 subtitle: A mobile commerce experience elegantly placed in eye-catching, interactive brand context that helps product showcase and drives user engagement. 
 code: newym
 type: work
