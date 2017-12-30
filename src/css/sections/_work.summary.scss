@@ -3,6 +3,7 @@
    There are two sizes: small and large
    ========================================================================== */
 
+/* common styles */
 .summary-work {
   .headline {
   	position: absolute;
@@ -33,6 +34,7 @@
   }	
 }
 
+/* individual specific styles */
 .windowplay {
 	.background img { filter: blur(10px); }
 	.headline { color: $primary-black; }
@@ -72,6 +74,7 @@
 		perspective: 600px;
 		perspective-origin: left bottom;
 		margin-top: -6rem;
+		padding-bottom: 1rem;
 
 		.mask-group {
 			width: 216px;
@@ -264,7 +267,7 @@
 	}
 
 	.headline {
-		top: 40px;
+		top: 120px;
 		left: 20px;
 		width: 200px;
 		transform: none;
@@ -297,9 +300,8 @@
 }
 
 .rapt {
-	.headline { 
-		top: 0; 
-	}
+	.headline { top: .5em; }
+  .featured { display: none; } 
 }
 
 .spray {
@@ -353,10 +355,14 @@
    Larger version of the summary header
    ========================================================================== */
 
+/* common styles */
 .summary-work.large {
-	.headline { font-size: 4em; }
+	.headline { 
+		font-size: 4em; 
+	}
 }
 
+/* individual specific styles */
 .windowplay.large {
 	.headline { top: 1.5em; }
 
@@ -580,15 +586,15 @@
    ========================================================================== */
 
 @media (--mobile-m) {
-	.windowplay .featured { margin-top: -6rem; }
-	.zine       .featured { margin-top: -8rem; }
-	.panorama   .featured { margin-top: -4.5rem; }
-	.lookbook   .featured { margin-top: -7rem; }
-	.carousel   .featured { margin-top: -8rem; }
-	.map        .featured { margin-top: -5rem; }
-	.mgestures  .featured { margin-top: -8rem; }
-	.wrapper    .featured,
-	.mcommerce  .featured,
-	.rapt       .featured,
-	.spray      .featured { margin-top: 0; right: 20px; }
+	.windowplay { .headline { top: 1.5em; }   .featured { margin-top: -7rem; } }
+	.zine       { .headline { top: 1em; }     .featured { margin-top: -8rem; } }
+	.panorama   { .headline { top: 1.5em; }   .featured { margin-top: -4.5rem; } }
+	.lookbook   { .headline { top: 1.25em; }  .featured { margin-top: -7rem; } }
+	.mgestures  { .headline { top: .75em; }   .featured { margin-top: -8rem; } }
+	.carousel   { .headline { top: 1em; }     .featured { margin-top: -8rem; } }
+	.map        { .headline { top: 1em; }     .featured { margin-top: -5rem; } }
+	.wrapper    { .headline { left: 1.5rem; } .featured { right: 1.5rem; } }
+	.mcommerce  { .headline { left: 1.5rem; } .featured { right: 1.5rem; } }
+	.rapt       { .headline { top: 1em; } }
+	.spray      { .headline { left: 1.5rem; } .featured { right: 1.5rem; } }
 }
