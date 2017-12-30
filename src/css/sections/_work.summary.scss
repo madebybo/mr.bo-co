@@ -1,0 +1,594 @@
+/* ==========================================================================
+   Contains all project "header" summaries,
+   There are two sizes: small and large
+   ========================================================================== */
+
+.summary-work {
+  .headline {
+  	position: absolute;
+  	z-index: 1;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	top: .75em;
+  }
+
+  .featured {
+  	margin-top: -5rem;
+
+  	.mask-group {
+	  	position: relative;
+	  	margin: 0 auto;
+	  	overflow: hidden;
+
+	  	.device,
+	  	.format {
+		  	position: absolute;	
+	  	}
+  	}
+  }
+
+  .mod.neo-quote {
+  	margin-top: 2em;
+  	margin-bottom: 1em;
+  }	
+}
+
+.windowplay {
+	.background img { filter: blur(10px); }
+	.headline { color: $primary-black; }
+
+	.featured {
+		margin-top: -4rem;
+
+		.mask-group {
+	  	width: 280px;
+	  	height: 299px;
+	  	perspective: 1200px;
+	  	box-shadow: $box-shadow;
+			overflow: hidden;
+
+		  .format {
+		  	z-index: 1;
+		  	top: -5px;
+		  	left: -3px;
+		  	width: 250px;
+
+		  	transform: rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+		  }
+
+		  .device {
+		  	top: -208px;
+		  	/* filter: grayscale(50%); */
+		  }
+		}
+	}
+}
+
+.zine {
+	.headline { color: $primary-white; }
+	.background img { filter: blur(10px); }
+
+	.featured {
+		perspective: 600px;
+		perspective-origin: left bottom;
+		margin-top: -6rem;
+
+		.mask-group {
+			width: 216px;
+			height: 335px;
+			left: -6px;
+
+			overflow: hidden;
+			transform: rotateX(12deg) rotateY(5deg) rotateZ(-12deg);
+
+			.format {
+				z-index: 1;
+				left: 9px;
+				top: 26px;
+				width: 201px;
+	   		box-shadow: 0 1px 1px 2px rgba(25,25,25,.8);
+				outline: 1px solid transparent;
+			}
+
+			.device {
+				z-index: 10;
+			}
+		}
+	}
+}
+
+.panorama {
+	.headline { color: $primary-white; }
+	figure.background img { filter: blur(2px) !important; }
+
+	.featured {
+		margin-top: -4rem;
+
+		.mask-group {
+			width: 280px;
+			height: 144px;
+
+			.format {
+				width: 272px;
+				left: 4px;
+				top: 8px;
+				border-radius: 12px;
+			}
+		}
+	}
+}
+
+.lookbook {
+	figure.background img { filter: blur(6px) }
+
+	.featured {
+		.mask-group {
+	  	width: 280px;
+	  	height: 353px;
+			overflow: hidden;
+
+			.format {
+		  	top: 32px;
+		  	left: 10px;
+		  	width: 262px;
+		  	border-bottom: 2px solid #ccc;
+			}
+		}
+	}
+}
+
+.mgestures {
+	.headline { color: $primary-white; }
+	figure.background img { filter: blur(6px) !important; }
+
+	.featured {
+		.mask-group {
+	  	width: 280px;
+	  	height: 353px;
+	  	perspective: 400px;
+	  	perspective-origin: left bottom;
+			overflow: hidden;
+
+			.format {
+				z-index: 1;
+		  	top: 104px;
+		  	left: 23px;
+		  	width: 292px;
+
+		  	transform: rotateX(0deg) rotateY(20deg) rotateZ(0deg);
+			}
+		}
+	}
+}
+
+.carousel {
+	.headline { color: $primary-white; }
+	figure.background img { filter: blur(8px) !important; }
+
+	.featured {
+		.mask-group {
+	  	width: 280px;
+	  	height: 330px;
+	  	perspective: 400px;
+	  	perspective-origin: left bottom;
+			overflow: hidden;
+
+			.format {
+				z-index: 1;
+		  	top: 130px;
+		  	left: 50px;
+		  	width: 375px;
+
+		  	transform: rotateX(0deg) rotateY(19deg) rotateZ(0deg);
+			}
+
+			.device { 
+				/* transform: rotate3d(0, 1, 0, 180deg); */ 
+				width: 150%;
+			}
+		}
+	}
+}
+
+.map {
+	figure.background img { filter: blur(4px) !important; }
+
+	.featured {
+		.mask-group {
+	  	width: 280px;
+	  	height: 323px;
+			overflow: hidden;
+
+			.format {
+		  	top: 90px;
+		  	left: 20px;
+		  	width: 240px;
+		  	/* border-bottom: 2px solid $primary-black; */
+		  	box-shadow: $box-shadow;
+			}
+		}
+	}
+}
+
+.wrapper {
+	.headline {
+		top: 200px;
+		left: 20px;
+		transform: none;
+	}
+
+	figure.background {
+		height: 320px;
+		background: #8d8b8c;
+		overflow: hidden;
+
+		img { 
+			height: 100%;
+			width: auto;
+	    transform: scale(.8) translateX(-80px);
+			filter: blur(8px) !important; 
+		}
+	}
+
+	.featured {
+		position: absolute;
+		top: 30px;
+		right: -20px;
+		margin-top: 0;
+		box-shadow: $box-shadow-heavy;
+
+		.mask-group {
+			width: 240px;
+			height: 260px;
+
+			.format {
+				width: 160%;
+				left: -72px;
+				bottom: -18px;
+			}
+		}
+	}
+
+	.mod.neo-quote {
+		margin-top: 2em;
+	}
+}
+
+.mcommerce {
+	.headline { color: $primary-white; }
+	figure.background {
+		height: 320px;
+		background: #3E3129;
+
+		img { display: none; }
+	}
+
+	.headline {
+		top: 40px;
+		left: 20px;
+		width: 200px;
+		transform: none;
+		text-align: left;
+		line-height: 1;
+	}
+
+	.featured {
+		position: absolute;
+		top: 30px;
+		right: -20px;
+		margin-top: 0;
+		box-shadow: $box-shadow-heavy;
+
+		.mask-group {
+			width: 240px;
+			height: 260px;
+
+			.format {
+				width: 230%;
+				left: -140px;
+				top: -100px;
+			}
+		}
+	}
+
+	.mod.neo-quote {
+		margin-top: 2em;
+	}
+}
+
+.rapt {
+	.headline { 
+		top: 0; 
+	}
+}
+
+.spray {
+	.headline { color: $primary-white; }
+	figure.background {
+		height: 300px;
+		background: #262626;
+
+		img { 
+			height: 100%;
+			width: auto;
+	    transform: scale(.8) translateX(-80px);
+			filter: blur(4px) !important; 
+		}
+	}
+
+	.headline {
+		top: 130px;
+		left: 20px;
+		transform: none;
+		text-align: left;
+	}
+
+	.featured {
+		position: absolute;
+		top: 50px;
+		right: -32px;
+		margin-top: 0;
+		box-shadow: $box-shadow-heavy;
+
+		.mask-group {
+			width: 280px;
+			height: 200px;
+
+			.format {
+				width: auto;
+				height: 203%;
+				left: -45px;
+				top: -58px;
+			}
+		}
+	}
+
+	.mod.neo-quote {
+		margin-top: 2em;
+	}
+}
+
+
+/* ==========================================================================
+   Larger version of the summary header
+   ========================================================================== */
+
+.summary-work.large {
+	.headline { font-size: 4em; }
+}
+
+.windowplay.large {
+	.headline { top: 1.5em; }
+
+	.featured {
+		margin-top: -16rem;
+
+		.mask-group {
+	  	width: 419px;
+	  	height: 441px;
+
+		  .format {
+		  	top: -11px;
+		  	left: -7px;
+		  	width: auto;
+		  }
+
+		  .device {
+		  	top: -222px;
+		  }
+		}
+	}
+}
+
+.zine.large {
+	.headline { top: 1.3em; }
+
+	.featured {
+		margin-top: -18rem;
+
+		.mask-group {
+			width: 384px;
+			height: 600px;
+
+			.format {
+				left: 16px;
+				top: 47px;
+				width: auto;
+			}
+		}
+	}
+}
+
+.panorama.large {
+	.headline { top: 2em; }
+
+	.featured {
+		margin-top: -8rem;
+
+		.mask-group {
+			width: 508px;
+			height: 256px;
+
+			.format {
+				width: auto;
+				left: 14px;
+				top: 16px;
+			}
+		}
+	}
+}
+
+.lookbook.large {
+	.headline { top: 1.5em; }
+
+	.featured {
+		margin-top: -15rem;
+
+		.mask-group {
+	  	width: 390px;
+	  	height: 532px;
+
+			.format {
+		  	top: 48px;
+		  	left: 16px;
+		  	width: auto;
+			}
+		}
+	}
+}
+
+.mgestures.large {
+	.headline { top: 1.3em; }
+
+	.featured {
+		margin-top: -16rem;
+
+		.mask-group {
+	  	width: 375px;
+	  	height: 532px;
+
+			.format {
+		  	top: 152px;
+		  	left: 41px;
+		  	width: auto;
+		  	transform: rotateY(12deg);
+			}
+		}
+	}
+}
+
+.carousel.large {
+	.headline { top: 1.4em; }
+
+	.featured {
+		margin-top: -17rem;
+
+		.mask-group {
+	  	width: 448px;
+	  	height: 502px;
+
+			.format {
+		  	top: 211px;
+		  	left: 108px;
+		  	width: auto;
+		  	transform: rotateY(12deg);
+			}
+		}
+	}
+}
+
+.map.large {
+	.headline { top: 1.3em; }
+
+	.featured {
+		margin-top: -12rem;
+
+		.mask-group {
+	  	width: 424px;
+	  	height: 351px;
+
+			.format {
+		  	top: 0;
+		  	left: 32px;
+		  	width: auto;
+			}
+
+			.device { top: -90px; }
+		}
+	}
+}
+
+.wrapper.large {
+	.headline { left: 3rem; }
+	figure.background {
+		height: 512px;
+		img { transform: scale(1.1) translateX(20px);}
+	}
+
+	.featured {
+		top: 60px;
+		right: 3rem;
+
+		.mask-group {
+			width: 440px;
+			height: 386px;
+
+			.format {
+				width: auto;
+				height: 100%;
+				left: -38px;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+.mcommerce.large {
+	figure.background { height: 512px; }
+
+	.headline {
+		top: 184px;
+		left: 3rem;
+	}
+
+	.featured {
+		top: 60px;
+		right: 3rem;
+
+		.mask-group {
+			width: 412px;
+			height: 386px;
+
+			.format {
+				width: auto;
+				height: 120%;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
+.rapt.large {
+	.headline { 
+		top: 1em;
+	}
+}
+
+.spray.large {
+	figure.background { height: 512px; }
+	.headline {
+		top: 200px;
+		left: 3rem;
+	}
+
+	.featured {
+		position: absolute;
+		top: 60px;
+		right: 3rem;
+
+		.mask-group {
+			width: 440px;
+			height: 386px;
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+	.windowplay .featured { margin-top: -6rem; }
+	.zine       .featured { margin-top: -8rem; }
+	.panorama   .featured { margin-top: -4.5rem; }
+	.lookbook   .featured { margin-top: -7rem; }
+	.carousel   .featured { margin-top: -8rem; }
+	.map        .featured { margin-top: -5rem; }
+	.mgestures  .featured { margin-top: -8rem; }
+	.wrapper    .featured,
+	.mcommerce  .featured,
+	.rapt       .featured,
+	.spray      .featured { margin-top: 0; right: 20px; }
+}

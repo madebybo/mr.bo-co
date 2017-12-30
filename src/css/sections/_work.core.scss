@@ -6,29 +6,38 @@
 	/* background-color: color($linen-grey lightness(92%)); */
 	/* background-color: $linen-grey; */
 	overflow: hidden;
-	max-width: 640px;
 	margin-left: auto;
 	margin-right: auto;
 
 	.list-header {
 		background-color: $primary-black;
-		height: 22em;
+		height: 24rem;
 
 		.header-holder {
 			position: fixed;
 			color: $primary-white;
-			padding: 6em 1em;
-			font-weight: 100;
+			height: 24rem;
+			width: 100%;
 			z-index: 0;
-			max-width: 640px;
+
+			.headline {
+				width: $content-width-mobile-s;
+				position: absolute;
+				font-weight: 100; 
+				margin: auto;
+				right: 0;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
 	}
 
-	.package-work {
+	.summary-work {
 		background-color: $primary-white;
 		position: relative;
-	  font-size: 1rem;
-	  margin: 4em 0;
+	  margin: 4em auto;
+	  /* max-width: 35rem; */
 
 	  &:after {
 	  	content: $triangle-down;
@@ -43,361 +52,8 @@
 	  &:last-child:after {
 	  	content: $closing-circle;
 	  }
-
-	  .headline {
-	  	position: absolute;
-	  	z-index: 1;
-	  	left: 50%;
-	  	transform: translateX(-50%);
-	  	top: .75em;
-	  	color: $primary-white;
-	  }
-
-	  /* figure.background { overflow: hidden; } */
-
-	  .featured {
-	  	margin-top: -5rem;
-
-	  	.mask-group {
-		  	position: relative;
-		  	margin: 0 auto;
-		  	overflow: hidden;
-
-		  	.device,
-		  	.format {
-			  	position: absolute;	
-		  	}
-	  	}
-	  }
-
-	  .mod.neo-quote {
-	  	margin-top: 2rem;
-	  	margin-bottom: 1rem;
-	  }
 	}
 }
-
-
-/* ==========================================================================
-   Individual Styling for Each Item
-   ========================================================================== */
-
-.section-wrapper.work .windowplay {
-  .background img { filter: blur(10px); }
-  .headline { color: $primary-black; }
-
-	.featured {
-		margin-top: -4rem;
-
-		.mask-group {
-	  	width: 280px;
-	  	height: 299px;
-	  	perspective: 1200px;
-	  	box-shadow: $box-shadow;
-			overflow: hidden;
-
-		  .format {
-		  	z-index: 1;
-		  	top: -5px;
-		  	left: -3px;
-		  	width: 250px;
-
-		  	transform: rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
-		  }
-
-		  .device {
-		  	top: -208px;
-		  	/* filter: grayscale(50%); */
-		  }
-		}
-	}
-}
-
-.section-wrapper.work .zine {
-	.background img { filter: blur(10px); }
-
-	.featured {
-		perspective: 600px;
-		perspective-origin: left bottom;
-		margin-top: -6rem;
-
-		.mask-group {
-			width: 216px;
-			height: 335px;
-			left: -6px;
-
-			overflow: hidden;
-			transform: rotateX(12deg) rotateY(5deg) rotateZ(-12deg);
-
-			.format {
-				z-index: 1;
-				left: 9px;
-				top: 26px;
-				width: 201px;
-	   		box-shadow: 0 1px 1px 2px rgba(25,25,25,.8);
-				outline: 1px solid transparent;
-			}
-
-			.device {
-				z-index: 10;
-			}
-		}
-	}
-}
-
-.section-wrapper.work .panorama {
-	figure.background img { filter: blur(2px) !important; }
-
-	.featured {
-		margin-top: -4rem;
-
-		.mask-group {
-			width: 280px;
-			height: 144px;
-
-			.format {
-				width: 272px;
-				left: 4px;
-				top: 8px;
-				border-radius: 12px;
-			}
-		}
-	}
-}
-
-.section-wrapper.work .lookbook {
-	figure.background img { filter: blur(6px) }
-	.headline { color: $primary-black; }
-
-	.featured {
-		.mask-group {
-	  	width: 280px;
-	  	height: 353px;
-			overflow: hidden;
-
-			.format {
-		  	top: 32px;
-		  	left: 10px;
-		  	width: 262px;
-		  	border-bottom: 2px solid #ccc;
-			}
-		}
-	}
-}
-
-.section-wrapper.work .carousel {
-	figure.background img { filter: blur(8px) !important; }
-
-	.featured {
-		.mask-group {
-	  	width: 280px;
-	  	height: 330px;
-	  	perspective: 400px;
-	  	perspective-origin: left bottom;
-			overflow: hidden;
-
-			.format {
-				z-index: 1;
-		  	top: 130px;
-		  	left: 50px;
-		  	width: 375px;
-
-		  	transform: rotateX(0deg) rotateY(19deg) rotateZ(0deg);
-			}
-
-			.device { 
-				/* transform: rotate3d(0, 1, 0, 180deg); */ 
-				width: 150%;
-			}
-		}
-	}
-}
-
-.section-wrapper.work .map {
-	figure.background img { filter: blur(4px) !important; }
-	.headline { color: $primary-black; }
-
-	.featured {
-		.mask-group {
-	  	width: 280px;
-	  	height: 323px;
-			overflow: hidden;
-
-			.format {
-		  	top: 90px;
-		  	left: 20px;
-		  	width: 240px;
-		  	/* border-bottom: 2px solid $primary-black; */
-		  	box-shadow: $box-shadow;
-			}
-		}
-	}
-}
-
-.section-wrapper.work .mgestures {
-	figure.background img { filter: blur(6px) !important; }
-
-	.featured {
-		.mask-group {
-	  	width: 280px;
-	  	height: 353px;
-	  	perspective: 400px;
-	  	perspective-origin: left bottom;
-			overflow: hidden;
-
-			.format {
-				z-index: 1;
-		  	top: 104px;
-		  	left: 23px;
-		  	width: 292px;
-
-		  	transform: rotateX(0deg) rotateY(20deg) rotateZ(0deg);
-			}
-		}
-	}
-}
-
-.section-wrapper.work .wrapper {
-	figure.background {
-		height: 320px;
-		background: #8d8b8c;
-
-		img { 
-			height: 100%;
-			width: auto;
-	    transform: scale(.8) translateX(-80px);
-			filter: blur(8px) !important; 
-		}
-	}
-
-	.headline {
-		color: $primary-black; 
-		top: 200px;
-		left: 20px;
-		transform: none;
-	}
-
-	.featured {
-		position: absolute;
-		top: 30px;
-		right: -20px;
-		margin-top: 0;
-		box-shadow: $box-shadow-heavy;
-
-		.mask-group {
-			width: 240px;
-			height: 260px;
-
-			.format {
-				width: 160%;
-				left: -72px;
-				bottom: -18px;
-			}
-		}
-	}
-
-	.mod.neo-quote {
-		margin-top: 2em;
-	}
-}
-
-.section-wrapper.work .mcommerce {
-	figure.background {
-		height: 320px;
-		background: #3E3129;
-
-		img { display: none; }
-	}
-
-	.headline {
-		top: 40px;
-		left: 20px;
-		width: 200px;
-		transform: none;
-		text-align: left;
-		line-height: 1;
-	}
-
-	.featured {
-		position: absolute;
-		top: 30px;
-		right: -20px;
-		margin-top: 0;
-		box-shadow: $box-shadow-heavy;
-
-		.mask-group {
-			width: 240px;
-			height: 260px;
-
-			.format {
-				width: 230%;
-				left: -140px;
-				top: -100px;
-			}
-		}
-	}
-
-	.mod.neo-quote {
-		margin-top: 2em;
-	}
-}
-
-.section-wrapper.work .rapt {
-	.headline {
-		top: 0;
-		color: $primary-black;
-	}
-
-	.featured {
-		margin-top: 0;
-	}
-}
-
-.section-wrapper.work .spray {
-	figure.background {
-		height: 300px;
-		background: #262626;
-
-		img { 
-			height: 100%;
-			width: auto;
-	    transform: scale(.8) translateX(-80px);
-			filter: blur(4px) !important; 
-		}
-	}
-
-	.headline {
-		top: 130px;
-		left: 20px;
-		transform: none;
-		text-align: left;
-	}
-
-	.featured {
-		position: absolute;
-		top: 50px;
-		right: -32px;
-		margin-top: 0;
-		box-shadow: $box-shadow-heavy;
-
-		.mask-group {
-			width: 280px;
-			height: 200px;
-
-			.format {
-				width: auto;
-				height: 203%;
-				left: -45px;
-				top: -58px;
-			}
-		}
-	}
-
-	.mod.neo-quote {
-		margin-top: 2em;
-	}
-}
-
 
 /* ==========================================================================
    Individual Project Page
@@ -420,23 +76,28 @@
 		}
 	}
 
+	.project-header,
+	.snapshot-inner,
+	.content > h2,
+	.content > p,
+	.content > ul,
+	.content > ol,
+	.content > div h6,
+	.cross-reference {
+		width: $content-width-mobile-s;		
+	}
+
 	.project-header {
-		width: $content-width-mobile-s;
 		margin: 3rem auto;
 
-		.headline {
-			margin: .5em 0;
-		}
+		.headline { margin: .5em 0; }
 	}
 
 	.snapshot {
 		background-color: $secondary-black;
 		color: $primary-white;
 
-		.snapshot-inner {
-			width: $content-width-mobile-s;
-			margin: 2em auto;
-		}
+		.snapshot-inner { margin: 3rem auto; }
 	}
 
 	/* Markdown Content */
@@ -447,21 +108,18 @@
 		a { font-family: $content-font; }
 
 		> h2 {
-			width: $content-width-mobile-s;
 			font-family: $header-font;
 			color: color($secondary-black lightness(50%)); 
 			margin: 3.5rem auto 1.5rem auto;
 		}
 
-		> p { 
-			width: $content-width-mobile-s;
+		> p {
 			margin: 1em auto; 
 			padding-left: 2.5rem;
 		}
 
 		> ul,
 		> ol {
-			width: $content-width-mobile-s;
 			margin: 1em auto; 
 			padding-left: 3.5rem;
 
@@ -492,7 +150,6 @@
 				font-weight: 100;
 				font-style: italic;
 				color: $classic-grey;
-				width: $content-width-mobile-s;
 				margin: 1em auto 0 auto;
 				font-size: .75em;
 			}
@@ -536,16 +193,10 @@
 	}
 
 	.cross-reference {
-		width: $content-width-mobile-s;
 		margin: 0 auto;
 		padding: 3rem 0;
 
-		.headline {
-			text-align: left;
-		}
-
-		.learn-more {
-			margin-top: 2rem;
-		}
+		.headline { text-align: left; }
+		.learn-more { margin-top: 2rem; }
 	}
 }

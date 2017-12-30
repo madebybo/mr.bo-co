@@ -13,3 +13,5 @@ images:
 weight: 6
 draft: false
 ---
+
+Reach an audience on the move through their mobile devices where you can highlight your nearby locations, promotions, new products, and other reasons stop in for a visit.
