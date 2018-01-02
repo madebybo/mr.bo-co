@@ -6,8 +6,6 @@
 	/* background-color: color($linen-grey lightness(92%)); */
 	/* background-color: $linen-grey; */
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
 
 	.list-header {
 		background-color: $primary-black;
@@ -36,8 +34,7 @@
 	.summary-work {
 		background-color: $primary-white;
 		position: relative;
-	  margin: 4em auto;
-	  /* max-width: 35rem; */
+	  margin: 4em auto 5em auto;
 
 	  &:after {
 	  	content: $triangle-down;
@@ -46,7 +43,7 @@
 	  	width: 100%;
 	  	bottom: 0;
 	  	text-align: center;
-	  	transform: translateY(2rem);
+	  	transform: translateY(1.5rem);
 	  }
 
 	  &:last-child:after {

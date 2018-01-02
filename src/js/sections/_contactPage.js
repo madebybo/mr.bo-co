@@ -4,7 +4,6 @@
 
 var contactPage = {
 	modules: {
-		getUIElements: require('../modules/_getUIElements'),
 		detectMobile: require('../modules/_detectMobile')
 	},
 

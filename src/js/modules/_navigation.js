@@ -1,13 +1,16 @@
-var getUIElements = require('./_getUIElements');
+var	ui = {
+	body: document.body,
+	navIcon: document.querySelector('#navIcon')
+};
 
 // implementation of the module
 function navigation(name) {
 	var navIconClicked = function(e) {
-		$(getUIElements.body).toggleClass('open');
+		$(ui.body).toggleClass('open');
 	};
 
 	// register event listeners
-	$(getUIElements.navIcon).on('click', navIconClicked);
+	$(ui.navIcon).on('click', navIconClicked);
 }
 
 module.exports = navigation;

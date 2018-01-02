@@ -53,7 +53,11 @@
 			font-size: 2rem; 
 		}
 
-		.summary-work:after { font-size: 1.5rem; }
+		.summary-work {
+			margin-bottom: 7em;
+
+			&:after { font-size: 1.5rem; }
+		}
 	}
 }
 
@@ -62,6 +66,24 @@
    ========================================================================== */
 
 @media (--desktop-s) {
+	.section-wrapper.work {
+		.summary-headers {
+			max-width: 896px;
+			margin: 0 auto;
+		}
+
+		.summary-work {
+			width: 320px;
+
+			&.large {
+				transform: scale(0.9);
+				width: 600px;
+				margin: 4em 0;
+			}
+		}
+	}
+
+
 }
 
 @media (--desktop-m) {

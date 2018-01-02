@@ -7,8 +7,10 @@
 		</div>
 	</div>
 
+	<div class="summary-headers">
   {{ range .Data.Pages }}
     {{ .Render "summary"}}
   {{ end }}
+	</div>
 </div>
 {{ end }}

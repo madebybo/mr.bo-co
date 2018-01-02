@@ -4,7 +4,6 @@
 
 var aboutDisplay = {
 	modules: {
-		getUIElements: require('../modules/_getUIElements'),
 		detectMobile: require('../modules/_detectMobile'),
 		setComponentsHeight: require('../modules/_setComponentsHeight')
 	},

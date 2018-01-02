@@ -5,17 +5,25 @@
 
 /* common styles */
 .summary-work {
-  .headline {
-  	position: absolute;
-  	z-index: 1;
-  	left: 50%;
-  	transform: translateX(-50%);
-  	top: .75em;
-  }
+	figure.background { 
+		position: absolute; 
+		width: 100%;
+	}
+
+	.headline-container {
+		position: relative;
+		z-index: 1;
+
+	  .headline {
+	  	position: absolute;
+	  	z-index: 1;
+	  	left: 50%;
+	  	top: 50%;
+	  	transform: translate3d(-50%, -50%, 0);
+	  }
+	}
 
   .featured {
-  	margin-top: -5rem;
-
   	.mask-group {
 	  	position: relative;
 	  	margin: 0 auto;
@@ -37,11 +45,9 @@
 /* individual specific styles */
 .windowplay {
 	.background img { filter: blur(10px); }
-	.headline { color: $primary-black; }
+	.headline-container { padding-bottom: calc(67.6%/2); }
 
 	.featured {
-		margin-top: -4rem;
-
 		.mask-group {
 	  	width: 280px;
 	  	height: 299px;
@@ -67,13 +73,20 @@
 }
 
 .zine {
-	.headline { color: $primary-white; }
 	.background img { filter: blur(10px); }
+
+	.headline-container { 
+		padding-bottom: calc(50%/2);
+
+		.headline { 
+			transform: translate3d(-50%, -25%, 0); 
+			color: $primary-white; 
+		}
+	}
 
 	.featured {
 		perspective: 600px;
 		perspective-origin: left bottom;
-		margin-top: -6rem;
 		padding-bottom: 1rem;
 
 		.mask-group {
@@ -101,12 +114,11 @@
 }
 
 .panorama {
+	.headline-container { padding-bottom: calc(56.25% - 72px); }	
 	.headline { color: $primary-white; }
 	figure.background img { filter: blur(2px) !important; }
 
 	.featured {
-		margin-top: -4rem;
-
 		.mask-group {
 			width: 280px;
 			height: 144px;
@@ -123,6 +135,7 @@
 
 .lookbook {
 	figure.background img { filter: blur(6px) }
+	.headline-container { padding-bottom: calc(64%/2); }
 
 	.featured {
 		.mask-group {
@@ -141,8 +154,9 @@
 }
 
 .mgestures {
-	.headline { color: $primary-white; }
 	figure.background img { filter: blur(6px) !important; }
+	.headline-container { padding-bottom: calc(54%/2); }
+	.headline { color: $primary-white; }
 
 	.featured {
 		.mask-group {
@@ -165,8 +179,9 @@
 }
 
 .carousel {
-	.headline { color: $primary-white; }
 	figure.background img { filter: blur(8px) !important; }
+	.headline-container { padding-bottom: calc(54%/2); }
+	.headline { color: $primary-white; }
 
 	.featured {
 		.mask-group {
@@ -195,6 +210,7 @@
 
 .map {
 	figure.background img { filter: blur(4px) !important; }
+	.headline-container { padding-bottom: calc(78%/2); }
 
 	.featured {
 		.mask-group {
@@ -214,16 +230,20 @@
 }
 
 .wrapper {
-	.headline {
-		top: 200px;
-		left: 20px;
-		transform: none;
+	.headline-container {
+		position: absolute;
+		height: 320px;
+		left: 1rem;
+		top: 0;
+
+		.headline { transform: translate3d(0, -50%, 0); }
 	}
 
 	figure.background {
 		height: 320px;
 		background: #8d8b8c;
 		overflow: hidden;
+		position: relative;
 
 		img { 
 			height: 100%;
@@ -237,7 +257,6 @@
 		position: absolute;
 		top: 30px;
 		right: -20px;
-		margin-top: 0;
 		box-shadow: $box-shadow-heavy;
 
 		.mask-group {
@@ -258,28 +277,31 @@
 }
 
 .mcommerce {
-	.headline { color: $primary-white; }
 	figure.background {
 		height: 320px;
 		background: #3E3129;
+		position: relative;
 
 		img { display: none; }
 	}
 
-	.headline {
-		top: 120px;
-		left: 20px;
-		width: 200px;
-		transform: none;
-		text-align: left;
-		line-height: 1;
+	.headline-container {
+		position: absolute;
+		height: 320px;
+		left: 1rem;
+		top: 0;
+
+		.headline {
+			color: $primary-white;
+			text-align: left;
+			transform: translate3d(0, -50%, 0);
+		}
 	}
 
 	.featured {
 		position: absolute;
 		top: 30px;
 		right: -20px;
-		margin-top: 0;
 		box-shadow: $box-shadow-heavy;
 
 		.mask-group {
@@ -300,14 +322,23 @@
 }
 
 .rapt {
-	.headline { top: .5em; }
-  .featured { display: none; } 
+	figure.background { position: relative; }
+  .featured { display: none; }
+
+	.headline-container {
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 2rem;
+
+		.headline { transform: translate3d(-50%, 0, 0); }
+	}
 }
 
 .spray {
-	.headline { color: $primary-white; }
 	figure.background {
-		height: 300px;
+		position: relative;
+		height: 320px;
 		background: #262626;
 
 		img { 
@@ -318,29 +349,33 @@
 		}
 	}
 
-	.headline {
-		top: 130px;
-		left: 20px;
-		transform: none;
-		text-align: left;
+	.headline-container {
+		position: absolute;
+		height: 320px;
+		left: 1rem;
+		top: 0;
+
+		.headline {
+			color: $primary-white;
+			transform: translate3d(0, -50%, 0);
+		}
 	}
 
 	.featured {
 		position: absolute;
 		top: 50px;
 		right: -32px;
-		margin-top: 0;
 		box-shadow: $box-shadow-heavy;
 
 		.mask-group {
 			width: 280px;
-			height: 200px;
+			height: 220px;
 
 			.format {
 				width: auto;
 				height: 203%;
 				left: -45px;
-				top: -58px;
+				top: -64px;
 			}
 		}
 	}
@@ -364,11 +399,7 @@
 
 /* individual specific styles */
 .windowplay.large {
-	.headline { top: 1.5em; }
-
 	.featured {
-		margin-top: -16rem;
-
 		.mask-group {
 	  	width: 419px;
 	  	height: 441px;
@@ -387,11 +418,13 @@
 }
 
 .zine.large {
-	.headline { top: 1.3em; }
+	.headline-container {
+		.headline {
+			transform: translate3d(-50%, 0, 0); 
+		}
+	}
 
 	.featured {
-		margin-top: -18rem;
-
 		.mask-group {
 			width: 384px;
 			height: 600px;
@@ -406,11 +439,9 @@
 }
 
 .panorama.large {
-	.headline { top: 2em; }
+	.headline-container { padding-bottom: calc(56.25% - 128px); }
 
 	.featured {
-		margin-top: -8rem;
-
 		.mask-group {
 			width: 508px;
 			height: 256px;
@@ -425,11 +456,7 @@
 }
 
 .lookbook.large {
-	.headline { top: 1.5em; }
-
 	.featured {
-		margin-top: -15rem;
-
 		.mask-group {
 	  	width: 390px;
 	  	height: 532px;
@@ -444,11 +471,7 @@
 }
 
 .mgestures.large {
-	.headline { top: 1.3em; }
-
 	.featured {
-		margin-top: -16rem;
-
 		.mask-group {
 	  	width: 375px;
 	  	height: 532px;
@@ -464,11 +487,7 @@
 }
 
 .carousel.large {
-	.headline { top: 1.4em; }
-
 	.featured {
-		margin-top: -17rem;
-
 		.mask-group {
 	  	width: 448px;
 	  	height: 502px;
@@ -484,11 +503,7 @@
 }
 
 .map.large {
-	.headline { top: 1.3em; }
-
 	.featured {
-		margin-top: -12rem;
-
 		.mask-group {
 	  	width: 424px;
 	  	height: 351px;
@@ -505,11 +520,12 @@
 }
 
 .wrapper.large {
-	.headline { left: 3rem; }
 	figure.background {
 		height: 512px;
 		img { transform: scale(1.1) translateX(20px);}
 	}
+
+	.headline-container { height: 512px; left: 3rem; }
 
 	.featured {
 		top: 60px;
@@ -531,11 +547,7 @@
 
 .mcommerce.large {
 	figure.background { height: 512px; }
-
-	.headline {
-		top: 184px;
-		left: 3rem;
-	}
+	.headline-container { height: 512px; left: 3rem; }
 
 	.featured {
 		top: 60px;
@@ -556,17 +568,12 @@
 }
 
 .rapt.large {
-	.headline { 
-		top: 1em;
-	}
+	.headline-container { top: 2.5rem; }
 }
 
 .spray.large {
 	figure.background { height: 512px; }
-	.headline {
-		top: 200px;
-		left: 3rem;
-	}
+	.headline-container { height: 512px; left: 3rem; }
 
 	.featured {
 		position: absolute;
@@ -586,15 +593,24 @@
    ========================================================================== */
 
 @media (--mobile-m) {
-	.windowplay { .headline { top: 1.5em; }   .featured { margin-top: -7rem; } }
-	.zine       { .headline { top: 1em; }     .featured { margin-top: -8rem; } }
-	.panorama   { .headline { top: 1.5em; }   .featured { margin-top: -4.5rem; } }
-	.lookbook   { .headline { top: 1.25em; }  .featured { margin-top: -7rem; } }
-	.mgestures  { .headline { top: .75em; }   .featured { margin-top: -8rem; } }
-	.carousel   { .headline { top: 1em; }     .featured { margin-top: -8rem; } }
-	.map        { .headline { top: 1em; }     .featured { margin-top: -5rem; } }
-	.wrapper    { .headline { left: 1.5rem; } .featured { right: 1.5rem; } }
-	.mcommerce  { .headline { left: 1.5rem; } .featured { right: 1.5rem; } }
-	.rapt       { .headline { top: 1em; } }
-	.spray      { .headline { left: 1.5rem; } .featured { right: 1.5rem; } }
+	.wrapper    { .headline-container { left: 1.5rem; } .featured { right: 1.5rem; } }
+	.mcommerce  { .headline-container { left: 1.5rem; } .featured { right: 1.5rem; } }
+	.spray      { .headline-container { left: 1.5rem; } .featured { right: 1.5rem; } }
 }
+
+@media (--mobile-l) {
+	.wrapper    { .headline-container { left: 2rem; } .featured { right: 2rem; } }
+	.mcommerce  { .headline-container { left: 2rem; } .featured { right: 2rem; } }
+	.spray      { .headline-container { left: 2rem; } .featured { right: 2rem; } }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+	
+
+}
+

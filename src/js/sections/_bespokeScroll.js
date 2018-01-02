@@ -4,9 +4,19 @@
 
 var bespokeScroll = {
 	modules: {
-		getUIElements: require('../modules/_getUIElements'),
 		detectMobile: require('../modules/_detectMobile'),
 		setComponentsHeight: require('../modules/_setComponentsHeight')
+	},
+
+	ui: {
+		html: document.documentElement,
+		body: document.body,
+		navBar: document.querySelector('#nav'),
+		navStart: document.querySelector('#navStart'),
+		navIcon: document.querySelector('#navIcon'),
+		header: document.querySelector('#header'),
+		exhibit: document.querySelector('#exhibit'),
+		firstPost: document.querySelector('#firstPost')
 	},
 
 	state: {
@@ -452,8 +462,6 @@ var bespokeScroll = {
 
 
 	init: function() {
-		this.ui = this.modules.getUIElements;
-
 		// set stateful classes, place this first to get accurate position
 		this.ui.html.classList.add('header-active');
 		this.modules.setComponentsHeight();

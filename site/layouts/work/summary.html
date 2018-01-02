@@ -1,14 +1,16 @@
 <!-- this goes inside of a range .Data.Pages loop -->
 {{ $code := .Params.code }}
 <div class="summary-work {{ $code }}">
-  <a href="{{ .Permalink }}">
-    <h3 class="headline">{{ .Title | safeHTML }}</h3>
-  </a>
-
   {{ with .Params.images.background }}
     <figure class="background"><img src="/work/{{ $code }}/{{ . }}"></figure>
   {{ end }}
-  
+
+  <div class="headline-container">
+    <a href="{{ .Permalink }}">
+      <h3 class="headline">{{ .Title | safeHTML }}</h3>
+    </a>
+  </div>
+
   <div class="featured clearfix">
     <div class="mask-group">
     {{ with .Params.images }}
