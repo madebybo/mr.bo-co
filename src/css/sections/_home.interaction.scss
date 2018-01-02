@@ -9,7 +9,7 @@
 
 	.header,
 	.exhibit,
-	.first-post {
+	.featured-content {
 		transition: none !important;
 	}
 }
@@ -65,7 +65,7 @@
 	}
 
 	.exhibit,
-	.first-post {
+	.featured-content {
 		transition: transform $mrbo-primary-transition-duration linear;
 	}
 }

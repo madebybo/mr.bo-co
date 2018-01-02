@@ -320,28 +320,21 @@ span.ellipsis {
    Very temporary stuff, to delete after development 
    ========================================================================== */
 
-.nav-start {
-  /* opacity: 0 !important; */
+.header {
+  background-color: rgb(10, 82, 104) !important;
 }
 
+.nav-start,
 .header-content {
-  .signature {
-    /* display: none; */
-    /* opacity: 0.4; */
-  }
-
-  p {
-    /* opacity: 0; */
-  }
+  opacity: 0 !important;
 }
 
-.exhibit {
-  img {
-    /* display: none; */
-  }
+.frame,
+.spectators {
+  opacity: 0;
 }
 
 .anchored-portrait {
-  /* display: none; */
+  display: none;
 }
 

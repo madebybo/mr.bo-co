@@ -81,17 +81,17 @@
    ========================================================================== */
 
 .featured-content {
-	.first-post {
-		padding-top: $nav-height-mobile;
-		background: $linen-grey;
-	}
-
 	section {
 		position: relative; /* just incase we do out-of-box styling */
 
-		img {
-			width: 100%;
+		img { 
+      width: 100%;
 		}
+
+    &:first-child {
+      padding-top: $nav-height-mobile;
+      background: $linen-grey;
+    }
 	}
 }
 

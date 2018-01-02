@@ -16,7 +16,7 @@ var bespokeScroll = {
 		navIcon: document.querySelector('#navIcon'),
 		header: document.querySelector('#header'),
 		exhibit: document.querySelector('#exhibit'),
-		firstPost: document.querySelector('#firstPost')
+		featuredContent: document.querySelector('#featuredContent')
 	},
 
 	state: {
@@ -26,7 +26,7 @@ var bespokeScroll = {
 		pagePulledDown: false,
 		exhibitHighlighted: false,
 		lastTouchTimestamp: +new Date,
-		justHardStoppedAtFirstPost:false,
+		justHardStoppedAtfeaturedContent:false,
 		isConsecutiveFastSwipe: false
 	},
 
@@ -69,18 +69,19 @@ var bespokeScroll = {
 	 * is useful to set/update signals that'll be used by both platforms
 	 */
 	onScroll: function(e) {
-		var firstPostRect;
+		var featuredContentRect;
 
 		if (this.state.scrollStage === 4) {
-			firstPostRect = this.ui.firstPost.getBoundingClientRect();
+			featuredContentRect = this.ui.featuredContent.getBoundingClientRect();
 
-			if (firstPostRect.top >= 0) {
-				$('html, body').scrollTop($(this.ui.firstPost).offset().top);
+			if (featuredContentRect.top >= 0) {
+				$('html, body').scrollTop($(this.ui.featuredContent).offset().top);
 
-				this.state.justHardStoppedAtFirstPost = true;
+				this.state.justHardStoppedAtfeaturedContent = true;
 			}
 		}
 	},
+
 
 	// do this in main.js
 	// onMouseWheel: function(e) {
@@ -99,12 +100,12 @@ var bespokeScroll = {
 	},
 
 	/**
-		 * this snap position won't change since section 2 is always in special scroll mode
-		 */
+	 * this snap position won't change since section 2 is always in special scroll mode
+	 */
 	highlightSection2: function() {
 		this.scrollElement(this.ui.header, this.getSnapPositions().exhibit, true);
 		this.scrollElement(this.ui.exhibit, this.getSnapPositions().exhibit, true);
-		this.scrollElement(this.ui.firstPost, this.getSnapPositions().exhibit, true);
+		this.scrollElement(this.ui.featuredContent, this.getSnapPositions().exhibit, true);
 
 		this.state.scrollStage = 2;
 		this.state.exhibitHighlighted = true;
@@ -114,13 +115,12 @@ var bespokeScroll = {
 	 * dynamically calculate the snap position for first post at the given moment
 	 */
 	highlightSection3: function() {
-		this.scrollElement(this.ui.header, this.getSnapPositions().firstPost, true);
-		this.scrollElement(this.ui.exhibit, this.getSnapPositions().firstPost, true);
-		this.scrollElement(this.ui.firstPost, this.getSnapPositions().firstPost, true, this.toDefaultScrollMode.bind(this));
+		this.scrollElement(this.ui.header, this.getSnapPositions().featuredContent, true);
+		this.scrollElement(this.ui.exhibit, this.getSnapPositions().featuredContent, true);
+		this.scrollElement(this.ui.featuredContent, this.getSnapPositions().featuredContent, true, this.toDefaultScrollMode.bind(this));
 
 		this.state.scrollStage = 3;
 	},
-
 
 	/**
 	 * remove CSS classes that disable default scroll, also scroll the entire 
@@ -132,22 +132,21 @@ var bespokeScroll = {
 
 		this.scrollElement(this.ui.header, 0, true);
 		this.scrollElement(this.ui.exhibit, 0, true);
-		this.scrollElement(this.ui.firstPost, 0, true);
+		this.scrollElement(this.ui.featuredContent, 0, true);
 
 		// matching first post
-		$('html, body').scrollTop(-1*this.getSnapPositions().firstPost);
+		$('html, body').scrollTop(-1*this.getSnapPositions().featuredContent);
 
 		// a very hacky solution for iOS Chrome which has a delayed toolbar transition
 		if (!this.modules.detectMobile().iOSSafari) {
 			setTimeout(function() {
-				$('html, body').scrollTop(-1*this.getSnapPositions().firstPost);
+				$('html, body').scrollTop(-1*this.getSnapPositions().featuredContent);
 			}.bind(this), 0);
 		}
 
 		// make sure we're at the correct scroll stage
 		this.state.scrollStage = 3;
 	},
-
 
 	toSpecialScrollMode: function(velocity, callback) {
 		var delayTime = this.props.sectionTransitionTime/2;
@@ -187,6 +186,8 @@ var bespokeScroll = {
 	 * indicated by @withMomentum, we don't want to update lastY during "touchmove"
 	 */
 	scrollElement: function(element, deltaY, withMomentum, callback) {
+		if (!element) return;
+
 		// callback is available when we want to do something after CSS 
 		// transition is finished, here we make sure it only fires once
 		$(element).css({'transform' : 'translate(0px, ' + deltaY + 'px)'});
@@ -208,7 +209,6 @@ var bespokeScroll = {
 		}
 	},
 
-
 	onTouchStart: function(e) {
 		// ignore the follwing swipe if it constitues a fast consecutive swipe
 		if ((+new Date - this.state.lastTouchTimestamp) < this.props.sectionTransitionTime) {
@@ -218,9 +218,9 @@ var bespokeScroll = {
 			this.state.isConsecutiveFastSwipe = false;
 		}
 
-		if (this.state.justHardStoppedAtFirstPost) {
+		if (this.state.justHardStoppedAtfeaturedContent) {
 			this.state.scrollStage = 3;
-			this.state.justHardStoppedAtFirstPost = false;
+			this.state.justHardStoppedAtfeaturedContent = false;
 		}
 
 		var touches = e.originalEvent.changedTouches[0];
@@ -240,11 +240,10 @@ var bespokeScroll = {
 		}
 	},
 
-
 	/**
 	 * stage 1: header moves up and exhibit stays fixed
 	 * stage 2: exhibit gets active and takes much of the viewport
-	 * stage 3: lastest post gets active and will be aligned at top
+	 * stage 3: lastest post gets active and aligned at top
 	 */
 	onTouchMove: function(e) {
 		if (this.state.isConsecutiveFastSwipe) {
@@ -271,7 +270,7 @@ var bespokeScroll = {
 
 		this.scrollElement(this.ui.header, distanceToScroll);
 		this.scrollElement(this.ui.exhibit, distanceToScroll);
-		this.scrollElement(this.ui.firstPost, distanceToScroll);
+		this.scrollElement(this.ui.featuredContent, distanceToScroll);
 
 		// header is visible during the move
 		if (headerRect.bottom >= 0) {
@@ -382,6 +381,7 @@ var bespokeScroll = {
 		if (headerBottomAfterMomentum <= 0) {
 			var scrollExhibitWithMomentum = Number(this.ui.exhibit.dataset.currentY) + headerBottomAfterMomentum;
 			var exhibitFloorThreshold = exhibitRect.bottom - $(window).height();
+			var newSectionNumber;
 			var toSection;
 
 			// first update ui state, it's definitely exhibit mode now
@@ -391,15 +391,20 @@ var bespokeScroll = {
 			// the momentum is beyond the threshold to show exhibit floor
 			if (Math.abs(distanceWithMomentum) > exhibitFloorThreshold) {
 				// since floor is revealed, at least we should reach scroll stage #2
-				var newSectionNumber = Math.max(2, Math.min(3, (this.state.scrollStage + scrollToSectionActionCode)));
+				// in the event of no featured content, there will be no stage #3 and beyond
+				if (this.ui.featuredContent) {
+					newSectionNumber = Math.max(2, Math.min(3, (this.state.scrollStage + scrollToSectionActionCode)));
+				} else {
+					newSectionNumber = 2;
+				}
 
 				toSection = this.state.exhibitHighlighted ? ('highlightSection' + newSectionNumber) : 'highlightSection2';
 
 				this[toSection]();
 			} else {
-				// exhibit and firstPost will move exactly the same distance in "exhibit-active" mode
+				// exhibit and featuredContent will move exactly the same distance in "exhibit-active" mode
 				this.scrollElement(this.ui.exhibit, keepScrollingWithMomentum, true);
-				this.scrollElement(this.ui.firstPost, keepScrollingWithMomentum, true);
+				this.scrollElement(this.ui.featuredContent, keepScrollingWithMomentum, true);
 			}
 		} else {
 			// only the header is moving, hence scroll stage is 1
@@ -417,13 +422,13 @@ var bespokeScroll = {
 				this.toSpecialScrollMode(velocity); // snap gently to section 2
 			} else if (actionCode === 0) {
 				$('html, body').animate({
-	      	scrollTop: $(this.ui.firstPost).offset().top
+	      	scrollTop: $(this.ui.featuredContent).offset().top
 	      }, this.props.sectionTransitionTime);
 			} else {
 				// here the action code is 1, we're trying to detect if user swipes again before the previous
 				// transition even completes, which will nullify the transition callback since there are no
 				// different value to transition to, thus the callback won't be executed, here invoke manually
-				if (Number(this.ui.firstPost.dataset.lastY) === Number(this.getSnapPositions().firstPost)) {
+				if (Number(this.ui.featuredContent.dataset.lastY) === Number(this.getSnapPositions().featuredContent)) {
 					this.toDefaultScrollMode();
 				}
 			}
@@ -434,19 +439,17 @@ var bespokeScroll = {
 		}
 	},
 
-
 	getSnapPositions: function() {
 		// this is to measure how much more to move up when top of exhibit aligns with viewport
 		var exhibitBelowFoldWhenTopAlign = this.ui.exhibit.getBoundingClientRect().height - $(window).height();
 		var exhibitSnapPosY = -1*exhibitBelowFoldWhenTopAlign + this.props.exhibitInitPosY;
-		var firstPostSnapPosY = -1*($(window).height()) + exhibitSnapPosY;
+		var featuredContentSnapPosY = -1*($(window).height()) + exhibitSnapPosY;
 
 		return {
 			exhibit: exhibitSnapPosY,
-			firstPost: firstPostSnapPosY
+			featuredContent: featuredContentSnapPosY
 		};
 	},
-
 
 	initScrollStage: function() {
 		this.ui.html.classList.add('header-active');
@@ -459,7 +462,6 @@ var bespokeScroll = {
 
 		this.state.scrollStage = 1;
 	},
-
 
 	init: function() {
 		// set stateful classes, place this first to get accurate position

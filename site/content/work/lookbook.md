@@ -20,6 +20,10 @@ draft: false
 
 ## challenge
 
+Lookbook is a totally immersive mobile experience that quickly takes your customers from inspiration to information. An eye-catching image showcases multiple separate products or features while pulsating hotspots encourage customers to tap to reveal more details and navigate to your site. 
+
+Whether showing off a complete outfit or the new features inside the latest car model, or anything in-between, the Lookbook is a great way to entice customers to learn more and take action. 
+
 Many brands have aspirational images of their products being used for their catalogs or websites. How might we leverage these assets to create a "shoppable" experience?
 
 <div><img src="/work/lookbook/versatility.jpg"></div>
