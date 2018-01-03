@@ -610,7 +610,10 @@
    ========================================================================== */
 
 @media (--desktop-s) {
-	
+	.summary-work {
+		.mod.neo-quote { font-size: 1.2rem; max-width: 16rem; }
+		&.large .mod.neo-quote { font-size: 1.5rem; max-width: 30rem; }
+	}	
 
 }
 

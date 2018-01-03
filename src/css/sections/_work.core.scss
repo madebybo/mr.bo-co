@@ -31,6 +31,27 @@
 		}
 	}
 
+	.summary-headers-wrapper {
+		position: relative;
+
+		.summary-headers {
+			position: relative;
+			z-index: 1;
+		}
+
+		.background-insert {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			top: 0;
+			z-index: 0;
+			background-size: 100% auto;
+			/* background-repeat: no-repeat; */
+			opacity: .1;
+		}
+	}
+
 	.summary-work {
 		background-color: $primary-white;
 		position: relative;

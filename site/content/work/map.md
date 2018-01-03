@@ -10,7 +10,7 @@ images:
   device: iPhone-X-vertical.png
   showcase:
     - map.gif
-weight: 6
+weight: 10
 draft: false
 ---
 

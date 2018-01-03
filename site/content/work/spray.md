@@ -14,7 +14,7 @@ snapshot:
   timeline: March 2016
 related: [mgestures, zine]
 tags: [interaction, design, research, mobile]
-weight: 11
+weight: 9
 draft: false
 ---
 

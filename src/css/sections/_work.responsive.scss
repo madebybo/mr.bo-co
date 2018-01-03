@@ -67,20 +67,43 @@
 
 @media (--desktop-s) {
 	.section-wrapper.work {
-		.summary-headers {
-			max-width: 896px;
-			margin: 0 auto;
+		.summary-headers-wrapper {
+			.summary-headers {
+				max-width: 52rem;
+				padding: 6rem 0;
+				margin: 0 auto;
+			}
+
+			.background-insert {
+				background-image: url("/_images/texture/lines.jpg");
+			}
 		}
 
 		.summary-work {
-			width: 320px;
+			box-shadow: $box-shadow;
+			display: inline-block;
+			width: 24rem;
+			margin: 0;
+			overflow: hidden;
+			float: left;
+
+			&:after { display: none; }
 
 			&.large {
-				transform: scale(0.9);
-				width: 600px;
-				margin: 4em 0;
+				/* transform: scale(0.9); */
+				width: 52rem;
+				margin: 4rem 0;
+			}
+
+			&.windowplay,
+			&.lookbook,
+			&.wrapper,
+			&.map { 
+				margin: 0 4rem 0 0; 
 			}
 		}
+
+
 	}
 
 

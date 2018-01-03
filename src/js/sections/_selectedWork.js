@@ -41,7 +41,9 @@ var selectedWork = {
 			$(this.ui.summaries).removeClass('large');
 
 			// handpick the ones to be featured
-			$('.summary-work.windowplay').addClass('large');
+			$('.summary-work.panorama').addClass('large');
+			$('.summary-work.rapt').addClass('large');
+			$('.summary-work.spray').addClass('large');
 		}
 	},
 

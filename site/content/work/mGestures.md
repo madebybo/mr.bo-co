@@ -16,7 +16,7 @@ snapshot:
   timeline: April 2016 - August 2016
 related: [windowplay, mcommerce]
 tags: [mcommerce, mobile, design]
-weight: 4
+weight: 5
 draft: false
 ---
 

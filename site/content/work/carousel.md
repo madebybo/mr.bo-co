@@ -11,7 +11,7 @@ images:
   showcase:
     - carousel-m.gif
 related: [windowplay, stack]
-weight: 5
+weight: 11
 draft: false
 ---
 

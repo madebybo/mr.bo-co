@@ -12,7 +12,7 @@ snapshot:
   timeline: June 2017
 related: [wrapper, spray]
 tags: [interaction, data, visualization, design, research]
-weight: 10
+weight: 6
 draft: false
 ---
 
