@@ -1,35 +1,53 @@
-body.contact {
+.section-wrapper.contact {
+	z-index: 1;
 
-	section {
-		padding: 32px;
-		margin-top: 64px; 
+	.section-wrapper-inner {
+		width: $content-width-mobile-s;
+		margin: 0 auto;
+
+		.list-header {
+			margin: 4em 0 8em 0;
+
+			.headline { text-align: left; }
+			.blurb { margin-top: 2rem; }
+		}
+
+		.contact-form {
+			margin: 4em 0 12em 0;
+			font-family: $header-font;
+		}
 	}
 }
+
+
+.background-insert {
+	/* display: none; */
+	position: fixed;
+	opacity: .6;
+	bottom: 0;
+}
+
+
 
 
 
 .input {
 	position: relative;
 	z-index: 1;
-	display: inline-block;
-	margin: 1em;
+	margin: 1em 0;
 	max-width: 350px;
-	width: calc(100% - 2em);
 	vertical-align: top;
 }
 
 .input__field {
+	line-height: 1.5;
 	position: relative;
 	display: block;
 	float: right;
-	padding: 0.8em;
-	width: 60%;
 	border: none;
 	border-radius: 0;
 	background: #f0f0f0;
 	color: #aaa;
-	font-weight: 400;
-	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
 }
 
@@ -62,33 +80,54 @@ body.contact {
 	width: 100%;
 }
 
-.graphic {
-	position: absolute;
-	top: 0;
-	left: 0;
-	fill: none;
-}
-
-.icon {
-	color: #ddd;
-	font-size: 150%;
+.input.select {
+	select { 
+		margin-left: -4px;  
+		margin-bottom: 2em;
+	}
 }
 
 
+.input.message {
+	.input__field,
+	.input__label {
+		min-height: 12em;
+	}
 
-/* Individual styles */
+	.input__label-content {
+		position: absolute;
+		bottom: .5em;
+	}
+}
 
-/* Manami */
+.input.submit {
+	margin: 2em 0;
+	/* text-align: center; */
+
+	input {
+		padding: .7em 1em .5em 1em;
+		border: 1px solid $classic-grey;
+		background-color: rgba(255, 255, 255, .5);
+		color: $primary-black;
+		border-radius: 0;
+	}
+}
+
+
+/* ==========================================================================
+   Individual styles: Manami
+   ========================================================================== */
+
 .input--manami {
 	overflow: hidden;
 }
 
 .input__field--manami {
-	width: 100%;
 	background: transparent;
+	width: 100%;
 	padding: 0.5em;
 	margin-bottom: 2em;
-	color: #f9f7f6;
+	color: $primary-black;
 	z-index: 100;
 	opacity: 0;
 }
@@ -113,33 +152,29 @@ body.contact {
 .input__label--manami::before {
 	height: 100%;
 	background: #A8A8A8;
+	background-color: $linen-grey;
 	top: 0;
-	-webkit-transform: translate3d(0, -100%, 0);
 	transform: translate3d(0, -100%, 0);
-	-webkit-transition: -webkit-transform 0.2s;
 	transition: transform 0.2s;
 }
 
 .input__label--manami::after {
 	height: 2px;
 	background: #A8A8A8;
+	/* background: $primary-black; */
 	top: 100%;
-	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 }
 
 .input__label-content--manami {
 	padding: 0;
-	-webkit-transform-origin: 0 0;
 	transform-origin: 0 0;
-	-webkit-transition: -webkit-transform 0.2s, color 0.2s;
 	transition: transform 0.2s, color 0.2s;
 }
 
 .input__field--manami:focus,
 .input--filled .input__field--manami {
 	opacity: 1;
-	-webkit-transition: opacity 0s 0.2s;
 	transition: opacity 0s 0.2s;
 }
 
@@ -148,13 +183,11 @@ body.contact {
 .input__label-content--manami,
 .input__field--manami:focus,
 .input--filled .input__field--manami {
-	-webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
 	transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
 }
 
 .input__field--manami:focus + .input__label--manami::before,
 .input--filled .input__label--manami::before {
-	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
 
@@ -165,7 +198,12 @@ body.contact {
 
 .input__field--manami:focus + .input__label--manami .input__label-content--manami,
 .input--filled .input__label--manami .input__label-content--manami {
-	color: #cbc4c6;
-	-webkit-transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
-	transform: translate3d(0, 2.1em, 0) scale3d(0.65, 0.65, 1);
+	color: $classic-grey;
+	transform: translate3d(0, 2.1em, 0) scale3d(0.75, 0.75, 1);
+}
+
+
+.message .input__field--manami:focus + .input__label--manami .input__label-content--manami,
+.message.input--filled .input__label--manami .input__label-content--manami {
+	/* transform: translate3d(0, 7.8em, 0) scale3d(0.75, 0.75, 1);	 */
 }

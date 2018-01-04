@@ -76,8 +76,10 @@ var aboutDisplay = {
 				// getting the opacity value based on active paragraph position
 				opacity = (topPos - this.props.disappearThreshold)/60;
 
-				// TODO: disable opacity whatsoever when it comes to the last paragraph
-				$(this.ui.paragraphs[i]).css('opacity', opacity);
+				// disable opacity whatsoever when it comes to the last paragraph
+				if (this.state.activeSection < this.ui.paragraphs.length - 1) {
+					$(this.ui.paragraphs[i]).css('opacity', opacity);
+				}
 
 				if (this.state.activeSection !== i) {
 					// update greeting title

@@ -27,6 +27,7 @@ body {
 }
 
 .section-wrapper {
+  position: relative;
   margin: 4em 0 0 0;
 }
 
@@ -43,6 +44,7 @@ section {
 
 footer {
   background-color: $secondary-black;
+  position: relative;
 
   .footer-inner {
     position: relative;
@@ -80,6 +82,6 @@ footer {
   }
 } 
 
-@media (--desktop) {
+@media (--desktop-s) {
 }
 

@@ -40,7 +40,7 @@ var contactPage = {
 			})();
 		}
 
-		[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+		[].slice.call( document.querySelectorAll( '.input .input__field' ) ).forEach( function( inputEl ) {
 			// in case the input is already filled..
 			if( inputEl.value.trim() !== '' ) {
 				$(inputEl.parentNode).addClass('input--filled');
@@ -66,8 +66,6 @@ var contactPage = {
 	init: function() {
 		this.registerEvents();
 		this.enableFormAnimation();
-
-		console.log('this is the contact page');
 	}
 };
 

@@ -1,7 +1,22 @@
 {{ define "main" }}
 <div class="section-wrapper {{ .Params.code }}">
-  {{ partial "form" . }}
+  <div class="section-wrapper-inner clearfix">
+    <div class="list-header">
+      <h1 class="headline">hello</h1>
+      <div class="blurb">{{ .Content }}</div>
+    </div>
 
-  {{ .Content }}
+    <!-- <h1>NYC Map</h1> -->
+    
+    {{ partial "form" . }}
+  </div>
+  <!-- <img src='{{ "_images/yieldmo-1.jpg" | absURL }}'> -->
+  <!-- <img src='{{ "_images/yieldmo-2.jpg" | absURL }}'> -->
 </div>
+
+<figure class="background-insert">
+  <img src='{{ "contact/ferris-wheel-center.jpg" | absURL }}'>
+</figure>
 {{ end }}
+
+{{ define "footer" }}.{{ end }}

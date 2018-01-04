@@ -1,24 +1,41 @@
-<section class="content bgcolor-3">
-  <h2>Manami</h2>
-  <span class="input input--manami">
+<form class="contact-form" action="{{ .Site.BaseURL }}">
+  <input type=hidden name="retURL" value="{{ .Site.BaseURL }}">
+
+  <div class="input input--manami">
     <input class="input__field input__field--manami" type="text" id="input-32" />
     <label class="input__label input__label--manami" for="input-32">
-      <span class="input__label-content input__label-content--manami">Username</span>
+      <span class="input__label-content input__label-content--manami">name</span>
     </label>
-  </span>
-  <span class="input input--manami">
-    <input class="input__field input__field--manami" type="text" id="input-33" />
+  </div>
+  <div class="input input--manami">
+    <input class="input__field input__field--manami" type="email" id="input-33" />
     <label class="input__label input__label--manami" for="input-33">
-      <span class="input__label-content input__label-content--manami">Website</span>
+      <span class="input__label-content input__label-content--manami">email</span>
     </label>
-  </span>
-  <span class="input input--manami">
-    <input class="input__field input__field--manami" type="text" id="input-34" />
+  </div>
+
+  <div class="input select input--manami">
+    <select class="input__field input__field--manami">
+      <option value="" disabled selected>purpose of inquiry</option>
+      <option value="1">speaking engagement</option>
+      <option value="2">consulting / teaching</option>
+      <option value="3">collaboration</option>
+      <option value="4">others</option>
+    </select>
+    <label class="input__label input__label--manami" for="input-33">
+      <span class="input__label-content input__label-content--manami">purpose of inquiry</span>
+    </label>    
+  </div>
+
+  <div class="input message input--manami">
+    <textarea class="input__field input__field--manami" id="input-34" /></textarea>
     <label class="input__label input__label--manami" for="input-34">
-      <span class="input__label-content input__label-content--manami">Invitation Code</span>
+      <span class="input__label-content input__label-content--manami">message</span>
     </label>
-  </span>
-</section>
+  </div>
 
-
+  <div class="input submit input--manami">
+    <input type="submit" value="submit" name="">
+  </div>
+</form>
 <!-- https://tympanus.net/Development/SelectInspiration/index2.html -->

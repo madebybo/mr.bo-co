@@ -1,6 +1,6 @@
 ---
-title: "contact"
-code: "contact"
+title: contact
+code: contact
 date: 2017-10-02T17:51:26-04:00
 weight: 10
 draft: false

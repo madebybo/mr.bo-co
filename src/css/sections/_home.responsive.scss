@@ -42,13 +42,6 @@
 	}
 }
 
-
-@media (--mobile-s) {
-	.exhibit {
-		font-size: 1rem;
-	}
-}
-
 @media (--mobile-m) {
 	.exhibit {
 		font-size: 1.125rem;
@@ -70,7 +63,7 @@
 
 
 /* forget about it for now... let's do a different layout for desktop */
-@media (--desktop) {
+@media (--desktop-s) {
 	.header-content {
 		height: calc(100vh - $exhibit-floor-desktop);
 	}
