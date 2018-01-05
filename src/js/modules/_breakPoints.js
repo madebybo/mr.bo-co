@@ -12,6 +12,6 @@ module.exports = {
 	mobileL : 408,
 	tablet  : 640,
 	desktopS: 960,
-	desktopM: 1440,
+	desktopM: 1280,
 	desktopL: 1920
 };

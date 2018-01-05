@@ -1,22 +1,24 @@
 .section-wrapper.contact {
-	z-index: 1;
+	/* z-index: 1; */
 
-	.section-wrapper-inner {
-		.contact-form {
-			width: $content-width-mobile-s;
-			margin: 4em auto 6em auto;
-			font-family: $header-font;
+	.contact-form {
+		width: $content-width-mobile-s;
+		font-family: $header-font;
+		margin: 6em auto;
+
+		.headline {
+			text-align: left;
+			color: $classic-grey;
+			margin-bottom: 2em;
 		}
 	}
 }
-
 
 
 .input {
 	position: relative;
 	z-index: 1;
 	margin: 1em 0;
-	max-width: 350px;
 	vertical-align: top;
 }
 

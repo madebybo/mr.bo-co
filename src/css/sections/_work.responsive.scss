@@ -118,12 +118,23 @@
 				margin: 0 4rem 0 0; 
 			}
 		}
-
-
 	}
-
-
 }
 
 @media (--desktop-m) {
+	.section-wrapper.work {
+		.section-wrapper-inner {
+			.summary-headers {
+				max-width: $content-width-desktop-m;
+			}
+		}
+
+		.summary-work {
+			&.large {
+				width: 44rem;
+			}
+
+			/* &.zine { display: none; } */
+		}
+	}
 }

@@ -3,12 +3,27 @@
    ========================================================================== */
 
 @media (--mobile-m) {
+	.section-wrapper.contact {
+		.contact-form { 
+			width: $content-width-mobile-m; 
+		}
+	}
 }
 
-@media (--mobile-m) {
+@media (--mobile-l) {
+	.section-wrapper.contact {
+		.contact-form { 
+			width: $content-width-mobile-l; 
+		}
+	}
 }
 
 @media (--tablet) {
+	.section-wrapper.contact {
+		.contact-form { 
+			width: $content-width-tablet; 
+		}
+	}	
 }
 
 /* ==========================================================================
@@ -16,6 +31,11 @@
    ========================================================================== */
 
 @media (--desktop-s) {
+	.section-wrapper.contact {
+		.contact-form { 
+			/* width: $content-width-desktop-s;  */
+		}
+	}		
 }
 
 @media (--desktop-m) {

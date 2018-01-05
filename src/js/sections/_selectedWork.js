@@ -45,6 +45,13 @@ var selectedWork = {
 			$('.summary-work.rapt').addClass('large');
 			$('.summary-work.spray').addClass('large');
 		}
+
+		if (currentWidth >= this.modules.breakPoints.desktopM) {
+			// reset all project summary header
+			// $(this.ui.summaries).removeClass('large');		
+			
+			$('.summary-work.windowplay').addClass('large');	
+		}
 	},
 
 	init: function() {
