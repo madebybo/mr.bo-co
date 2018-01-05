@@ -52,7 +52,8 @@ $mobile-m-width: 359px;
 $mobile-l-width: 408px;
 $tablet-width: 640px;
 $desktop-width-s: 960px;
-$desktop-width-m: 1440px;
+$desktop-width-m: 1280px;
+$desktop-width-m: 1680px;
 
 /* @custom-media --mobile-s (width <= 359px); */
 @custom-media --mobile-m  (width >= 359px);
@@ -60,7 +61,7 @@ $desktop-width-m: 1440px;
 @custom-media --tablet    (width >= 640px);
 @custom-media --desktop-s (width >= 960px);
 @custom-media --desktop-m (width >= 1280px);
-@custom-media --desktop-l (width >= 1920px);
+@custom-media --desktop-l (width >= 1680px);
 
 
 $nav-height-mobile: 64px;
