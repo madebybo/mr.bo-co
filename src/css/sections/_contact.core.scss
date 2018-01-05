@@ -2,32 +2,13 @@
 	z-index: 1;
 
 	.section-wrapper-inner {
-		width: $content-width-mobile-s;
-		margin: 0 auto;
-
-		.list-header {
-			margin: 4em 0 8em 0;
-
-			.headline { text-align: left; }
-			.blurb { margin-top: 2rem; }
-		}
-
 		.contact-form {
-			margin: 4em 0 12em 0;
+			width: $content-width-mobile-s;
+			margin: 4em auto 6em auto;
 			font-family: $header-font;
 		}
 	}
 }
-
-
-.background-insert {
-	/* display: none; */
-	position: fixed;
-	opacity: .6;
-	bottom: 0;
-}
-
-
 
 
 

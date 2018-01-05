@@ -1,4 +1,30 @@
 /* ==========================================================================
+   .scroll-down: an animated arrow to indicate user to scroll down 
+   ========================================================================== */
+
+.scroll-down {
+	position: absolute;
+  transform: translateX(-50%) rotate(-45deg);
+  left: 50%;
+  color: $primary-white;
+  font-size: 1.5rem;
+  font-weight: 100;
+  animation: scroll-down 2s ease-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translate3d(-50%,0,0) rotate(-45deg);;
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate3d(-50%,.2em,0) rotate(-45deg);
+    opacity: 0.8;
+  }
+}
+
+/* ==========================================================================
    .neo-quote: The subtitle which features the「 」symbol 
    ========================================================================== */
 
@@ -44,6 +70,97 @@
 	}
 }
 
+.quote {
+	width: 80%;
+	margin: 0 0 4rem 20%;
+
+	.content {
+		font-family: $header-font;
+		padding: 2rem 0 0 1rem;
+		margin: 0;
+		position: relative;
+		display: inline-block;
+		font-style: italic;
+		font-size: 1em;
+
+		&:before {
+			font-family: serif;
+			content: $quote-left;
+			position: absolute;
+			font-size: 5em;
+			color: $classic-grey;
+			font-weight: 900;
+			z-index: -1;
+			left: 0; 
+			top: -2rem;
+			font-style: normal;
+		} 
+		
+		&:after { 
+			font-family: serif;
+			content: $quote-right;
+		}
+	}
+
+	.author {
+		font-family: $header-font;
+		font-size: .8em;
+		margin: 2rem 0 0 .5rem;
+		color: $classic-grey;
+	}
+
+	@media (--desktop-s) { font-size: 1.5rem; }
+}
+
+/* ==========================================================================
+   .marquee: the fixed full page "cover" on mobile for section list pages
+   ========================================================================== */
+
+.marquee {
+	height: calc(100vh - 4rem);
+	position: relative;
+
+	.fixed-holder {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		top: 4rem;
+		width: $content-width-mobile-s;
+		margin: 0 auto;
+		z-index: 1;
+
+		.headline {
+			position: relative;
+			text-align: left;
+			margin: 4rem 0;
+
+			@media (--desktop-s) { font-size: 5rem; }		
+		}
+
+		.blurb { 
+			margin: 4rem 0;
+		}
+
+		@media (--mobile-m) { width: $content-width-mobile-m; }
+		@media (--mobile-l) { width: $content-width-mobile-l; }		
+		@media (--tablet) { width: $content-width-tablet; }		
+		@media (--desktop-s) { width: $content-width-desktop-s; }		
+	}
+
+	.background-insert {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100% - 4rem);
+		z-index: 0;
+		background-size: cover;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		/* filter: blur(3px); */
+	}
+}
 
 /* ==========================================================================
    .nav-back: Simple link to nav back to parent directory 
@@ -74,7 +191,6 @@
 	@media (--mobile-l) { width: $content-width-mobile-l; }
 }
 
-
 /* ==========================================================================
    .metadata: The metadata entry in single page 
    ========================================================================== */
@@ -99,7 +215,6 @@
 		text-decoration: none;
 	}
 }
-
 
 /* ==========================================================================
    .metadata: The metadata entry in single page 
@@ -128,6 +243,3 @@
 	font-family: $header-font;
 	font-size: 1.2rem;
 }
-
-
-

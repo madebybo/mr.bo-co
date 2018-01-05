@@ -1,14 +1,8 @@
 {{ define "main" }}
 <div class="section-wrapper {{ .Params.code }} clearfix">
-	<div class="list-header">
-		<div class="header-holder">
-			<h5 class="headline">"Everyone designs who devises courses of action aimed at changing existing situations into preferred ones." - Herbert Simon</h5>
+	{{ partial "marquee" . }}
 
-			<h6>I believe that technology is becoming an essential part of the design process...</h6>
-		</div>
-	</div>
-
-	<div class="summary-headers-wrapper">
+	<div class="section-wrapper-inner">
 		<div class="summary-headers clearfix">
 	  {{ range .Data.Pages }}
 	    {{ .Render "summary"}}

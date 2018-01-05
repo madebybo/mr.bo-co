@@ -29,6 +29,13 @@ body {
 .section-wrapper {
   position: relative;
   margin: 4em 0 0 0;
+
+  .section-wrapper-inner {
+    position: relative;
+    background-color: rgba(255, 255, 255, .9);
+    background-color: $primary-white;
+    z-index: 999;
+  }
 }
 
 section {
@@ -45,6 +52,7 @@ section {
 footer {
   background-color: $secondary-black;
   position: relative;
+  z-index: 999;
 
   .footer-inner {
     position: relative;

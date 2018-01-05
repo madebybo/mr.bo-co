@@ -7,33 +7,16 @@
 	/* background-color: $linen-grey; */
 	overflow: hidden;
 
-	.list-header {
-		background-color: $primary-black;
-		height: 24rem;
-
-		.header-holder {
-			position: fixed;
-			color: $primary-white;
-			height: 24rem;
-			width: 100%;
-			z-index: 0;
-
-			.headline {
-				width: $content-width-mobile-s;
-				position: absolute;
-				font-weight: 100; 
-				margin: auto;
-				right: 0;
-				left: 0;
-				top: 50%;
-				transform: translateY(-50%);
-			}
+	.marquee.mod {
+		.fixed-holder { 
+			color: $primary-white; 
+			.blurb > p { display: none; }
 		}
+		
+		.background-insert { background: $secondary-black; }
 	}
 
-	.summary-headers-wrapper {
-		position: relative;
-
+	.section-wrapper-inner {
 		.summary-headers {
 			position: relative;
 			z-index: 1;

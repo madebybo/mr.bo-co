@@ -75,6 +75,7 @@ $content-width-mobile-s: 16rem;
 $content-width-mobile-m: 17.5rem;
 $content-width-mobile-l: 19.5rem;
 $content-width-tablet: 25rem;
+$content-width-desktop-s: 52rem;
 
 /* ==========================================================================
    VISUAL
@@ -96,8 +97,12 @@ $mrbo-primary-transition-duration: 300ms;
    ========================================================================== */
 
 $arrow-right: '❯';
+$angle: '∟';
 $neo-quote-left: '「';
 $neo-quote-right: '」';
+$double-low-reversed-quotation: '“';
+$quote-left: '“';
+$quote-right: '”';
 $triangle-up: '▴';
 $triangle-down: '▾';
 $triangle-left: '◂';

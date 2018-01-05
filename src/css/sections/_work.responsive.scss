@@ -6,6 +6,7 @@
 	.section-wrapper.work {
 		.list-header .header-holder .headline { width: $content-width-mobile-m; }
 		.summary-work:after { font-size: 1.2rem; }
+		.marquee.mod .fixed-holder .blurb > p { display: block; }
 	}
 
 	.work.single {
@@ -67,9 +68,24 @@
 
 @media (--desktop-s) {
 	.section-wrapper.work {
-		.summary-headers-wrapper {
+		.marquee.mod {
+			height: auto;
+
+			.fixed-holder {
+				position: relative;
+				top: 0;
+			}
+
+			.background-insert {
+				position: absolute;
+				top: 0;
+				height: 100%;
+			}
+		}
+
+		.section-wrapper-inner {
 			.summary-headers {
-				max-width: 52rem;
+				max-width: $content-width-desktop-s;
 				padding: 6rem 0;
 				margin: 0 auto;
 			}
