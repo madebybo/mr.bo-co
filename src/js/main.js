@@ -43,7 +43,7 @@ $(function() {
         this.sections.contactPage.init();
       }
 
-      if (window.section === 'work') {
+      if (window.section === 'work' ) {
         this.sections.selectedWork.init();
       }
     }

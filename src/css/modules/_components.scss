@@ -1,4 +1,32 @@
 /* ==========================================================================
+   .headline: mr.bo trademark lowercase headline 
+   ========================================================================== */
+
+.headline {
+  font-family: $header-font;
+  font-weight: 700; /* if use EB Garamond */
+  font-weight: 200; /* if use Caslon */
+  text-align: center;
+  line-height: 1.1;
+
+  h1& { font-size: 3.5em; }
+  h2& { font-size: 3em;   }
+  h3& { font-size: 2.5em; }
+  h4& { font-size: 2em;   }
+  h5& { font-size: 1.5em; }
+  h6& { font-size: .9em;  }
+
+  @media (--tablet) { 
+    h1& { font-size: 4.5em; }
+    h2& { font-size: 4em;   }
+    h3& { font-size: 3.5em; }
+    h4& { font-size: 3em;   }
+    h5& { font-size: 2.5em; }
+    h6& { font-size: 1.2em;  }
+  }
+}
+
+/* ==========================================================================
    .scroll-down: an animated arrow to indicate user to scroll down 
    ========================================================================== */
 
@@ -31,11 +59,11 @@
 .neo-quote {
 	position: relative;
 	padding: 1.5em;
-	max-width: 14em;
 	margin: 0 auto;
 	display: inline-block;
 	left: 50%;
 	transform: translateX(-50%);
+	max-width: calc($content-width-mobile-s - 2rem);
 
 	p {
 		margin: 0;
@@ -46,7 +74,6 @@
 
 	&:before {
 		content: $neo-quote-left;
-		color: $primary-black;
 		font-size: 1.5em;
 		position: absolute;
 		left: -0.5em;
@@ -56,13 +83,15 @@
 
 	&:after {
 		content: $neo-quote-right;
-		color: $primary-black;
 		font-size: 1.5em;
 		position: absolute;
 		right: -0.5em;
 		bottom: .5em;
 		font-weight: 100;
 	}
+
+	@media (--mobile-m) { max-width: calc($content-width-mobile-m - 2rem); }
+	@media (--mobile-l) { max-width: calc($content-width-mobile-l - 2rem); }
 
 	@media (--tablet) {
 		max-width: 25rem;
@@ -160,6 +189,23 @@
 		background-repeat: no-repeat;
 		/* filter: blur(3px); */
 	}
+
+	@media (--desktop-s) {
+		height: auto;
+
+		& {
+			.fixed-holder {
+				position: relative;
+				top: 0;
+			}
+
+			.background-insert {
+				position: absolute;
+				top: 0;
+				height: 100%;
+			}	
+		}
+	}
 }
 
 /* ==========================================================================
@@ -175,20 +221,24 @@
 	a {
 		font-size: 1.2rem;
 		font-weight: 900;
-	}
 
-	&:before {
-		position: absolute;
-		content: $triangle-left;
-		left: 0;
-		font-size: 2em;
-		line-height: .6;
-		font-weight: 100;
-		text-decoration: none;
+		@media (--tablet) { font-size: 1.5rem; }
+
+		&:before {
+			position: absolute;
+			content: $triangle-left;
+			left: 0;
+			top: .25em;
+			font-size: 1.5em;
+			line-height: .6;
+			font-weight: 100;
+			text-decoration: none;
+		}
 	}
 
 	@media (--mobile-m) { width: $content-width-mobile-m; }
 	@media (--mobile-l) { width: $content-width-mobile-l; }
+	@media (--tablet) { width: $content-width-tablet; }
 }
 
 /* ==========================================================================
@@ -231,6 +281,8 @@
 	}
 
 	p { font-size: .9em; }
+
+	@media (--tablet) { font-size: 1.3rem; }
 }
 
 /* ==========================================================================

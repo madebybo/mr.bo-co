@@ -2,7 +2,7 @@
    Common Style for the Work List Page
    ========================================================================== */
 
-.section-wrapper.work {
+.work.list {
 	/* background-color: color($linen-grey lightness(92%)); */
 	/* background-color: $linen-grey; */
 	overflow: hidden;
@@ -62,17 +62,16 @@
 
 .work.single {
 	/* TODO: scroll and the feature page image scale down */
-	> .package-work {
+	> .summary-work {
 		margin-top: 0rem;
 		margin-bottom: 3rem;
 
-		> a,
+		a,
 		&:after {
 			display: none;
 		}
 
 		figure.background img {
-			/* transform: scale(1.4); */
 			filter: none;
 		}
 	}
@@ -104,7 +103,7 @@
 	/* Markdown Content */
 	.content {
 		position: relative;
-		padding-bottom: 6em;
+		padding-bottom: 8em;
 
 		a { font-family: $content-font; }
 
@@ -112,17 +111,20 @@
 			font-family: $header-font;
 			color: color($secondary-black lightness(50%)); 
 			margin: 3.5rem auto 1.5rem auto;
+			font-size: 1.5em;
 		}
 
 		> p {
 			margin: 1em auto; 
-			padding-left: 2.5rem;
+			padding-left: 2.5em;
+			font-size: .9em;
 		}
 
 		> ul,
 		> ol {
 			margin: 1em auto; 
-			padding-left: 3.5rem;
+			padding-left: 3.5em;
+			font-size: .9em;
 
 			li {
 				margin-bottom: .25em;
@@ -144,7 +146,7 @@
 
 		/* the cushion for image */
 		> div {
-			margin: 2em 0;
+			margin: 4rem 0;
 
 			h6 {
 				font-family: $content-font;
@@ -168,26 +170,24 @@
 	  	display: block;
 	  	position: absolute;
 	  	width: 100%;
-	  	bottom: 2.5em;
+	  	bottom: 4em;
 	  	text-align: center;
 	  }
 	}
 
 	.related {
 		background-color: $linen-grey;
-		padding: 2em 0;
+		padding: 2rem 0;
 
 		> .headline {
-			margin: 1rem 0;
+			margin: 2rem 0;
 		}
 
-		.package-work {
-			/* background-color: transparent; */
+		.summary-work {
 			margin: 0 auto;
-			overflow: hidden;
 			transform: scale(.9);
 			box-shadow: $box-shadow;
-			max-width: 20rem; /* keep it the same size as smallest phone version */
+			overflow: hidden;
 
 			&:after { display: none; }
 		}

@@ -13,8 +13,8 @@ snapshot:
   team: ux research <br> ux design <br> engineering <br> product management <br> a/b testing
   role: design lead
   timeline: April 2016 - August 2016
-related: [panorama, mcommerce]
-tags: ["video", "mobile", "design"]
+related: [panorama, zine]
+tags: [video, mobile, design]
 weight: 1
 draft: false
 ---

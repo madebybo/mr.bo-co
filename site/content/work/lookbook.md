@@ -3,16 +3,17 @@ title: lookbook
 subtitle: A mobile commerce experience elegantly placed in eye-catching, interactive brand context that helps product showcase and drives user engagement. 
 code: lookbook
 type: work
-timeline: April 2016 - August 2016
 tags: [mcommerce, mobile, design]
 images:
   background: lookbook-background.png
   device: Samsung-Galaxy-S8.png
   showcase: 
     - lookbook.gif
-overview: A concept that came out of primary consumer design research on how people discover and purchase brands/products, Lookbook presents a group of products in their natural setting (a room of furniture, a model wearing clothing items, etc.), and allows individual items to be clicked to explore more within the format.
-team: business opration <br> ux research <br> ux design <br> engineering <br> a/b testing <br> data insights
-role: product lead
+snapshot:
+  overview: A concept that came out of primary consumer design research on how people discover and purchase brands/products, Lookbook presents a group of products in their natural setting (a room of furniture, a model wearing clothing items, etc.), and allows individual items to be clicked to explore more within the format.
+  team: business opration <br> ux research <br> ux design <br> engineering <br> a/b testing <br> data insights
+  role: product lead
+  timeline: April 2016 - August 2016
 related: [zine, mcommerce]
 weight: 4
 draft: false

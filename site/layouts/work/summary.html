@@ -2,7 +2,10 @@
 {{ $code := .Params.code }}
 <div class="summary-work {{ $code }}">
   {{ with .Params.images.background }}
-    <figure class="background"><img src="/work/{{ $code }}/{{ . }}"></figure>
+    <figure class="background">
+      <img src="/work/{{ $code }}/{{ . }}">
+      <div class="image" style="background-image: url(/work/{{ $code }}/{{ . }});"></div>
+    </figure>
   {{ end }}
 
   <div class="headline-container">

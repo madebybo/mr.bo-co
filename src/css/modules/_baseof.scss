@@ -11,21 +11,6 @@ body {
   margin: 0;
 }
 
-.headline {
-  font-family: $header-font;
-  font-weight: 700; /* if use EB Garamond */
-  font-weight: 200; /* if use Caslon */
-  text-align: center;
-  line-height: 1.1;
-
-  h1& { font-size: 3.5em; }
-  h2& { font-size: 3em;   }
-  h3& { font-size: 2.5em; }
-  h4& { font-size: 2em;   }
-  h5& { font-size: 1.5em; }
-  h6& { font-size: .9em;   }
-}
-
 .section-wrapper {
   position: relative;
   margin: 4em 0 0 0;

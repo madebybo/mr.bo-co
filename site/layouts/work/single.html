@@ -49,3 +49,10 @@
   </div>
 </div>
 {{ end }}
+
+{{ define "section-scripts" }}
+<script type="text/javascript">
+  window.section = {{ .Params.type }}
+  window.single = {{ .Params.code }}
+</script>
+{{ end }}

@@ -37,20 +37,36 @@ var selectedWork = {
 		}
 
 		if (currentWidth >= this.modules.breakPoints.desktopS) {
-			// reset all project summary header
 			$(this.ui.summaries).removeClass('large');
-
-			// handpick the ones to be featured
-			$('.summary-work.panorama').addClass('large');
-			$('.summary-work.rapt').addClass('large');
-			$('.summary-work.spray').addClass('large');
 		}
 
 		if (currentWidth >= this.modules.breakPoints.desktopM) {
-			// reset all project summary header
-			// $(this.ui.summaries).removeClass('large');		
+			// $(this.ui.summaries).removeClass('large');
+			// $('.summary-work.zine').addClass('large');
 			
-			$('.summary-work.windowplay').addClass('large');	
+			$(this.ui.summaries).addClass('large');
+		}		
+
+		// only do this for non-single page, aka list page
+		if (!window.single) {
+			return false;
+
+			if (currentWidth >= this.modules.breakPoints.desktopS) {
+				// reset all project summary header
+				$(this.ui.summaries).removeClass('large');
+
+				// handpick the ones to be featured
+				$('.summary-work.panorama').addClass('large');
+				$('.summary-work.rapt').addClass('large');
+				$('.summary-work.spray').addClass('large');
+			}
+
+			if (currentWidth >= this.modules.breakPoints.desktopM) {
+				// reset all project summary header
+				// $(this.ui.summaries).removeClass('large');		
+				
+				$('.summary-work.windowplay').addClass('large');	
+			}
 		}
 	},
 
