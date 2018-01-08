@@ -4,6 +4,7 @@ subtitle: An interactive “scroll to control” video format with maximum brand
 code: windowplay
 type: work
 images:
+  source: https://www.youtube.com/watch?v=XF7su4YXHzY
   background: windowplay-background.png
   device: iPhone-upright-gold.jpg
   showcase: 

@@ -69,7 +69,7 @@
 		margin: 0;
 		font-family: $header-font;
 		font-size: 1em;
-		font-weight: bold;
+		font-weight: 300;
 	}
 
 	&:before {
@@ -92,11 +92,8 @@
 
 	@media (--mobile-m) { max-width: calc($content-width-mobile-m - 2rem); }
 	@media (--mobile-l) { max-width: calc($content-width-mobile-l - 2rem); }
-
-	@media (--tablet) {
-		max-width: 25rem;
-		font-size: 1.6rem;
-	}
+	@media (--tablet) { max-width: 25rem; font-size: 1.6rem; }
+	@media (--desktop-s) { max-width: 18rem; font-size: 1.1rem; }
 }
 
 .quote {

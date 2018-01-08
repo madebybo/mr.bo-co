@@ -52,7 +52,7 @@
 /* individual specific styles */
 .windowplay {
 	.background img { filter: blur(4px); }
-	.headline-container { padding-bottom: calc(67.6%/2); }
+	.headline-container { padding-bottom: calc(69.6%/2); }
 
 	.featured {
 		.mask-group {
@@ -629,13 +629,7 @@
 			width: auto;
 			box-shadow: $box-shadow-heavy;
 
-			img { 
-				/* position: absolute; */
-				/* filter: none; */
-				/* height: 100%; */
-				/* width: auto; */
-				display: none;
-			}
+			img { display: none; }
 
 			.image {
 				height: 100%;
@@ -691,6 +685,7 @@
 			.image { 
 				background-position: left center;
 				filter: blur(1px);
+				/* filter: none; */
 			}
 		}
 
@@ -700,7 +695,7 @@
 	}
 
 	.zine {
-		height: 28rem;
+		height: 26rem;
 
 		figure.background {
 			right: 40%;
@@ -720,7 +715,6 @@
 		figure.background {	
 			left: 40%;
 			right: 0;
-			max-width: 568px;
 		}
 
 		.headline-container { left: 4rem; }
@@ -729,7 +723,7 @@
 	}
 
 	.lookbook { 
-		height: 28rem; 
+		height: 26rem; 
 
 		figure.background {
 			right: 40%;
@@ -742,13 +736,11 @@
 	}
 
 	.mgestures { 
-		height: 28rem; 
+		height: 26rem; 
 
 		figure.background {	
 			left: 40%;
 			right: 0;
-
-			img { right:-7rem; }	
 		}
 
 		.headline-container { margin-top: 2rem; left: 3rem; } 
@@ -758,6 +750,9 @@
 
 	.rapt { 
 		height: 25rem; 
+		max-width: 56rem;
+		margin-left: auto !important;
+		margin-right: auto !important;
 
 		figure.background {
 			left: 0;
@@ -766,8 +761,8 @@
 			.image { filter: none; }
 		}
 
-		.headline-container { left: 40rem; }
-		.neo-quote.mod { left: 35rem; }
+		.headline-container { right: 8rem; }
+		.neo-quote.mod { right: 2rem; }
 	}
 
 	.wrapper {
@@ -857,16 +852,118 @@
 
 	.zine {
 		height: 36rem;
+		margin-bottom: 1rem !important;
 
-		figure.background { bottom: 10rem; }
+		figure.background { bottom: 12rem; }
 
 		.headline-container { margin-left: 13rem;  }
 		.neo-quote.mod { margin-left: 6rem; bottom: 3rem; }
 		.featured { 
 			left: 30%; 
 			top: auto; 
-			bottom: -2rem;
+			bottom: 0rem;
 			transform: translate3d(-50%, 0, 0) scale(.8); 
 		}
+	}
+
+	.panorama {
+		height: 24rem;
+
+		.neo-quote.mod { left: 3rem; }
+		.featured { right: 30%; transform: translate3d(50%, -50%, 0); }
+	}
+
+	.lookbook { 
+		height: 32rem; 
+
+		figure.background { bottom: 8rem; }
+
+		.headline-container { left: 60%; margin-left: 6rem; margin-top: -2rem; }
+		.neo-quote.mod { left: 60%; margin-left: 6rem; bottom: 2rem; }
+		.featured { left: 30%; margin-top: 2rem; transform: translate3d(-50%, -50%, 0) scale(.8); }
+	}
+
+	.mgestures { 
+		height: 26rem;
+
+		figure.background { top: 3rem; bottom: 3rem; }
+		.headline-container { margin-top: 0; } 
+		.neo-quote.mod { left: 3rem; }
+		.featured { transform: translate3d(50%, -50%, 0) scale(.8); }
+	}
+
+	.rapt.large { 
+		height: 28rem; 
+		max-width: 64rem;
+
+		figure.background { width: 553px; /* 448/0.81 */ }
+		.headline-container { top: 12rem; }
+	}
+
+	.wrapper.large {
+		height: 26rem;
+		margin-top: 10rem !important;
+
+		figure.background { height: 26rem; }
+		.headline-container { left: 6rem; }
+		.neo-quote.mod { left: 4rem; }
+		.featured { right: 4rem; transform: none; top: auto; bottom: 6rem; }
+	}
+
+	.mcommerce.large { 
+		height: 24rem;
+		margin-top: 10rem !important;
+
+		figure.background { 
+			right: 55%;
+			height: 24rem; 
+		}
+
+		.headline-container { 
+			left: 45%; 
+			right: auto; 
+			margin-left: 8rem; 
+			margin-top: -4rem; 
+			height: auto;
+		}
+		
+		.neo-quote.mod { 
+			left: 45%; 
+			margin-left: 10rem; 
+		}
+		
+		.featured { 
+			top: auto; 
+			bottom: 4rem; 
+			right: auto; 
+			left: 4rem; 
+			transform: none; 
+
+			.mask-group {
+				width: 32rem;
+			}
+		}
+	}
+
+	.spray.large {
+		height: 26rem;
+
+		figure.background {	height: auto; }
+		.headline-container { left: 6rem; height: auto; }
+		.neo-quote.mod { left: 2rem; }
+		.featured { right: 2rem; top: 50%; transform: translate3d(0, -50%, 0) scale(.8); }
+	}
+
+	.map { 
+		height: 26rem; 
+
+		.featured { transform: translate3d(-50%, -50%, 0) scale(.95); }
+	}
+
+	.carousel {
+		height: 30rem;
+
+		.neo-quote.mod { left: 3rem; }
+		.featured { right: 30%; transform: translate3d(50%, -50%, 0) scale(.8); }
 	}
 }
