@@ -53,14 +53,6 @@
 }
 
 @media (--tablet) {
-	.work.list {
-		.summary-work {
-			margin-bottom: 7em;
-
-			&:after { font-size: 1.5rem; }
-		}
-	}	
-
 	.work.single {
 		.project-header,
 		.snapshot-inner,
@@ -113,22 +105,22 @@
 		}
 
 		.summary-work {
-			margin: 0 0 6rem 0;
 
 			&:after { display: none; }
 		}
 	}
 
 	.work.single {
-		.summary-work {
-			margin: 4rem auto;
-			width: $content-width-desktop-s;
+		> .summary-work {
+			margin: 4rem 4rem 4rem auto;
+			width: 50%;
 		}
 
 		.nav-back {
 			position: absolute;
 			top: 4rem;
 			left: 4rem;
+			width: auto;
 		}
 
 		.project-header {
@@ -138,9 +130,29 @@
 			left: 2rem;
 		}
 
-		.zine {
-			margin-left: auto;
+		.related {
+			padding: 2rem 0;
+
+			> div {
+				max-width: $content-width-desktop-s;
+				margin: 0 auto;				
+			}
+
+			.summary-work {
+				max-width: none;
+				overflow: visible;
+				transform: none;
+				width: 60%;
+
+				&:nth-child(2n) { margin: 4rem auto 4rem 0; }
+				&:nth-child(2n+1) { margin: 4rem 0 4rem auto; }
+			}
 		}
+
+
+
+		/* individual tuning */
+		.mcommerce ~ .project-header .headline { text-align: left; width: 18rem; margin: .5em auto; }
 	}
 }
 
@@ -157,8 +169,6 @@
 			&.large {
 				/* width: 44rem; */
 			}
-
-			/* &.zine { display: none; } */
 		}
 	}
 }
