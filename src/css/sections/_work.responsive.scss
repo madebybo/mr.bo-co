@@ -28,7 +28,6 @@
 			}
 
 			.summary-work {
-				background-color: $primary-white;
 				max-width: 20rem;
 				transform: none;
 				margin-bottom: 4rem;
@@ -99,7 +98,7 @@
 				margin: 0 auto;
 			}
 
-			.background-insert {
+			.background-insert { 
 				background-image: url("/_images/texture/lines.jpg");
 			}
 		}
@@ -111,7 +110,7 @@
 	}
 
 	.work.single {
-		> .summary-work {
+		.summary-header-wrapper .summary-work {
 			margin: 4rem 4rem 4rem auto;
 			width: 50%;
 		}
@@ -130,6 +129,66 @@
 			left: 2rem;
 		}
 
+		.snapshot-inner,
+		.content,
+		.cross-reference {
+			width: $content-width-desktop-s;
+		}
+
+		.snapshot-inner {
+			.metadata {
+				width: 50%;
+				margin-left: 50%;
+				padding-left: 10%;
+				font-size: 1.1rem;
+				display: inline-block;
+
+				&:first-child { 
+					position: absolute;
+					left: 0;
+					margin-left: 0;
+				}
+			}
+		}
+
+		.content {
+			padding: 4rem 0;
+			margin: 0 auto;
+			font-size: 1.1rem;
+
+			> h2 {
+				position: relative;
+				width: auto;
+				margin: 0;
+				font-size: 2.5rem;
+				left: 4rem;
+
+				+ p { &:after { display: none; } }
+				
+				&:after {
+					content: "";
+					position: absolute;
+					top: 1.5em;			
+					left: 0;
+					width: 2.5rem;
+					border-bottom: 2px solid $primary-black;
+				}
+			}
+
+			> p {
+				margin-left: 50%;
+				width: 50%;
+				padding: 0 4rem 0 0;
+			}
+
+			> ul,
+			> ol {
+				margin-left: 50%;
+				width: 50%;
+				padding: 0 4rem 0 3.5em;
+			}
+		}
+
 		.related {
 			padding: 2rem 0;
 
@@ -139,6 +198,7 @@
 			}
 
 			.summary-work {
+				box-shadow: none;
 				max-width: none;
 				overflow: visible;
 				transform: none;
@@ -149,7 +209,21 @@
 			}
 		}
 
+		.cross-reference {
+			padding: 8rem 0;
 
+			.headline {
+				width: 50%;
+			}
+
+			.learn-more {
+				position: absolute;
+				margin: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate3d(50%, -50%, 0);
+			}
+		}
 
 		/* individual tuning */
 		.mcommerce ~ .project-header .headline { text-align: left; width: 18rem; margin: .5em auto; }
@@ -161,14 +235,48 @@
 		.section-wrapper-inner {
 			.summary-headers {
 				max-width: $content-width-desktop-m;
-				padding: 4rem 0;
+				padding: 6rem 0;
+			}
+		}
+	}
+
+	.work.single {
+		.summary-header-wrapper {
+			max-width: $content-width-desktop-m;
+			margin: 0 auto;
+
+			.summary-work {
+				margin-right: 0;
 			}
 		}
 
-		.summary-work {
-			&.large {
-				/* width: 44rem; */
+		.project-header {
+			left: 8rem;
+		}
+
+		.snapshot-inner,
+		.content {
+			width: $content-width-desktop-m;
+		}
+
+		.content {
+			> h2 {
+				left: 8rem;
 			}
+
+			> p {
+				padding: 0 8rem 0 0;
+			}
+
+			> ul,
+			> ol {
+				padding: 0 8rem 0 3.5em;
+			}
+		}
+
+		.related {
+			> div { max-width: $content-width-desktop-m; }			
+			.summary-work { transform: scale(.9); }
 		}
 	}
 }

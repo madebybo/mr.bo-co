@@ -1,7 +1,9 @@
 {{ define "main" }}
 <div class="section-wrapper work single clearfix">
-  {{ .Render "summary"}}
-
+  <div class="summary-header-wrapper">
+    {{ .Render "summary"}}
+  </div>
+  
   <div class="nav-back"><a href="/work">work</a></div>
 
   <div class="project-header">
@@ -12,7 +14,7 @@
   </div>
 
   <div class="snapshot clearfix">
-    <div class="snapshot-inner">
+    <div class="snapshot-inner clearfix">
     {{ with .Params.snapshot }}
       {{ range $index, $element := . }}
       <div class="metadata">
@@ -24,7 +26,7 @@
     </div>
   </div>
 
-  <div class="content">
+  <div class="content clearfix">
     {{ .Content }}
 
     {{ with .Params.tags }}

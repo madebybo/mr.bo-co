@@ -41,7 +41,7 @@
 
 .work.single {
 	/* TODO: scroll and the feature page image scale down */
-	> .summary-work {
+	.summary-header-wrapper .summary-work {
 		margin-top: 0rem;
 		margin-bottom: 3rem;
 
@@ -50,8 +50,10 @@
 			display: none;
 		}
 
-		figure.background img {
-			filter: none;
+		figure.background {
+			overflow: hidden;
+
+			img { filter: none; }
 		}
 	}
 
@@ -173,6 +175,7 @@
 	}
 
 	.cross-reference {
+		position: relative;
 		margin: 0 auto;
 		padding: 3rem 0;
 
