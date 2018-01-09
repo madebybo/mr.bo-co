@@ -94,12 +94,13 @@
 	.work.list {
 		.section-wrapper-inner {
 			.summary-headers {
-				padding: 4rem;
+				padding: 4rem 8rem;
 				margin: 0 auto;
 			}
 
 			.background-insert { 
 				background-image: url("/_images/texture/lines.jpg");
+				display: none;
 			}
 		}
 
@@ -147,6 +148,8 @@
 					position: absolute;
 					left: 0;
 					margin-left: 0;
+					padding-right: 10%;
+					padding-left: 0;
 				}
 			}
 		}
@@ -236,6 +239,7 @@
 			.summary-headers {
 				max-width: $content-width-desktop-m;
 				padding: 6rem 0;
+				padding: 6rem 2rem;
 			}
 		}
 	}
@@ -251,7 +255,8 @@
 		}
 
 		.project-header {
-			left: 8rem;
+			left: 50%;
+			transform: translate3d(calc(-50% - 28rem), calc(-100% - 4rem), 0);
 		}
 
 		.snapshot-inner,

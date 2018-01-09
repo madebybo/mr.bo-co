@@ -643,6 +643,27 @@
    ========================================================================== */
 
 @media (--desktop-s) {
+	.summary-headers {
+		counter-reset: summary-list-counter;
+		
+		.summary-work {
+			counter-increment: summary-list-counter;
+
+			.headline-container:before {
+				content: counter(summary-list-counter, decimal-leading-zero);
+				position: absolute;
+				z-index: -1;
+				transform: translate3d(-50%, -100%, 0);
+				top: 6rem;
+				font-family: $header-font;
+				font-weight: 900;
+				font-size: 12rem;
+				line-height: 1;
+				color: color($linen-grey blackness(10%));
+			}
+		}
+	}
+
 	.summary-work {
 		width: 60%;
 
@@ -700,19 +721,29 @@
 
 		&:nth-child(2n+1) {
 			margin: 0 0 6rem auto;
+			left: 1rem;
 
 			.text-container {
 				left: -90%;
 				top: 50%;
 			}
+
+			.headline-container:before {
+				left: calc(50% - 8rem);
+			}
 		}
 
 		&:nth-child(2n) {
 			margin: 0 auto 6rem 0;
+			right: 2rem;
 
 			.text-container {
 				left: 90%;
 				top: 50%;
+			}
+
+			.headline-container:before {
+				left: calc(50% + 8rem);
 			}
 		}		
 	}

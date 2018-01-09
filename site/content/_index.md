@@ -2,7 +2,10 @@
 title: Home
 code: home
 object: plant-lighter.png
-_obj: "http://leibal.com/products/vide-poche-2/"
+inspirations:
+  - http://leibal.com/products/vide-poche-2/
+  - https://www.designspiration.net/save/3619227075228/
+  - http://leibal.com/furniture/jeanette-chair/
 date: 2017-09-27
 draft: false
 showFeaturedContent: false

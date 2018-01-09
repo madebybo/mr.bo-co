@@ -78,7 +78,10 @@
 		background-color: $secondary-black;
 		color: $primary-white;
 
-		.snapshot-inner { margin: 3rem auto; }
+		.snapshot-inner { 
+			position: relative;
+			margin: 3rem auto;
+		}
 	}
 
 	/* Markdown Content */
