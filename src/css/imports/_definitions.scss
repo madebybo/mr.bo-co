@@ -47,8 +47,10 @@ $soothing-yellow: rgb(254,211,95);
    Media Queries and custom media definitions
    ========================================================================== */
 
+/* this nav height does not change */
 $nav-height: 4rem;
 
+/* definie breakpoints */
 $mobile-s-width: 280px;
 $mobile-m-width: 359px;
 $mobile-l-width: 408px;
@@ -57,7 +59,7 @@ $desktop-width-s: 960px;
 $desktop-width-m: 1280px;
 $desktop-width-l: 1680px;
 
-/* @custom-media --mobile-s (width <= 359px); */
+/* apply style for --mobile-s by default */
 @custom-media --mobile-m  (width >= 359px);
 @custom-media --mobile-l  (width >= 408px);
 @custom-media --tablet    (width >= 640px);
@@ -65,19 +67,14 @@ $desktop-width-l: 1680px;
 @custom-media --desktop-m (width >= 1280px);
 @custom-media --desktop-l (width >= 1680px);
 
-
-$exhibit-floor-mobile: 64px;
-$exhibit-floor-desktop: 112px;
-$exhibit-elevation-mobile: 96px;
-$exhibit-elevation-desktop: 160px;
-
-
+/* content width for each breakpoint */
 $content-width-mobile-s: 16rem;
 $content-width-mobile-m: 17.5rem;
 $content-width-mobile-l: 19.5rem;
 $content-width-tablet: 25rem;
 $content-width-desktop-s: 52rem;
 $content-width-desktop-m: 72rem;
+
 
 /* ==========================================================================
    VISUAL

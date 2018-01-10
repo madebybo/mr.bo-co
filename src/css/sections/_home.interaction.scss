@@ -44,6 +44,22 @@
 	}
 }
 
+
+.non-touch-header-active {
+	.nav {
+		visibility: hidden !important;
+
+		.nav-start,
+		.nav-icon {
+			opacity: 0 !important;
+		}
+	}
+
+	.exhibit-inner-wrapper {
+		position: fixed;
+	}	
+}
+
 /* ==========================================================================
    ui state: exhibit is active (in viewport)
    ========================================================================== */
@@ -70,6 +86,17 @@
 	}
 }
 
+.non-touch-exhibit-active {
+	.nav {
+		opacity: 1;
+		box-shadow: none;
+
+		.nav-start,
+		.nav-icon { 
+			opacity: 1; 
+		}
+	}
+}
 
 /* ==========================================================================
    ui state: exhibit is active (in viewport)

@@ -31,7 +31,7 @@ $(function() {
       this.registerEvents();
 
       // only implement bespokeScroll for home page mobile version
-      if (window.section === 'home' && this.modules.detectMobile().isMobile) {
+      if (window.section === 'home') {
         this.sections.bespokeScroll.init();
       }
 

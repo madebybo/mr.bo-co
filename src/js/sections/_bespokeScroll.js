@@ -467,18 +467,46 @@ var bespokeScroll = {
 	// TODO: try navStartClicked()
 	reset: function() {
 		location.reload();
+		this.isPortrait();
 	},
 
-	// Kickoff this super awesome module!
-	init: function() {
-		// need to bind this event anyways
-		$(window).on('resize', this.reset.bind(this));
+	isPortrait: function() {
+		// if ($(window).width() < $(window).height()) {
+		// 	this.ui.body.classList.add('portrait')
+		// 	return true;
+		// } else {
+		// 	this.ui.body.classList.add('landscape')
+		// 	return false;
+		// }
 
-		// only apply module for mobile devices in portrait mode
-		if ($(window).width() > $(window).height()) {
-			return false;
-		}
+		return ($(window).width() < $(window).height());
+	},
 
+	nonTouchInit: function() {
+		var currentStage;
+
+		$(window).on('scroll', function() {
+			var header = document.querySelector('#header');
+
+			if (header.getBoundingClientRect().bottom > 0) {
+				if (currentStage !== 1) {
+					document.body.classList.remove('non-touch-exhibit-active');
+					document.body.classList.add('non-touch-header-active');
+
+					currentStage = 1;
+				}
+			} else {
+				if (currentStage !== 2) {
+					document.body.classList.remove('non-touch-header-active');
+					document.body.classList.add('non-touch-exhibit-active');
+
+					currentStage = 2;
+				}
+			}
+		});
+	},
+
+	touchInit: function() {
 		// set stateful classes, place this first to get accurate position
 		this.ui.html.classList.add('header-active');
 		this.modules.setComponentsHeight();
@@ -489,6 +517,23 @@ var bespokeScroll = {
 
 		this.initScrollStage();
 		this.registerEvents();
+	},
+
+	// Kickoff this super awesome module!
+	init: function() {
+		// need to bind this event anyways
+		$(window).on('resize', this.reset.bind(this));
+
+		// only apply module for touch devices in portrait mode
+		if (this.isPortrait()) {
+			if (Modernizr.touch) {
+				this.touchInit();
+			} else {
+				this.nonTouchInit();
+			}
+		} else {
+			this.ui.body.classList.add('landscape');
+		}
 	}
 };
 
