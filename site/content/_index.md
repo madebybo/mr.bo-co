@@ -13,5 +13,3 @@ showFeaturedContent: false
 
 Bo Wang is the Creative Lead for Google’s Material Design studio in New York, where he manages projects that include design outreach efforts like the SPAN Design & Technology Conference and design.google.com along with the expansion and development of the Material Design system itself.
 
-Social profiles and contact info goes here
-

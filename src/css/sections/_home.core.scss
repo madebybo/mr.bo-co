@@ -7,9 +7,9 @@
 	position: relative;
 	z-index: 100;
 	box-shadow: $box-shadow;
+	font-size: 1rem;
 
 	.header-content {
-		font-size: 1rem;
 		color: $primary-white;
 
 		.signature {
@@ -17,57 +17,66 @@
 			width: 4em;
 			height: 4em;
 			top: 4em;
-			left: 1em;
+			left: 1.25em;
 		}
 
 		.summary {
 			position: absolute;
-			bottom: 1rem;
+			bottom: 1.75em;
 			right: 0;
 			left: 0;
-			margin: 1rem;
+			margin: 1.25em;
+
+			p { font-size: .8em; }
 		}
 
-		.scroll-down { bottom: .5rem; }
-	}
-}
-
-
-.exhibit-inner-wrapper {
-	/**
-	 * could apply background pattern outside of the frame
-	 * 	 background-image: url("../_images/white-wall.jpg");
-	 *   background-size: 200px;
-	 *   background-size: cover; 
-	 */
-	width: 100%;
-	top: 0;
-
-	.frame {
-		position: relative;
-		border: .5em solid $primary-black;
-	}
-
-	.floor {
-    text-align: center;
-    background: $linen-grey;
-    border-top: .125em solid color($linen-grey blackness(23%));;
-
-    .spectators {
-    	position: relative;
-    	z-index: 1;
-
-			img {
-				position: absolute;
-				height: 100%;
-				width: auto;
-			}
-    }
+		.scroll-down { bottom: .5em; }
 	}
 }
 
 .exhibit {
-  font-size: 1rem;
+	font-size: 1rem;
+
+	.exhibit-inner-wrapper {
+		/**
+		 * could apply background pattern outside of the frame
+		 * 	 background-image: url("../_images/white-wall.jpg");
+		 *   background-size: 200px;
+		 *   background-size: cover; 
+		 */
+		width: 100%;
+		top: 0;
+
+		.frame {
+			position: relative;
+
+			.masterpiece {
+				position: relative;
+				border: .5em solid $primary-black;
+				box-shadow: $box-shadow-master;
+				height: 100%;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+
+		.floor {
+	    text-align: center;
+	    background: $linen-grey;
+	    border-top: .125em solid color($linen-grey blackness(23%));;
+
+	    .spectators {
+	    	position: relative;
+	    	z-index: 1;
+
+				img {
+					position: absolute;
+					height: 100%;
+					width: auto;
+				}
+	    }
+		}
+	}
 }
 
 /* ==========================================================================
@@ -83,7 +92,7 @@
 		}
 
     &:first-child {
-      padding-top: $nav-height-mobile;
+      padding-top: $nav-height;
       background: $linen-grey;
     }
 	}
@@ -98,13 +107,3 @@
 
 
 
-
-.menu {
-  .item a {
-    font-size: 28px;
-
-    @media (min-width: $mrbo-desktop) {
-      font-size: 40px;
-    }
-  }
-}

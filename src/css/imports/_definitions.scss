@@ -47,6 +47,8 @@ $soothing-yellow: rgb(254,211,95);
    Media Queries and custom media definitions
    ========================================================================== */
 
+$nav-height: 4rem;
+
 $mobile-s-width: 280px;
 $mobile-m-width: 359px;
 $mobile-l-width: 408px;
@@ -63,8 +65,6 @@ $desktop-width-l: 1680px;
 @custom-media --desktop-m (width >= 1280px);
 @custom-media --desktop-l (width >= 1680px);
 
-
-$nav-height-mobile: 64px;
 
 $exhibit-floor-mobile: 64px;
 $exhibit-floor-desktop: 112px;
@@ -85,14 +85,15 @@ $content-width-desktop-m: 72rem;
 
 $box-shadow: 0px 1px 1px 0 rgba(25,25,25,0.4);
 $box-shadow-heavy: 0 2px 4px 0 rgba(0,0,0,0.50);
-
+$box-shadow-master: 7px 12px 12px 0 rgba(0,0,0,.2);
+$box-shadow-master: 6px 10px 6px 0 rgba(0,0,0,.2);
 
 
 /* ==========================================================================
    INTERACTION
    ========================================================================== */
 
-$mrbo-primary-transition-duration: 300ms;
+$primary-transition-duration: 300ms;
 
 /* ==========================================================================
    SYMBOLS (http://mcdlr.com/8/)

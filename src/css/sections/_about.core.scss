@@ -1,5 +1,5 @@
 body.about {
-	background: $mrbo-primary-white;
+	background: $primary-white;
 }
 
 .anchored-portrait {
@@ -11,10 +11,8 @@ body.about {
 }
 
 .greeting {
-	margin-top: $mrbo-exhibit-floor-mobile;
 	font-weight: 600;
 	font-family: $header-font;
-
 
 	position: fixed;
 	height: 80px;
@@ -24,12 +22,12 @@ body.about {
 	margin: 64px 0 0 0;
 	top: 64px;
 	margin: 0;
-	// background: $mrbo-secondary-black;
-	// color: $mrbo-primary-black;
+	// background: $secondary-black;
+	// color: $primary-black;
 }
 
 .bio {
-	// color: $mrbo-primary-black;
+	// color: $primary-black;
 	padding: 340px 0 calc(340px - 144px) 0; /* adjust based on break points */
 	margin: 0 24px;
 	margin-right: 80px;

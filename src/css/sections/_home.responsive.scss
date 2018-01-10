@@ -2,31 +2,32 @@
    RESPONSIVE: extract "responsive" attributes from above and put'em here
    ========================================================================== */
 
-/* ceiling height = floor height = nav height */
-
-.header-content {
-  height: calc(100vh - 6em + 1em); /* viewport - margin bottom (elevation) height + base height */
+/**
+ * ceiling height = floor height = frame top margin >= nav height 
+ */
+.header{
+	.header-content {
+	  height: calc(100vh - 6em + 1em); /* viewport - margin bottom (elevation) height + base height */
+	}
 }
 
 .exhibit {
-  height: calc(100vh + $nav-height-mobile); /* viewport + floor height */
+  height: calc(100vh + 4em); /* viewport + floor height */
 
 	.exhibit-inner-wrapper {
-		height: calc(100vh + $nav-height-mobile); /* 100vh + $exhibit-floor-mobile */
+		height: calc(100vh + 4em); /* viewport + floor height */
 
 	  .ceiling {
-	    height: $nav-height-mobile;
+	    height: 4em; /* floor height */
 	  }
 
 	  .frame {
-	    height: calc(100vh - $nav-height-mobile - 4em - 6em); /* viewport - ceilingHeight - marginTop - marginBottom */
+	    height: calc(100vh - 4em - 4em - 6em); /* viewport - ceilingHeight - marginTop - marginBottom */
 	    margin: 4em 2.5em 6em 2.5em; /* margin-top: 4em, margin-bottom: 6em */
-	    box-shadow: 7px 12px 12px 0 rgba(0,0,0,.2);
-	    box-shadow: 6px 10px 6px 0 rgba(0,0,0,.2);
 	  }
 
 	  .floor {
-	    height: $nav-height-mobile;
+	    height: 4em;
 
 	    .spectators {
 	      height: 6em;
@@ -42,18 +43,37 @@
 	}
 }
 
+
+
+
 @media (--mobile-m) {
+	.header,
 	.exhibit {
 		font-size: 1.125rem;
 	}
 }
 
 @media (--mobile-l) {
+	.header,
 	.exhibit {
 		font-size: 1.25rem;
 	}
 }
 
+@media (--tablet) {
+	.header,
+	.exhibit {
+		font-size: 1.75rem;
+
+		/**
+		 * modify the aspect ratio of frame, but notice that 
+		 * the sum of margin top&bottom remain unchanged 
+		 */
+		.exhibit-inner-wrapper .frame {
+			margin: 3.75em 4em 6.25em 4em; 
+		}
+	}
+}
 
 
 

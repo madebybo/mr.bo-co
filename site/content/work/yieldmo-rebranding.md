@@ -25,6 +25,8 @@ draft: true
 
 the dramatic swerves as shown here can imply volatility and/or a downhill trajectory. The thin lines in our "Insights Current" design are intended to appear in multiples, alluding to the massive, energetic data set we're working with here - the reduction in number and this particular application make them lose their purpose.
 
+## S is for "Swipe, Scroll..."
+
 ## recommendation
 
 Dear Admissions Officer:

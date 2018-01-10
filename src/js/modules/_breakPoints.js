@@ -4,8 +4,8 @@
 // @custom-media --mobile-l  (width >= 408px);
 // @custom-media --tablet    (width >= 640px);
 // @custom-media --desktop-s (width >= 960px);
-// @custom-media --desktop-m (width >= 1440px);
-// @custom-media --desktop-l (width >= 1920px);
+// @custom-media --desktop-m (width >= 1280px);
+// @custom-media --desktop-l (width >= 1680px);
 
 module.exports = {
 	mobileM : 359,
@@ -13,5 +13,5 @@ module.exports = {
 	tablet  : 640,
 	desktopS: 960,
 	desktopM: 1280,
-	desktopL: 1920
+	desktopL: 1680
 };

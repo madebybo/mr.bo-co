@@ -5,6 +5,7 @@ function setComponentsHeight() {
 		exhibit: document.querySelector('#exhibit'),
 		exhibitInnerWrapper: document.querySelector('.exhibit-inner-wrapper'),
 		frame: document.querySelector('.frame'),
+		masterpiece: document.querySelector('.masterpiece'),
 		floor: document.querySelector('.floor'),
 		ceiling: document.querySelector('.ceiling')
 	};
@@ -27,6 +28,9 @@ function setComponentsHeight() {
 	$(elements.exhibitInnerWrapper).height($(window).height() + params.floorHeight);
 	$(elements.exhibit).height($(window).height() + params.floorHeight);
 	$(elements.frame).height(frameHeight);
+
+	// set masterpiece max height to maintain aspect ratio
+	$(elements.masterpiece).css('max-height', 1.5*$(elements.masterpiece).width());
 }
 
 module.exports = setComponentsHeight;

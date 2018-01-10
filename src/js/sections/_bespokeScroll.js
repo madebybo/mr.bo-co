@@ -463,7 +463,22 @@ var bespokeScroll = {
 		this.state.scrollStage = 1;
 	},
 
+	// Force reloading, find an elegant solution later..
+	// TODO: try navStartClicked()
+	reset: function() {
+		location.reload();
+	},
+
+	// Kickoff this super awesome module!
 	init: function() {
+		// need to bind this event anyways
+		$(window).on('resize', this.reset.bind(this));
+
+		// only apply module for mobile devices in portrait mode
+		if ($(window).width() > $(window).height()) {
+			return false;
+		}
+
 		// set stateful classes, place this first to get accurate position
 		this.ui.html.classList.add('header-active');
 		this.modules.setComponentsHeight();
