@@ -12,7 +12,7 @@ images:
     - carousel-m.gif
 related: [windowplay, stack]
 weight: 11
-draft: false
+draft: true
 ---
 
 

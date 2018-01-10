@@ -28,7 +28,7 @@ $(function() {
       this.modules.navigation();
 
       // register events
-      this.registerEvents();
+      // this.registerEvents();
 
       // only implement bespokeScroll for home page mobile version
       if (window.section === 'home') {

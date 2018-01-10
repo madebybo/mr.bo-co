@@ -11,7 +11,7 @@ images:
   showcase:
     - map.gif
 weight: 10
-draft: false
+draft: true
 ---
 
 Reach an audience on the move through their mobile devices where you can highlight your nearby locations, promotions, new products, and other reasons stop in for a visit.

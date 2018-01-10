@@ -14,38 +14,37 @@ snapshot:
   team: business opration <br> ux research <br> ux design <br> engineering <br> a/b testing <br> data insights
   role: product lead
   timeline: April 2016 - August 2016
-related: [zine, mcommerce]
+related: [mcommerce, zine]
 weight: 4
 draft: false
 ---
 
 ## challenge
 
-Lookbook is a totally immersive mobile experience that quickly takes your customers from inspiration to information. An eye-catching image showcases multiple separate products or features while pulsating hotspots encourage customers to tap to reveal more details and navigate to your site. 
+Many brands have aspirational images of their products being used for their catalogs or websites. These images range from showing off a complete outfit to the new features inside the latest car model, or anything in-between. However, little efforts have been made to use these brand collateral differently. 
 
-Whether showing off a complete outfit or the new features inside the latest car model, or anything in-between, the Lookbook is a great way to entice customers to learn more and take action. 
 
-Many brands have aspirational images of their products being used for their catalogs or websites. How might we leverage these assets to create a "shoppable" experience?
+Inspired by findings from the recent [mCommerce Research](/work/mobile-commerce-research/), the Yieldmo design team saw great potential in utilizing these assets to entice customers to learn more and take action. In other words: How might we leverage these assets to create a "shoppable" experience?
 
 <div><img src="/work/lookbook/versatility.jpg"></div>
 
 ## storyboard
 
-Advocate for users in a fast-paced environment, imparting day-to-day design leadership that fosters a shared understanding of the user-centric intersection between design, content, business and engineering.
-
-Lookbook is a result from the [mCommerce Research](/work/mobile-commerce-research/)
+We created several user stories to relive the experience one might go through when shopping on mobile web. The illustration below offers a glimpse of what it looked like. These user stories provide valuable context in designing for such experiences.
 
 <div><img src="/work/lookbook/lookbook-storyboard.jpg"></div>
 
 ## userflow and wireframe 
 
-The role will help to shape teams and the way we work. We're looking for design managers who are excited to localize our product for the Chinese audience, build new products for the market and help Chinese travelers explore the world through our local experiences, personable hosts, and unique accommodations. 
+While the entire product is packed only in a limited space, the user flow can become complicated and trickly. The Lookbook design concept proposes a "two-screen" experience where more detailed information about a certain product may be revealed once user interacts with the first screen. The navigation between screens need to be thoroughly thought out, and it's critical to maintain the "appeal" of such design paradigm without impeding usability. 
 
 <div><img src="/work/lookbook/userflow.jpg"></div>
 <div><img src="/work/lookbook/wireframe.png"></div>
 
 
 ## interaction design
+
+Lookbook is a totally immersive mobile experience that quickly takes customers from inspiration to information. Since the format utilizes a single image to showcases multiple separate products or features, the visual cue must be clearly communicated but also subtle enough to avoid generate noises. We decided to employ pulsating hotspots to encourage customers to tap to reveal more details and take further action. 
 
 <div><img src="/work/lookbook/interactions.png"></div>
 
@@ -68,7 +67,6 @@ Combined with the insights from MTurk, the team also run numberous A/B tests to 
 - Idea 2: Format is coming into view, but there are no hotspots. As user continutes to scroll, the hotspots are intruduced and pulsating.
 
 <div><img src="/work/lookbook/ab-test.jpg"></div>
-
 
 ## future iteration
 

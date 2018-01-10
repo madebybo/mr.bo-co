@@ -10,7 +10,7 @@ images:
   showcase: 
     - wrapper.png
 weight: 8
-draft: false
+draft: true
 ---
 
 The Wrapper was born from advertiser’s desire to replicate a desktop takeover experience. Popular among entertainment brands, the Wrapper offers a top and bottom image as well as railing colors that allow your message to feel present throughout a reader’s experience without being disruptive or annoying. The Wrapper works on infinite scroll pages and is fully responsive to tablet sizes.
