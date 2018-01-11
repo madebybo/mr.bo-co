@@ -17,3 +17,5 @@ draft: true
 
 
 https://patents.google.com/patent/USD793424S1/en
+
+What happens when swipe slow, when swipe fast, etc.

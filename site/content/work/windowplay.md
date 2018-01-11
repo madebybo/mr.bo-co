@@ -14,6 +14,7 @@ snapshot:
   team: ux research <br> ux design <br> engineering <br> product management <br> a/b testing
   role: design lead
   timeline: April 2016 - August 2016
+productURL: https://formats.yieldmo.com/#/build/windowplay
 related: [panorama, zine]
 tags: [video, mobile, design]
 weight: 1

@@ -8,7 +8,7 @@ images:
   showcase: 
     - mcommerce-poster.jpg
 snapshot:
-  overview: In addition to the well-known fact that mobile has become the hub of everyone's digital life. Commerce on mobile is thriving at a even more staggering pace. One does not need to look at the annual record-breaking holiday sales distribution to be impressed, in fact, mobile commerce has taken the center stage long before people have realized. <br><br> This project attempts to formulate a mature, comprehensive framework in understanding mCommerce, as well as developing tools and design components for future product developments.
+  overview: In addition to the well-known fact that mobile has become the hub of everyone's digital life. Commerce on mobile is thriving at a even more staggering pace. One does not need to look at the annual record-breaking holiday sales distribution to be impressed. In fact, mobile commerce has taken the center stage long before people have realized. <br><br> This project attempts to formulate a mature, comprehensive framework in understanding mCommerce, as well as developing tools and design components for future product developments.
   team: Design Research <br> UX Prototype <br> Analytics <br> Product Management
   role: Project Co-lead
   timeline: November 2015 - Feburary 2016
@@ -20,9 +20,9 @@ draft: false
 
 ## the challenge
 
-Identify different phases for consumers to make a purchase on mobile.
+Consumers are spending more and more time on mobile not to just consume content, but also engage in activities that may lead to a final purchase. However, the journey is not simply "click-and-go", the role that mobile plays is far more evasive, yet most mobile advertising still centers around that simple mindset. 
 
-We are trying to understand how users are consuming content on mobile, and how that leads to browsing product information and therefore inform purchase decisions.
+The Yieldmo Design Team setted out to identify different phases for consumers to make a purchase on mobile. The goal is to understand how users are consuming content on mobile, and how that leads to browsing product information and therefore inform purchase decisions.
 
 ## interviews
 
@@ -41,14 +41,24 @@ We conducted in-depth user interviews with 5 participants. Specifically, we were
 
 ## user journey
 
+Based on the raw data from interivews. We went through multiple sessions of in-depth analysis around different journeys users go through. Realizing their stories varies from individual perspectives and experiences, we made deliberate efforts to uncover the converging themes and common patterns.
+
 <div><img src="/work/mcommerce/journey-1.png"></div>
 <div><img src="/work/mcommerce/journey-2.png"></div>
 
 ## behavior map
 
+Next step in the research process, we formulated an complete behavior map that comprises three stages
+
+- Discover: the actions involve view, expand, and involve.
+- Evaluate: the actions involve compare, refine, and specify.
+- Purchase: the actions involve consider and purchase.
+
 <div><img src="/work/mcommerce/behavior-map-framework.jpg"></div>
 
 ## synthesis
+
+We also documented the process and translated some ideas to forms that are easier to comprehend. Below you will find detailed summaries to our user interviews. In addition to that, there are also the synthesis about our framework and associated insights.
 
 <div><img src="/work/mcommerce/deck-1.jpg"></div>
 <div><img src="/work/mcommerce/deck-2.jpg"></div>
@@ -57,9 +67,13 @@ We conducted in-depth user interviews with 5 participants. Specifically, we were
 
 ## uncover patterns
 
+Another important objective of the project is to uncover prevailing design patterns and surface components that are best suited for mobile. We run thorough Competitive Analysis of major online shopping outlets such as Amazon, eBay, as well as trending mobile-centric brands. We also examined other factors such as ergonomics and cognitive cost.
+
 <div><img src="/work/mcommerce/references.jpg"></div>
 
 ## ui components
+
+Below you can find some of the UI components we designed and developed in the project. The may contain multiple layers of interaction, in which case we also introduced complete user flows.
 
 <div><img src="/work/mcommerce/ui-components-1.jpg"></div>
 <div><img src="/work/mcommerce/ui-components-2.jpg"></div>

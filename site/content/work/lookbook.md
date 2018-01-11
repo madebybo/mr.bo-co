@@ -23,7 +23,6 @@ draft: false
 
 Many brands have aspirational images of their products being used for their catalogs or websites. These images range from showing off a complete outfit to the new features inside the latest car model, or anything in-between. However, little efforts have been made to use these brand collateral differently. 
 
-
 Inspired by findings from the recent [mCommerce Research](/work/mobile-commerce-research/), the Yieldmo design team saw great potential in utilizing these assets to entice customers to learn more and take action. In other words: How might we leverage these assets to create a "shoppable" experience?
 
 <div><img src="/work/lookbook/versatility.jpg"></div>
