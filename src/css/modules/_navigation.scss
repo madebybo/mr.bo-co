@@ -4,7 +4,7 @@
 	right: 0;
 	left: 0;
 	top: 0;
-	padding: .5em;
+	padding: .5rem .75rem;
 	background-color: color($primary-white a(95%));
 	box-shadow: $box-shadow;
 	z-index: 99999;
@@ -84,8 +84,9 @@
 /* 1. The persistent navigation top bar */
 .nav {
 	height: 4em;
-	transition: background 350ms linear,height 350ms ease-in;
+	transition: background 350ms linear, height 350ms ease-in;
 }
+
 .open .nav {
 	height: 100%;
 	background-color: $primary-white;

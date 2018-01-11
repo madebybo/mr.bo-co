@@ -72,7 +72,7 @@
 		 * the sum of margin top&bottom remain unchanged 
 		 */
 		.exhibit-inner-wrapper .frame {
-			margin: 3.75em 4em 6.25em 4em; 
+			margin: 3.75em 5em 6.25em 5em; 
 		}
 	}
 }
@@ -82,8 +82,128 @@
    iPad Landscape and Beyond
    ========================================================================== */
 
-/* forget about it for now... let's do a different layout for desktop */
 @media (--desktop-s) {
-	// TODO: also tweak CSS so the bespokeScroll works on portrait even without JS
-	/* .landscape { } */
+	.landscape {
+		&.open {
+			.nav {
+				height: 100%;
+			}
+
+			.header {
+				z-index: 1;
+			}
+		}
+
+		.nav {
+			box-shadow: none;
+			padding: 0;
+			height: 0;
+
+			.nav-start {
+				display: none;
+			}
+
+			.nav-icon {
+				margin: 1.5rem 1.25rem;
+			}
+		}
+
+		.header {
+			transition: z-index 0ms 350ms;
+			position: absolute;
+			height: 100vh;
+			width: 40%;
+			left: 0;
+			top: 0;
+			font-size: 1.25rem;
+			z-index: 100000;
+
+			.header-content {
+				height: 100%;
+
+				.signature {
+					left: 2em;
+				}
+
+				.summary {
+					bottom: 0;
+					margin: 2em;
+				}
+
+				.scroll-down {
+					display: none;
+				}
+			}
+		}
+
+		.exhibit {
+			position: absolute;
+			height: 100vh;
+			left: 40%;
+			right: 0;
+			font-size: 1.25rem;
+
+			.exhibit-inner-wrapper {
+				position: absolute;
+				height: 100%;
+
+				.ceiling {
+					display: none;
+				}
+
+				.frame {
+					margin: 5em 3em 7em 3em;
+					height: calc(100vh - 12em - 4em);
+					width: calc(100vh - 12em - 4em);
+
+					.masterpiece {
+						width: 66.7%; /* container is square, so this is how to get 3/2 ratio! */
+					}
+				}
+			}
+		}
+
+		.headlines-container {
+			display: block;
+			position: absolute;
+			right: -1rem;
+			top: 50%;
+			transform: translateY(-50%);
+
+			.headline {
+				text-align: right;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+
+@media (--desktop-m) {
+	.landscape {
+		.header {
+			width: 34rem;
+
+			.header-content {
+				.signature {
+					left: 2.5em;
+				}
+
+				.summary {
+					margin: 2.5em;
+				}			
+			}
+		}
+
+		.exhibit {
+			left: 34rem;
+
+			.exhibit-inner-wrapper .frame {
+				margin-left: 4em;
+			}
+		}
+
+		.headlines-container {
+			right: 4em;
+		}
+	}
 }

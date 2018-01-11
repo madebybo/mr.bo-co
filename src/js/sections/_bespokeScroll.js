@@ -485,6 +485,8 @@ var bespokeScroll = {
 	nonTouchInit: function() {
 		var currentStage;
 
+		document.body.classList.add('non-touch-header-active');
+
 		$(window).on('scroll', function() {
 			var header = document.querySelector('#header');
 

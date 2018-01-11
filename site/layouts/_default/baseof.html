@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
   {{ partial "head" . }}
 
-  <body class="{{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+  <body class="{{ .Params.code }}">
     {{ block "header" . }}{{ partial "site-header" .}}{{ end }}
 
     <!-- beginning of site content -->
