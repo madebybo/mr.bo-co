@@ -22,6 +22,7 @@
 	.section-wrapper.contact {
 		.contact-form { 
 			width: $content-width-tablet; 
+			font-size: 1.5rem;
 		}
 	}	
 }
@@ -33,10 +34,7 @@
 @media (--desktop-s) {
 	.section-wrapper.contact {
 		.contact-form { 
-			/* width: $content-width-desktop-s;  */
+			width: 36rem;
 		}
 	}		
-}
-
-@media (--desktop-m) {
 }

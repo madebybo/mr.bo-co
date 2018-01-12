@@ -33,48 +33,8 @@ section {
 
 
 
-
-footer {
-  background-color: $secondary-black;
-  position: relative;
-  z-index: 999;
-
-  .footer-inner {
-    position: relative;
-    width: $content-width-mobile-s;
-    margin: 0 auto;
-
-    figure.wordmark {
-      float: right;
-      margin: 2rem 0;
-
-      img { width: 8rem; }
-    }
-
-    .headline {
-      position: absolute;
-      left: 0;
-      bottom: 2rem;
-      color: $primary-white;
-      text-align: left;
-      font-weight: 100;
-    }
-  }
-}
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media (--mobile-m) {
-  footer {
-    .footer-inner {
-      width: $content-width-mobile-m;
-      figure.wordmark { img { width: auto; } }
-    }
-  }
-} 
-
-@media (--desktop-s) {
-}
 

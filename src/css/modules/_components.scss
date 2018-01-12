@@ -166,11 +166,13 @@
 
 		.blurb { 
 			margin: 4rem 0;
+
+			p { font-size: .9em; }
 		}
 
-		@media (--mobile-m) { width: $content-width-mobile-m; }
-		@media (--mobile-l) { width: $content-width-mobile-l; }		
-		@media (--tablet) { width: $content-width-tablet; }		
+		@media (--mobile-m) { font-size: 1.1rem; width: $content-width-mobile-m; }
+		@media (--mobile-l) { font-size: 1.2rem; width: $content-width-mobile-l; }		
+		@media (--tablet)   { font-size: 1.4rem; width: $content-width-tablet; }		
 		@media (--desktop-s) { width: $content-width-desktop-s; }		
 	}
 
@@ -184,11 +186,10 @@
 		background-size: cover;
 		background-position: bottom;
 		background-repeat: no-repeat;
-		/* filter: blur(3px); */
 	}
 
 	@media (--desktop-s) {
-		height: auto;
+		/* height: auto;
 
 		& {
 			.fixed-holder {
@@ -201,7 +202,7 @@
 				top: 0;
 				height: 100%;
 			}	
-		}
+		} */
 	}
 }
 
@@ -294,4 +295,45 @@
 	width: $content-width-mobile-s;
 	font-family: $header-font;
 	font-size: 1.2rem;
+}
+
+
+/* ==========================================================================
+   footer: Site Footer 
+   ========================================================================== */
+
+footer {
+  background-color: $secondary-black;
+  position: relative;
+  z-index: 999;
+
+  .footer-inner {
+    position: relative;
+    width: $content-width-mobile-s;
+    margin: 0 auto;
+
+    figure.wordmark {
+      float: right;
+      margin: 2rem 0;
+
+      img { width: 8rem; }
+    }
+
+    .trademark-line {
+      font-family: $content-font;
+      font-size: .75rem;
+      position: absolute;
+      left: 0;
+      bottom: 2rem;
+      color: $classic-grey;
+      text-align: left;
+      font-weight: 100;
+    }
+
+		@media (--mobile-m)  { width: $content-width-mobile-m; margin: 1rem auto; }
+		@media (--mobile-l)  { width: $content-width-mobile-l; }
+		@media (--tablet)    { width: $content-width-tablet; margin: 2rem auto; }
+		@media (--desktop-s) { width: $content-width-desktop-s; margin: 4rem auto; }
+		@media (--desktop-m) { width: $content-width-desktop-m; }
+  }
 }
