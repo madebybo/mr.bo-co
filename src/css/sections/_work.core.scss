@@ -71,7 +71,10 @@
 	.project-header {
 		margin: 3rem auto;
 
-		.headline { margin: .5em 0; }
+		.headline { 
+			margin: .5em 0; 
+			color: $primary-black;
+		}
 	}
 
 	.snapshot {

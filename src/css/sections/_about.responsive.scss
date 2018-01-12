@@ -3,12 +3,40 @@
    ========================================================================== */
 
 @media (--mobile-m) {
+
 }
 
 @media (--mobile-l) {
+	.section-wrapper.about {
+		.greeting {
+			font-size: 2.5rem;
+		}
+
+		.bio {
+			margin: 0 6rem 0 2.5rem;
+
+			p span {
+				display: inline;
+			}	
+		}
+
+	}
 }
 
 @media (--tablet) {
+	.section-wrapper.about {
+		.greeting {
+			font-size: 4rem;
+		}
+
+		.bio {
+			margin: 0 8rem 0 4rem;
+
+			p {
+				font-size: 1.3rem;
+			}
+		}
+	}
 }
 
 /* ==========================================================================
@@ -16,7 +44,28 @@
    ========================================================================== */
 
 @media (--desktop-s) {
+	.section-wrapper.about {
+		.anchored-portrait {
+			right: 2rem;
+		}
+
+		.bio {
+			margin: 0 26rem 0 4rem;
+			max-width: 32rem;
+		}
+	}
 }
 
 @media (--desktop-m) {
+	.section-wrapper.about {
+		.greeting,
+		.bio {
+			margin: 0;
+			left: calc(50% - $content-width-desktop-m/2);
+		}
+
+		.anchored-portrait {
+			right: calc(50% - $content-width-desktop-m/2);
+		}
+	}	
 }

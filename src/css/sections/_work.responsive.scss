@@ -105,8 +105,10 @@
 		}
 
 		.summary-work {
-
-			&:after { display: none; }
+			&:after {
+				transform: translateY(calc(4rem + 50%));
+				font-size: 1.75rem;
+			}
 		}
 	}
 

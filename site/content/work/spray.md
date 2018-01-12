@@ -100,7 +100,7 @@ After laying the fundation by establishing a sound framework for our motion desi
 
 <div><img src="/work/spray/illustration.jpg"></div>
 
-"We build tools and tools shape us"
+"We build tools and tools shape us" - The wisdom from Marshall Mcluhan still rings resoundingly true. As modern product design becomeing more sophisticated and comprehensive, the intricate relationship between design and engineering often presents more frictions than facilitations. Like Mcluhan implied, we believe a highly efficient design team should incorporate technology to its fullest and the creation of such tools is pivotal to the success of the design practice.
 
 Spray stands for "<u>S</u>ystematically <u>P</u>rototyping <u>R</u>esponsive <u>A</u>nimations at <u>Y</u>ieldmo".
 

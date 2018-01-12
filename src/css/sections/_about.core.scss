@@ -1,50 +1,30 @@
-body.about {
-	background: $primary-white;
-}
+.section-wrapper.about {
+	.anchored-portrait {
+		position: fixed;
+		right: .5rem;
+		bottom: 0;
+		width: 50%;
+		max-width: 24rem;
+	}
 
-.anchored-portrait {
-	position: fixed;
-	bottom: 0;
-	width: 80%;
-	right: -1%;
-	bottom: 0;
-}
+	.greeting {
+		font-family: $header-font;
+		font-weight: 600;
+		position: fixed;
+		z-index: 1;
+		top: calc(4rem + 1em);
+		left: 1em;
+	}
 
-.greeting {
-	font-weight: 600;
-	font-family: $header-font;
+	.bio {
+		margin: 0 5rem 0 2rem;
+		
+		p {
+			margin: 0;
 
-	position: fixed;
-	height: 80px;
-	z-index: 1;
-	width: 100%;
-	padding: 24px 24px 12px 24px;
-	margin: 64px 0 0 0;
-	top: 64px;
-	margin: 0;
-	// background: $secondary-black;
-	// color: $primary-black;
-}
-
-.bio {
-	// color: $primary-black;
-	padding: 340px 0 calc(340px - 144px) 0; /* adjust based on break points */
-	margin: 0 24px;
-	margin-right: 80px;
-
-	p:last-child {
-		// margin-bottom: 0;
-		height: auto !important;
+			span { display: none; }
+			&:last-child { height: auto !important; }
+		}
 	}
 }
 
-
-.bio ~ footer {
-	/* position: relative;
-	width: 240px;
-
-	.headline {
-		padding-left: 1.5rem;
-		text-align: left;
-	} */
-}

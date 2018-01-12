@@ -1,0 +1,11 @@
+/* ==========================================================================
+   intro animation: TODO: racecar type of things...
+   ========================================================================== */
+
+body.about {
+	transition: opacity 300ms;
+}
+
+body.about.init {
+	opacity: 0;
+}

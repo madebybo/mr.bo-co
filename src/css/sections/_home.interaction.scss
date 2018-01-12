@@ -3,14 +3,11 @@
    ========================================================================== */
 
 body.home {
-	opacity: 0;
 	transition: opacity 300ms;
 }
 
-body.landscape,
-body.non-touch-header-active,
-.header-active body {
-	opacity: 1;
+body.home.init {
+	opacity: 0;
 }
 
 /* ==========================================================================

@@ -44,8 +44,13 @@ var aboutDisplay = {
 		var bioPaddingBottom;
 		var paragraphHeight;
 
-		bioPaddingTop = parseInt($(window).height()/2);
-		bioPaddingBottom = parseInt(($(window).height() - this.props.disappearThreshold)/2) - 96;
+		var firstParagraphNativeHeight = $('.bio p:first-child').height();
+		var lastParagraphNativeHeight = $('.bio p:last-child').height();
+
+		// make sure we start and end right at the center point
+		bioPaddingTop = parseInt($(window).height()/2 - $(this.ui.navBar).outerHeight()/2) - parseInt(firstParagraphNativeHeight/2);
+		bioPaddingBottom = parseInt($(window).height()/2 - $(this.ui.navBar).outerHeight()/2)  - parseInt(lastParagraphNativeHeight/2);
+
 		paragraphHeight = (window.screen.height - this.props.disappearThreshold);
 
 		$(this.ui.bio).css('padding', bioPaddingTop + 'px' + ' 0 ' + bioPaddingBottom + 'px 0');
@@ -99,6 +104,9 @@ var aboutDisplay = {
 		this.setInitValues();
 		this.registerEvents();
 		this.setBioDimensions();
+
+		// trigger init animation
+		document.body.classList.remove('init');
 	}
 };
 

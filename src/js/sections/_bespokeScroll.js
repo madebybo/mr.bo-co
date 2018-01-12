@@ -536,6 +536,8 @@ var bespokeScroll = {
 		} else {
 			this.ui.body.classList.add('landscape');
 		}
+
+		document.body.classList.remove('init');
 	}
 };
 

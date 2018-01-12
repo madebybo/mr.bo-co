@@ -203,7 +203,45 @@
 		}
 
 		.headlines-container {
-			right: 4em;
+			right: 2em;
+		}
+	}
+}
+
+@media (--desktop-l) {
+	.landscape {
+		.header {
+			width: 40rem;
+
+			.header-content {
+				.signature {
+					left: 3em;
+					top: 6em;
+				}
+
+				.summary {
+					margin: 3em;
+					font-size: 1.5rem;
+				}			
+			}
+		}
+
+		.exhibit {
+			left: 40rem;
+
+			.exhibit-inner-wrapper {
+				.floor .spectators img {
+					left: 7em;
+				}
+
+				.frame {
+					margin-left: 5em;
+				}
+			}
+		}
+
+		.headlines-container {
+			right: 5em;
 		}
 	}
 }
