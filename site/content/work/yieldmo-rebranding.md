@@ -14,6 +14,7 @@ snapshot:
   role: product lead
   team: business opration <br> ux research <br> ux design <br> engineering <br> a/b testing <br> data insights
   timeline: September 2017 - December 2017
+productURL: https://www.yieldmo.com
 related: [zine, mcommerce]
 vimeo: https://vimeo.com/250196245
 weight: 4

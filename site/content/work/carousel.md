@@ -10,6 +10,7 @@ images:
   device: iPhone-X-carousel.png
   showcase:
     - carousel-m.gif
+productURL: https://formats.yieldmo.com/#/build/carousel
 related: [windowplay, stack]
 weight: 11
 draft: true

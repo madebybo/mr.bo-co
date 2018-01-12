@@ -10,12 +10,13 @@ images:
     - zine.gif
 snapshot:
   overview: Zine lets customers immerse themselves in branded content or product details. Customers can swipe through headlines displayed on top of brand imagery or videos and expand each to reveal more content. And this format is never tricky—an easily accessible "X" neatly folds your content away and keeps Zine user-friendly.
-  team: business operation <br> ux research <br> ux design <br> engineering <br> marketing <br> data insights
-  role: co-inventor, design lead
+  team: Business Operation <br> UX Research <br> UX Design <br> Engineering <br> Marketing <br> Data Insights
+  role: Co-inventor, Design Lead
   patent: Methods for Serving Interactive Content to a User (us 15/677,259)
   timeline: Feburary 2016 - April 2016
+productURL: https://formats.yieldmo.com/#/build/zine
 related: [lookbook, mcommerce]
-tags: ["video", "mobile", "design"]
+tags: [video, mobile, design]
 weight: 2
 draft: false
 ---

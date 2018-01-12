@@ -1,6 +1,6 @@
 ---
 title: spray
-subtitle: building a point of view for motion design language for mobile advertising
+subtitle: Building a point of view of motion design for mobile advertising and better yet, an innovative tool to bridge the gap between design and engineering.
 code: spray
 type: work
 images:
@@ -8,10 +8,10 @@ images:
   showcase: 
     - spray.gif
 snapshot:
-  overview: Animation often implies engagement, vitality and delight. When properly applied, animatio ncan enhane user experience and elevate the product quality. 
-  process: 1. research & strategy <br> 2. prototyping <br> 2. testing <br> 5. build & iteration <br> 5. implementation
+  overview: Animation often implies engagement, vitality and delight. When properly applied, animation can enhance user experience and elevate product quality.
+  process: 1. Research & Strategy <br> 2. Prototyping <br> 3. Testing <br> 4. Build & Iteration <br> 5. Implementation
   role: creator
-  timeline: March 2016
+  timeline: March 2016 - April 2016
 related: [mgestures, zine]
 tags: [interaction, design, research, mobile]
 weight: 9
@@ -24,7 +24,7 @@ At Yieldmo, the design team have already established a static visual design lang
 
 The goal of this project is to develop this motion framework by studying animation in the context of format design, prototyping, testing assumptions and setting up the foundation for future growth.
 
-## theoretical framework
+## the framework
 
 In order to develop Yieldmo Format Animation Framework, we need to understand animation in the context of format design.
 
@@ -36,7 +36,7 @@ In order to develop Yieldmo Format Animation Framework, we need to understand an
 
 ## animation functionality
 
-Three main things, the following are copied from Yiming's stuff, refine it.
+We propose that animation serve three main functionalities:
 
 - **Intrigue**: to introduce ad unit or highlight component with elegant on-stage animation
 
@@ -78,31 +78,32 @@ Every complete atomic animation consists of three key parts:
 
 <div><img src="/work/spray/dissection-property.gif"></div>
 
-
-
 ## effects
 
-After laying the fundation by establishing a sound framework for our motion design language. We started exploring various visual effects that could be applied to the toolkit. While it's verbose to enumerate all effects we have created, it is necessary to list out a few.
+After laying the fundation by establishing a sound framework for our motion design language. We started exploring various visual effects that could be applied to the toolkit. While it's verbose to enumerate all effects we have created, it is necessary to list out a few:
 
-- **shine**: to evoke attention, usually used to serve the "intrigue" function
+<div>
+  <img src="/work/spray/shine.gif">
+  <h6 style="text-align: center;">Above: shine - to evoke attention, usually used to serve the "intrigue" function</h6>
+</div>
 
-<div style="padding: 0 1rem;"><img src="/work/spray/shine.gif"></div>
+<div>
+  <img src="/work/spray/ripple.gif">
+  <h6 style="text-align: center;">Above: ripple - to provide feedback, generally concludes a decisive action</h6>
+</div>
 
-- **ripple**: to provide feedback, generally concludes a decisive action
-
-<div style="padding: 0 1rem;"><img src="/work/spray/ripple.gif"></div>
-
-- **racecar**: to intrigue users, suitable for first sequense of motions
-
-<div style="padding: 0 1rem;"><img src="/work/spray/racecar.gif"></div>
+<div>
+  <img src="/work/spray/racecar.gif">
+  <h6 style="text-align: center;">Above: racecar - to intrigue users, suitable for first sequense of motions</h6>
+</div>
 
 ## spray
 
 <div><img src="/work/spray/illustration.jpg"></div>
 
-"We build tools and tools shape us" - The wisdom from Marshall Mcluhan still rings resoundingly true. As modern product design becomeing more sophisticated and comprehensive, the intricate relationship between design and engineering often presents more frictions than facilitations. Like Mcluhan implied, we believe a highly efficient design team should incorporate technology to its fullest and the creation of such tools is pivotal to the success of the design practice.
+"We build tools and tools shape us" - The wisdom from Marshall Mcluhan still rings resoundingly true. As modern product design becomes more sophisticated and comprehensive, the intricate relationship between design and engineering often presents more frictions than facilitations. Like Mcluhan implied, we believe a highly efficient design team should incorporate technology to its fullest and the creation of such tools is pivotal to the success of the design practice.
 
-Spray stands for "<u>S</u>ystematically <u>P</u>rototyping <u>R</u>esponsive <u>A</u>nimations at <u>Y</u>ieldmo".
+Spray stands for **"<u>S</u>ystematically <u>P</u>rototyping <u>R</u>esponsive <u>A</u>nimations at <u>Y</u>ieldmo"**.
 
 - Pre-defined triggers: 
   - Enter; Leave; Rest; Tap; iTouch; Long Tap; Tilt
@@ -117,15 +118,19 @@ Spray stands for "<u>S</u>ystematically <u>P</u>rototyping <u>R</u>esponsive <u>
 
 Here's an real-world example captured from one of Yieldmo's publisher page:
 
-<div style="padding: 0 1rem;"><img src="/work/spray/spray-postcard.gif"></div>
+<div>
+  <img style="box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.31);" src="/work/spray/spray-postcard.gif">
+</div>
 
 
 ## outcome
 
 In order to validate the framework, we need to prototype and utilize the A/B testing platform. The approach is to use Direct Response formats as a start, and bombine qualitative and quantitative testing methods.
 
-Not to collide with: https://www.yiming-bao.com/projects/motion-design-framework
+The result:
 
-- User experience improvement for text+image formats
-- Revenue increase because of the format iterations
-- My article got great feedback from the UX/design community
+- Improved user experience improvement for "Direct Response" formats.
+- Significantly increased revenue increase owing to the implementation.
+- Well-received thought pieces within the industry.
+
+<div class="vimeo" style="padding-bottom: 56.25%">{{< vimeo 250844959 >}}</div>

@@ -14,6 +14,7 @@ snapshot:
   team: business opration <br> ux research <br> ux design <br> engineering <br> a/b testing <br> data insights
   role: product lead
   timeline: April 2016 - August 2016
+productURL: https://formats.yieldmo.com/#/build/lookbook
 related: [mcommerce, zine]
 weight: 4
 draft: false
@@ -54,9 +55,13 @@ The team conducted a [comsumer research](https://www.surveymonkey.com/r/Lookbook
 - Hot-spot recognition and usage
 - Expected brand favorability and in-store visit intent
 
-<div><img src="/work/lookbook/mturk-1.jpg"></div>
-
 The research provided qualitative data to understand consumer behavior on a large scale (259 U.S.-based respondents). It was highly valuable in informing design iterations and a/b testing directions. 
+
+<div class="double clearfix">
+	<img src="/work/lookbook/mturk-1.jpg">
+	<img style="vertical-align: bottom;" src="/work/lookbook/mturk-3.jpg">
+</div>
+
 
 ## a/b testing
 

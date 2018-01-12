@@ -1,6 +1,6 @@
 ---
 title: 360 video
-subtitle: A new take on 360 video
+subtitle: "Cross-platform virtual reality: a new take on 360 video, a step closer to reality."
 code: panorama
 type: work
 images:
@@ -10,7 +10,7 @@ images:
     - 360-video.gif
 video: 360-video-2.mp4
 snapshot:
-  overview: 360 video has been an emerging medium for more immersive content experiences. It is currently the most accessible form of vitual reality technology (smartphone accessible, enhanced experience with google cardboard devices), bolstered by the relatively low cost 360 video cameras and well executed distribution platforms like Facebook and the New York Times.
+  overview: "360 video has been an emerging medium for more immersive content experiences. It is currently the most accessible form of vitual reality technology (smartphone accessible, enhanced experience with google cardboard devices), bolstered by the relatively low cost 360 video cameras and well executed distribution platforms like Facebook and the New York Times. <br><br>This project aims to add Yieldmo's unique flavor to the experience and take the apodation even further: making it accessible virtually everywhere."
   team: business operation <br> ux research <br> ux design <br> engineering <br> marketing <br> data insights
   role: co-inventor, design lead
   patent: Method for Generating an Interactive 360° Video Advertisement (us 62/474,549)
@@ -32,8 +32,13 @@ Like any brand new medium, simply showcasing the technology engages early adopte
 ## user flow
 
 <div><img src="/work/panorama/360-video-user-flow.png"></div>
-<div><img src="/work/panorama/preview-tactic-flow.jpg"></div>
-<div><img src="/work/panorama/engagement-tactic-screens.jpg"></div>
+
+<!-- <div><img src="/work/panorama/preview-tactic-flow.jpg"></div> -->
+
+<div class="double clearfix">
+	<img style="padding: 0 3%;" src="/work/panorama/preview-tactic-flow.jpg">
+	<img style="vertical-align: bottom;" src="/work/panorama/engagement-tactic-screens.jpg">
+</div>
 
 ## intro screens
 
@@ -52,22 +57,25 @@ We conducted several rounds of usability testings to gauge users' interest and r
 
 The example below outlines part of the result we gathered from the first round of Hallway Test, in which we tested with severn participants, each for approximately 15 minutes.
 
-<div><img src="/work/panorama/mockup-w-hand.png"></div>
 <div><img src="/work/panorama/hallway-testing.jpg"></div>
 
 ## patent
 
 The invention that is covered in the 360 video format has been filed for design patent with application number "62 / 474,549", entitled "Method for Generating an Interactive 360° Video Advertisement".
 
-<div><img src="/work/panorama/poster.png"></div>
+
+<div class="double clearfix">
+	<img src="/work/panorama/mockup-w-hand.png">
+	<img style="padding-top: 4rem;" src="/work/panorama/poster.png">
+</div>
+
 
 ## future iteration
 
-How might we add new user experience on top or within 360 video content?
+The first version of product is welcomed with positive feedback and great performance lift across the board. Since Yieldmo's design infrastructure is built with "Components", it is only fitting to ask: How might we add new user experience on top or within 360 video content?
+
+To answer that question, we combined this format with another popular Yieldmo video product: [Windowplay](/work/windowplay/). Below is a beta preview and what that looks like.
 
 <div><img src="/work/panorama/360-windowplay.gif"></div>
 <div><img src="/work/panorama/future-iteration.png"></div>
-
-
-
 

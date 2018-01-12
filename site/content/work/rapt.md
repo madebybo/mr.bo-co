@@ -1,15 +1,16 @@
 ---
 title: rapt
-subtitle: Design Sprint all in one, Cannes Rapt Demo (full page)
+subtitle: Executed in a two-week fast-paced Design Sprint, the powerful interactive demo is dubbed as "the most impactful sales tool in company history"
 code: rapt
 type: work
 images:
-  background: rapt-featured.png
+  background: perspective-2.jpg
 snapshot:
-  overview: We want to give sales people a visual, mobile way to show that we capture a lot of human interactions before the click, and show the potential to tie that data to insights and more elemental advertiser goals (like brand lift). The demo needs to be conducive to an advertiser client looking at it on their own phone during Cannes social events (Yieldmo Yacht, etc.), and needs to be reliable in low connection speed environments. 
+  overview: The Yieldmo design team wanted to give business team a visual, mobile way to illustrate that their formats capture a lot of human interactions before the click, and show the potential to tie that data to insights and more elemental advertiser goals (like brand lift). The demo needs to be conducive to an advertiser client looking at it on their own phone during Cannes social events (Yieldmo Yacht, etc.), and needs to be reliable in low connection speed environments. 
   team: ux research <br> ux design <br> engineering <br> product management <br> a/b testing
   role: design lead
   timeline: June 2017
+productURL: http://adformatlab.yieldmo.com/rapt/
 related: [panorama, spray]
 tags: [interaction, data, visualization, design, research]
 weight: 6
@@ -65,21 +66,24 @@ The user interface of the RAPT™ demo has three parts:
 - Display Panel: notifies user the exact name of the interaction at the moment, this helps clarification.
 - Timer: keeps track of how long user has been interacting with the ad.
 
-<div><img src="/work/rapt/main-screen.jpg"></div>
+<div><img src="/work/rapt/main-screen.png"></div>
 
 **The summary screen** is also the last screen. It recaps the entire session and estimates "Ad Recall Probability", a Yieldmo-proprietary metric that is used to determine how likely one user is to recall the product in the future.
 
 <div><img src="/work/rapt/perspective-2.jpg"></div>
 
+
 ## interaction
 
 When it comes to interaction design, we decided to use a fictional "tray" to carry out the interactions.
 
-<div><img src="/work/rapt/interaction-tray.gif"></div>
+Here is a closed look at how icons are "popped" onto the tray.
 
-It can be amplified in real-world context:
+<div><img style="box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.31);" src="/work/rapt/interaction-tray.gif"></div>
 
-<div><img src="/work/rapt/interaction-context.gif"></div>
+Here is how that can be amplified in real-world context
+
+<div><img style="box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.31);" src="/work/rapt/interaction-context.gif"></div>
 
 ## iteration
 
@@ -98,6 +102,3 @@ The overview of all interactions:
 Since it's first appearance, the RAPT™ demo has been highly successful and effectively in illustrating Yieldmo's product strategy and commitment to Data and Design. It is even cited internally by some as **"the most impactful sales tool in our company history"**.
 
 <div><img src="/work/rapt/Video_Package_One-Sheeter.jpg"></div>
-
-Experience the demo [here](http://adformatlab.yieldmo.com/rapt/).<br>
-*(note: please viewe on mobile)*

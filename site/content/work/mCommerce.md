@@ -75,9 +75,17 @@ Another important objective of the project is to uncover prevailing design patte
 
 Below you can find some of the UI components we designed and developed in the project. The may contain multiple layers of interaction, in which case we also introduced complete user flows.
 
-<div><img src="/work/mcommerce/ui-components-1.jpg"></div>
-<div><img src="/work/mcommerce/ui-components-2.jpg"></div>
-<div><img src="/work/mcommerce/ui-components-3.jpg"></div>
+<div>
+	<img src="/work/mcommerce/ui-components-1.jpg">
+	<h6>Above: Coverflow - a stack of "cards" with fluid layout</h6>
+	<img src="/work/mcommerce/ui-components-2.jpg">
+	<h6>Above: Mainstage carousel with arrow navigation</h6>
+	<img src="/work/mcommerce/ui-components-3.jpg">
+	<h6>Above: Catalogue with complete user flow</h6>
+</div>
+
+<!-- <div><img src="/work/mcommerce/ui-components-2.jpg"></div> -->
+<!-- <div><img src="/work/mcommerce/ui-components-3.jpg"></div> -->
 
 ## interaction design
 
@@ -85,18 +93,16 @@ Even in a research-centric project, we spend a lot of time explore the role of d
 
 The result of this project the is theoritical fundation and design infrastructure of many upcoming ad formats that are purposefully designed for mobile commrce.
 
-*Intro animation:*
+*From left to right: Intro animation, View catalog option 1*
 
-<div><img src="/work/mcommerce/mcommerce-ix-1.gif"></div>
+<div class="double clearfix">
+	<img style="vertical-align: bottom;" src="/work/mcommerce/mcommerce-ix-1.gif">
+	<img src="/work/mcommerce/mcommerce-ix-2.gif">
+</div>
 
-*View catalog option 1:*
+*From left to right: View catalog option 2, Expand product information*
 
-<div><img src="/work/mcommerce/mcommerce-ix-2.gif"></div>
-
-*View catalog option 2:*
-
-<div><img src="/work/mcommerce/mcommerce-ix-3.gif"></div>
-
-*Expand product information:*
-
-<div><img src="/work/mcommerce/mcommerce-ix-4.gif"></div>
+<div class="double clearfix">
+	<img src="/work/mcommerce/mcommerce-ix-3.gif">
+	<img src="/work/mcommerce/mcommerce-ix-4.gif">
+</div>

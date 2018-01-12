@@ -9,6 +9,7 @@ images:
   background: wrapper.png
   showcase: 
     - wrapper.png
+productURL: https://formats.yieldmo.com/#/build/wrapper
 weight: 8
 draft: true
 ---

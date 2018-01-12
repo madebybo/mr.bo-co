@@ -1,6 +1,13 @@
 .section-wrapper.contact {
 	/* z-index: 1; */
 
+	.marquee.mod {
+		.fixed-holder { 
+			color: $primary-black; 
+			/* .blurb > p { display: none; } */
+		}
+	}
+
 	.contact-form {
 		width: $content-width-mobile-s;
 		font-family: $header-font;

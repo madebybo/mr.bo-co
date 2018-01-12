@@ -64,6 +64,10 @@
 			width: $content-width-tablet;		
 		}
 
+		.snapshot .snapshot-inner .launch-button {
+			font-size: 1.1rem;
+		}
+
 		.content { font-size: 1.3rem; }
 
 		.related {
@@ -109,6 +113,12 @@
 		.summary-header-wrapper .summary-work {
 			margin: 4rem 4rem 4rem auto;
 			width: 50%;
+
+			&.rapt {
+				figure.background {
+					padding: 0;
+				}
+			}
 		}
 
 		.nav-back {
@@ -131,7 +141,7 @@
 			width: $content-width-desktop-s;
 		}
 
-		.snapshot-inner {
+		.snapshot .snapshot-inner {
 			.metadata {
 				width: 50%;
 				margin-left: 50%;
@@ -147,12 +157,26 @@
 					padding-left: 0;
 				}
 			}
+
+			.launch-button {
+				font-size: 1rem;
+			}
 		}
 
 		.content {
-			padding: 4rem 0;
+			padding: 4rem 0 6rem 0;
 			margin: 0 auto;
 			font-size: 1.1rem;
+
+			> div { 
+				margin: 4rem 0; 
+
+				/* caption for image */
+				h6 {
+					width: auto;
+					margin-left: 4rem;
+				}
+			}
 
 			> h2 {
 				position: relative;
@@ -184,6 +208,16 @@
 				margin-left: 50%;
 				width: 50%;
 				padding: 0 4rem 0 3.5em;
+			}
+
+			.double {
+				font-size: 0;
+				text-align: center;
+
+				img { 
+					display: inline;
+					max-width: 50%;
+				}
 			}
 		}
 

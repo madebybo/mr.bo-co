@@ -59,15 +59,20 @@ We went through many iterations as to the look and feel for the UI.
 
 After building physical prototypes and conducting contextual analyses. We fine-tuned a selected group of interactions specifically design for the two key gestures.
 
-- Swipe: this interaction works by combining the popular "card" design concept and the "drag-and-drop" interaction pattern. 
+- **Swipe**: this interaction works by combining the popular "card" design concept and the "drag-and-drop" interaction pattern. 
 
-<div><img src="/work/mgestures/stack-interaction-1.gif"></div>
-<div><img src="/work/mgestures/stack-interaction-2.gif"></div>
+<div class="double clearfix">
+	<img src="/work/mgestures/stack-interaction-1.gif">
+	<img src="/work/mgestures/stack-interaction-2.gif">
+</div>
 
-- Tilt: this interaction uses a featured brand image which consists of "safe area" and "shadow area". Once user tilts the phone in a certain direction the corresponding "shadow area" will be revealed, providing a sense of delightfulness and serendipity.
+- **Tilt**: this interaction uses a featured brand image which consists of "safe area" and "shadow area". Once user tilts the phone in a certain direction the corresponding "shadow area" will be revealed, providing a sense of delightfulness and serendipity.
 
-<div><img src="/work/mgestures/shadowbox-interaction-1.gif"></div>
-<div><img src="/work/mgestures/shadowbox-interaction-2.gif"></div>
+<div class="double clearfix">
+	<img src="/work/mgestures/shadowbox-interaction-1.gif">
+	<img src="/work/mgestures/shadowbox-interaction-2.gif">
+</div>
+
 
 ## outcome
 
