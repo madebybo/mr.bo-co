@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
   {{ partial "head" . }}
 
-  <body class="{{ .Params.code }} init">
+  <body class="init {{ .Params.easeLoad }}">
     {{ block "header" . }}{{ partial "site-header" .}}{{ end }}
 
     <!-- beginning of site content -->

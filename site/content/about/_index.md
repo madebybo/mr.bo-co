@@ -1,8 +1,7 @@
 ---
-title: a<i>·</i>bo<i>·</i>ut
 title: a.bo.ut
-_title: a<u>bo</u>ut
-code: "about"
+code: about
+easeLoad: ease-load
 weight: 1
 ---
 

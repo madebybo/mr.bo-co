@@ -103,13 +103,6 @@
 				display: none;
 			}
 		}
-
-		.summary-work {
-			&:after {
-				transform: translateY(calc(4rem + 50%));
-				font-size: 1.75rem;
-			}
-		}
 	}
 
 	.work.single {

@@ -677,6 +677,7 @@
 			height: auto;
 			width: auto;
 			box-shadow: $box-shadow-heavy;
+			box-shadow: $box-shadow-marquee;
 
 			img { display: none; }
 
@@ -745,7 +746,12 @@
 			.headline-container:before {
 				left: calc(50% + 8rem);
 			}
-		}		
+		}
+
+		&:after {
+			transform: translateY(calc(4rem + 50%));
+			font-size: 1.75rem;
+		}
 	}
 
 	.windowplay {

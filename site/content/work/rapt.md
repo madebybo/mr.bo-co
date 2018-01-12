@@ -10,7 +10,7 @@ snapshot:
   team: ux research <br> ux design <br> engineering <br> product management <br> a/b testing
   role: design lead
   timeline: June 2017
-related: [wrapper, spray]
+related: [panorama, spray]
 tags: [interaction, data, visualization, design, research]
 weight: 6
 draft: false

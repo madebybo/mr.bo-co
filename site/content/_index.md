@@ -2,6 +2,7 @@
 title: Home
 code: home
 object: plant-lighter.png
+easeLoad: ease-load
 inspirations:
   - http://leibal.com/products/vide-poche-2/
   - https://www.designspiration.net/save/3619227075228/
