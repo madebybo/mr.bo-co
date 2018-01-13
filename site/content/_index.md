@@ -1,5 +1,5 @@
 ---
-title: Home
+title: .bo wang
 code: home
 object: plant-lighter.png
 easeLoad: ease-load
@@ -12,6 +12,6 @@ draft: false
 showFeaturedContent: false
 ---
 
-Bo Wang is the Creative Lead for Google’s Material Design studio in New York, where he manages projects that include design outreach efforts like the SPAN Design & Technology Conference and design.google.com along with the expansion and development of the Material Design system itself.
+Bo Wang is the Senior Design Technologist for [Yieldmo](https://en.wikipedia.org/wiki/Yieldmo) in New York, where he manages projects that include buidling design infrastructure for the flagship ad format products and their optimizations. Having extensive experience in leading research, strategize and ideate products that are used by millions of users, he enjoys and thrives in finding solutions through ambiguity.
 
-Advocate for users in a fast-paced environment, imparting day-to-day design leadership that fosters a shared understanding of the user-centric intersection between design, content, business and engineering.
+Throughout his design practice, Bo is a strong advocate for users in a fast-paced environment. He focuses on imparting day-to-day design leadership that fosters a shared understanding of the user-centric intersection between design, content, business and engineering.
