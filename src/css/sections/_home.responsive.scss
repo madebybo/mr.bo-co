@@ -63,7 +63,14 @@
 }
 
 @media (--tablet) {
-	.header,
+	.header {
+		font-size: 1.5rem;
+		
+		.header-content {
+			.summary p span { display: inline; }
+		}
+	}
+
 	.exhibit {
 		font-size: 1.75rem;
 

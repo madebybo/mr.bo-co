@@ -27,7 +27,7 @@
 			left: 0;
 			margin: 1.25em;
 
-			p { font-size: .8em; }
+			p { font-size: .8em; span { display: none; } }
 			a { color: $primary-white; font-family: $content-font; }
 		}
 
