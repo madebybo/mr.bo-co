@@ -6,11 +6,12 @@ author: "mr. bo"
 description: ""
 tags: ["teaching"]
 images:
-  poster: "browser-cover.png"
+  poster: browser-cover.png
 timeline: ""
 draft: false
 weight: 5
 ---
 
-Designing User Interface: A Human-Centered Approach. One of the building stones of computer science. It’s a mathematical concept, a formalization of the notion of computation in order to prove theorems about computation: and not just computation but ANY computation.
+This is a talk that was given at a USV talk series. By taking a closer look at browsers' inner workings, one can better understand common browser behaviors and engineers can apply that knowledge in writing cleaner, faster code.
+
 <!--more-->

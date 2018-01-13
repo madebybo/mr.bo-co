@@ -1,8 +1,8 @@
 <!-- this goes inside of a range .Data.Pages loop -->
-<div class="package-tnt {{ .Params.code }} clearfix">
+<div class="summary-bospeak {{ .Params.code }} clearfix">
   
   <div class="featured clearfix">
-    <a href="{{ .Permalink }}">
+    <a data-href="{{ .Permalink }}">
       <h4 class="headline">{{ .Title | safeHTML }}</h4>
     </a>
 
@@ -11,6 +11,5 @@
     {{ end }}
   </div>
 
-  <a class="summary" href="{{ .Permalink }}">{{ .Summary }}</a>
-
+  <a class="summary" data-href="{{ .Permalink }}">{{ .Summary }}</a>
 </div>

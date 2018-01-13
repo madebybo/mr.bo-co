@@ -2,12 +2,12 @@
    Common Style for the Teaching & Talks List Page
    ========================================================================== */
 
-.section-wrapper.tnt {
+.section-wrapper.bospeak {
 	width: $content-width-mobile-s;
 	margin-left: auto;
 	margin-right: auto;
 
-	.package-tnt {
+	.summary-bospeak {
 		position: relative;
 		margin: 4em 0 6em 0;
 		font-size: .8rem;
@@ -60,7 +60,7 @@
 		}
 	}
 
-	.package-tnt:nth-child(2n+1) {
+	.summary-bospeak:nth-child(2n+1) {
 		.featured {
 			.headline { right: 0; }
 			figure.poster { float: left; }
@@ -70,7 +70,7 @@
 		.summary { margin-left: 0; }
 	}
 
-	.package-tnt:nth-child(2n) {
+	.summary-bospeak:nth-child(2n) {
 		.featured {
 			.headline { left: 0; }
 			figure.poster { float: right; }
@@ -85,17 +85,17 @@
    Individual Styling for Each Item
    ========================================================================== */
 
-.section-wrapper.tnt .hcd {
+.section-wrapper.bospeak .hcd {
 	.featured {
 	}
 }
 
-.section-wrapper.tnt .vdf {
+.section-wrapper.bospeak .vdf {
 	.featured {
 	}
 }
 
-.section-wrapper.tnt .hci {
+.section-wrapper.bospeak .hci {
 	.featured {
 		figure.poster:after {
 			background-color: #a88a8b;
@@ -103,7 +103,7 @@
 	}
 }
 
-.section-wrapper.tnt .h4d {
+.section-wrapper.bospeak .h4d {
 	.featured {
 		figure.poster:after {
 			background-color: rgb(120, 120, 120);
@@ -111,7 +111,7 @@
 	}
 }
 
-.section-wrapper.tnt .browser {
+.section-wrapper.bospeak .browser {
 	.featured {
 		figure.poster:after {
 			background-color: #45b2e5;
@@ -119,7 +119,7 @@
 	}
 }
 
-.section-wrapper.tnt .dic {
+.section-wrapper.bospeak .dic {
 	.featured {
 		figure.poster:after {
 			background-color: #FDDA00;
@@ -129,10 +129,10 @@
 
 
 /* ==========================================================================
-   Interior Page for Each Item
+   Single Page for Each Item
    ========================================================================== */
 
-.tnt-interior {
+.bospeak.single {
 	.headline {
 		br { display: none; }
 	}

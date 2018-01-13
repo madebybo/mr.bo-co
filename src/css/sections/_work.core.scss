@@ -9,11 +9,11 @@
 
 	.marquee.mod {
 		.fixed-holder { 
-			/* color: $primary-white;  */
+			color: $primary-white; 
 			/* .blurb > p { display: none; } */
 		}
 		
-		/* .background-insert { background: $secondary-black; } */
+		.background-insert { background: $primary-black; }
 	}
 
 	.section-wrapper-inner {

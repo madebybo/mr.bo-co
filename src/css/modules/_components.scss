@@ -152,10 +152,9 @@
 		right: 0;
 		left: 0;
 		top: 4rem;
-		width: $content-width-mobile-s;
 		margin: 0 auto;
 		z-index: 1;
-		color: $primary-white;
+		width: $content-width-mobile-s;
 
 		.headline {
 			position: relative;
@@ -187,7 +186,6 @@
 		background-size: cover;
 		background-position: bottom;
 		background-repeat: no-repeat;
-		background-color: $primary-black;
 	}
 
 	@media (--desktop-s) {

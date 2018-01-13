@@ -12,5 +12,6 @@ draft: false
 weight: 2
 ---
 
-lines & shapes, color, typography, imagery. One of the building stones of computer science. It’s a mathematical concept, a formalization of the notion of computation in order to prove theorems about computation: and not just computation but ANY computation.
+lines & shapes, color, typography, imagery.
+
 <!--more-->

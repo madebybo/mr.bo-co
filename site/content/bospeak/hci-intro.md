@@ -12,7 +12,7 @@ draft: false
 weight: 3
 ---
 
-Designing User Interface: A Human-Centered Approach. One of the building stones of computer science. It’s a mathematical concept, a formalization of the notion of computation in order to prove theorems about computation: and not just computation but ANY computation.
+An introduction to Human-Computer Interaction. 
 <!--more-->
 
 
