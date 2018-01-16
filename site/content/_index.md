@@ -12,6 +12,6 @@ draft: false
 showFeaturedContent: false
 ---
 
-Bo Wang is the Senior Design Technologist for [Yieldmo](https://en.wikipedia.org/wiki/Yieldmo) in New York, where he manages projects that include buidling design infrastructure for products that are used by millions of users. <span>Having extensive experience in leading the research, strategy and ideation of large scale design challenges, he enjoys and thrives in finding solutions through ambiguity.</span>
+Bo Wang is the Senior Design Technologist for [Yieldmo](https://en.wikipedia.org/wiki/Yieldmo) in New York, where he manages projects that include buidling design infrastructure for products that are used by millions of users. <span>Having extensive experience in leading the research, strategy and ideation of complex design challenges, he enjoys and thrives in finding solutions through ambiguity.</span>
 
-While in design practice, Bo is a strong advocate for users especially in a fast-paced environment. He focuses on imparting day-to-day design leadership that fosters a shared understanding of the user-centric intersection between design, content, business and engineering.
+While in design practice, Bo is a strong advocate for user-centered design especially in fast-paced environments. He strives to foster a design culture that balances user experience, technical capability, and business objectives.
