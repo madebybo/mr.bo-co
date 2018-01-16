@@ -7,5 +7,4 @@ weight: 10
 draft: false
 ---
 
-contact: giving talks, grab coffee, or just talk about art or music
-maybe a cool photo of NYC?
+Give talks, grab coffee, or just talk about art or music.

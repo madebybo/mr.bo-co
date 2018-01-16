@@ -11,4 +11,4 @@ weight: 2
 	<p class="author">- Herbert Simon</p>
 </div>
 
-I believe that technology is becoming an essential part of the design process. Here is a selection of my past work.
+<div style="display: none;">I believe that technology is becoming an essential part of the design process. Here is a selection of my past work.</div>

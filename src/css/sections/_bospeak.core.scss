@@ -40,7 +40,7 @@
 			figure.poster {
 				position: relative;
 				width: calc(100% - 1rem);
-				box-shadow: $box-shadow-heavy;
+				box-shadow: $box-shadow-marquee;
 
 				&:after {
 					content: "";
