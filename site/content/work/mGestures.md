@@ -28,9 +28,9 @@ The mGestures projects aims to extract interaction design patterns from aforemen
 
 <div><img src="/work/mgestures/gestures-montage.jpg"></div>
 
-## storyboard
+## storytelling
 
-Creating storyborads help us clarify intention and better understand the gestures in appropriate context.
+The team employed compelling usage of Personas, User-Journeys, and other storytelling frameworks to clarify design intentions. For example, the storyboards below were instrumental in helping us understanding hand gestures under certain circumstances.
 
 Here is shake:
 
@@ -49,11 +49,13 @@ Among all the gestures we explored during the research phase, the following two 
 
 - Tilt: tilting is one of the most unique gestures that is almost analogous to portability. It works by detecting the device gyroscope motion and animates in response, creating a new opprotunity to engage users. To tilt may seem trivial, but the very gesture implies something very intentional.
 
+
 ## ui iteration
 
 We went through many iterations as to the look and feel for the UI.
 
 <div><img src="/work/mgestures/iteration.png"></div>
+
 
 ## interaction design
 

@@ -30,7 +30,7 @@ Inspired by findings from the recent [mCommerce Research](/work/mobile-commerce-
 
 ## storyboard
 
-We created several user stories to relive the experience one might go through when shopping on mobile web. The illustration below offers a glimpse of what it looked like. These user stories provide valuable context in designing for such experiences.
+We created several user stories to relive the experience one might go through when shopping on mobile web. The illustration below offers a glimpse of what it looked like. These user stories provided valuable context in designing for such experiences.
 
 <div><img src="/work/lookbook/lookbook-storyboard.jpg"></div>
 
@@ -72,11 +72,12 @@ Combined with the insights from MTurk, the team also run numberous A/B tests to 
 
 <div><img src="/work/lookbook/ab-test.jpg"></div>
 
+
 ## future iteration
 
 Since we designed initial Lookbook concepts, there has been validation of this type of experience with [Instagram shoppable ads](http://www.adweek.com/digital/retailers-can-now-make-instagram-posts-much-more-shoppable/) and [Pinterest](https://blog.pinterest.com/en/search-outside-box-new-pinterest-visual-discovery-tools), so it is worth developing further iterations that is distinct in Yieldmo's design language.
 
-We also designed two concepts for future iteration. 
+Leveraging ethnographic insights and robust testing techniques, we also designed two concepts for future iteration:
 
 <div><img src="/work/lookbook/slider.jpg"></div>
 <div><img src="/work/lookbook/payment.jpg"></div>
