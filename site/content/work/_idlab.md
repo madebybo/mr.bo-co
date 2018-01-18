@@ -18,12 +18,11 @@ In [windowplay]({{< ref "windowplay.md#about" >}}), it is mentioned that...
 
 1)Inspire DV leadership and multi-disciplinary team members with clear communication, hands-on contribution, and strong advocacy for best practices in Experience Design throughout all venture phases
 
-7）Create style guides, templates, and other accelerant frameworks for the design team members
+
 
 8）Create unique products and culturally-relevant solutions to engage users with valuable experiences
 9）Consider the moments of engagement, or touch-points, between people and brands, as well as the ideas, emotions and memories these moments create
 10）Implement a cross-discipline perspective that considers multiple aspects of the brand/business/experience and creates a way for businesses to align with design to solve problems
-11）Translate strategic design into controls, mechanisms and processes that users require to meet goals
 12）Communicate the product’s vision to partners and customers to test and explore venture opportunities
 13）Develop artifacts or images to make opportunities tangible for multiple audiences
 14）Identify and collect exemplars and articulate their design logic, benefits and tradeoffs

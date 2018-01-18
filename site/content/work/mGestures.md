@@ -52,7 +52,9 @@ Among all the gestures we explored during the research phase, the following two 
 
 ## ui iteration
 
-We went through many iterations as to the look and feel for the UI.
+We create style guides, templates, and other accelerant frameworks for the design team members
+
+We went through many iterations as to the look and feel for the UI. 7）
 
 <div><img src="/work/mgestures/iteration.png"></div>
 
