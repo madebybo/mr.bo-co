@@ -29,3 +29,13 @@ the dramatic swerves as shown here can imply volatility and/or a downhill trajec
 ## S is for "Swipe, Scroll..."
 
 In this role, you will apply your passion for brand, craft, and design fidelity to guide research and design processes
+
+## Pop Quiz:
+
+Please include your answer to the following question in your cover letter.
+
+1. What do you think is the most well designed digital experience in the world right now?
+
+2. What do you like about it? If you could make it even better, what would you do?
+
+Please keep your answer to less than 300 words + any images.
