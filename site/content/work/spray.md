@@ -113,7 +113,12 @@ Spray stands for **"<u>S</u>ystematically <u>P</u>rototyping <u>R</u>esponsive <
 
 ## case study
 
+Applying our motion design framework, here is a detailed breakdown of how a very simple format–postcard, can be dissected and analyzed:
+
 <div><img src="/work/spray/postcard-dissection.jpg"></div>
+
+How we choreograph the experience from the begining (format enters the viewport) to the end (format leaves the viewport):
+
 <div><img src="/work/spray/postcard-animation-flow.jpg"></div>
 
 Here's an real-world example captured from one of Yieldmo's publisher page:

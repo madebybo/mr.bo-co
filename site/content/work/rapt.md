@@ -7,8 +7,8 @@ images:
   background: perspective-2.jpg
 snapshot:
   overview: The Yieldmo design team wanted to give business team a visual, mobile way to illustrate that their formats capture a lot of human interactions before the click, and show the potential to tie that data to insights and more elemental advertiser goals (like brand lift). The demo needs to be conducive to an advertiser client looking at it on their own phone during Cannes social events (Yieldmo Yacht, etc.), and needs to be reliable in low connection speed environments. 
-  team: ux research <br> ux design <br> engineering <br> product management <br> a/b testing
-  role: design lead
+  team: UX Research <br> UX design <br> Engineering <br> Product Management <br> Useability Testing <br> A/B testing
+  role: Design Lead
   timeline: June 2017
 productURL: http://adformatlab.yieldmo.com/rapt/
 related: [panorama, spray]
