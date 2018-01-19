@@ -45,13 +45,13 @@ Some goals, requirements and constraints to work within:
 
 ## versatility
 
-can display both video and image, on top and bottom cards
+Zine can display both video and image, on top and bottom cards
 
 <div><img src="/work/zine/versatility.png"></div>
 
 ## poetic interactions
 
-the expand icon morphs into the exit icon
+The expand icon morphs into the exit icon
 
 <div><img src="/work/zine/interaction.gif"></div>
 

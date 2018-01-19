@@ -19,3 +19,5 @@ The Wrapper was born from advertiser’s desire to replicate a desktop takeover 
 Often, the Wrapper is paired with an in-content format. This allows for messaging at the beginning, middle, and end of a web page and maximizes your impression. The Wrapper isn’t available on all publishers so be sure to consult with your Yieldmo Account Manager.
 
 threading design and business thinking together to deliver inventive, durable and thoughtful, solutions from concept to launch.
+
+Consider the moments of engagement, or touch-points, between people and brands, as well as the ideas, emotions and memories these moments create

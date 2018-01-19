@@ -39,6 +39,9 @@ We created several user stories to relive the experience one might go through wh
 While the entire product is packed only in a limited space, the user flow can become complicated and trickly. The Lookbook design concept proposes a "two-screen" experience where more detailed information about a certain product may be revealed once user interacts with the first screen. The navigation between screens need to be thoroughly thought out, and it's critical to maintain the "appeal" of such design paradigm without impeding usability. 
 
 <div><img src="/work/lookbook/userflow.jpg"></div>
+
+Wireframe iterations based on feedback from internal reviews and user testing:
+
 <div><img src="/work/lookbook/wireframe.png"></div>
 
 
