@@ -34,20 +34,9 @@ In order to develop Yieldmo Format Animation Framework, we need to understand an
 <div><img src="/work/spray/framework-whiteboard.jpg"></div>
 <div><img src="/work/spray/framework-animation.gif"></div>
 
-## animation functionality
-
-We propose that animation serve three main functionalities:
-
-- **Intrigue**: to introduce ad unit or highlight component with elegant on-stage animation
-
-- **Guide**: to communicate visual wayfinding and interaction status with transitional animation
-
-- **respond**: to enhance the sense of manipulation with visual cues, as well as bring delight as a layer over functionality
-
-<div><img src="/work/spray/motion-functionality.gif"></div>
-
-
 ## design principles
+
+We started by defining a set of core principles to guide the design.
 
 - **Respect** user through *unintrusive* and *lightweight* motions
   - Unintrusive: animation shouldn't strike user as a surprise, neither appear confusing or obnoxious.
@@ -60,6 +49,19 @@ We propose that animation serve three main functionalities:
 - **Enchant** user through *rhythmic* and *tactile* responsies
   - Rhythmic: choreograph animation in a meaningful and elegant way. Every animation complements another to compose a harmonical appearance.
   - Tactile: use metaphorical visual language to enrich the digital experience. Celebrate character and vitality.
+
+
+## animation functionality
+
+We propose that animation serve three main functionalities:
+
+- **Intrigue**: to introduce ad unit or highlight component with elegant on-stage animation
+
+- **Guide**: to communicate visual wayfinding and interaction status with transitional animation
+
+- **respond**: to enhance the sense of manipulation with visual cues, as well as bring delight as a layer over functionality
+
+<div><img src="/work/spray/motion-functionality.gif"></div>
 
 
 ## dissection

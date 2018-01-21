@@ -48,7 +48,7 @@ Based on the raw data from interivews. We went through multiple sessions of in-d
 
 ## behavior map
 
-Next step in the research process, we formulated an complete behavior map that comprises three stages
+Visualizing user attitudes and behaviors in a behavior map helps the design teams align on a deep understanding of end users. We formulated an complete behavior map that is comprised of three stages:
 
 - Discover: the actions involve view, expand, and involve.
 - Evaluate: the actions involve compare, refine, and specify.

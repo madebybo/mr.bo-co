@@ -22,9 +22,9 @@ draft: false
 
 ## challenge
 
-How might we utilize native mobile interactioin patterns? For example, shake, tap, tilt and swipe, etc. The fact that most mobile advertising metrics are still swayed by clicks and impressions is a dire fact that is due for big changes. 
+Since the original iPhone release in June 2007, the standard vocabulary of gestures on mobile has been expanding. Gestures solve a lot of UI problem by maximizing the real estate of the screen. However, it also presents a lot of usability problems related to discover and learn. How might we utilize these native mobile interactioin patterns without hurting the user experience?
 
-The mGestures projects aims to extract interaction design patterns from aforementioned gestures. The deliverables will tap into the rich world of mobile gestures and try to provide answers that balance business goals and design sensibilities.
+The mGestures projects aims to extract interaction design patterns from the commons gestures, such as shake, tap, tilt and swipe. The deliverables will tap into the rich world of mobile gestures and try to provide answers that balance business goals and design sensibilities.
 
 <div><img src="/work/mgestures/gestures-montage.jpg"></div>
 
@@ -54,7 +54,7 @@ Among all the gestures we explored during the research phase, the following two 
 
 We create style guides, templates, and other accelerant frameworks for the design team members
 
-We went through many iterations as to the look and feel for the UI. 7）
+We went through many iterations as to the look and feel for the UI.
 
 <div><img src="/work/mgestures/iteration.png"></div>
 
