@@ -138,4 +138,4 @@ The result:
 - Significantly increased revenue increase owing to the implementation.
 - Well-received thought pieces within the industry.
 
-<div class="vimeo" style="padding-bottom: 56.25%">{{< vimeo 250844959 >}}</div>
+<div><iframe src="https://player.vimeo.com/video/250844959?title=0&byline=0&portrait=0" width="1152" height="646" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
