@@ -56,9 +56,8 @@
 			img { filter: none; }
 		}
 
-		&.rapt figure.background {
-			padding-top: 2rem;
-		}
+		&.rapt figure.background { padding-top: 2rem; }
+		&.rebranding figure.background { padding-top: 4rem; }
 	}
 
 	.project-header,
@@ -215,6 +214,11 @@
 			overflow: hidden;
 
 			&:after { display: none; }
+		}
+
+		.rebranding {
+			figure.background { padding-top: 10rem; }
+			.headline-container { top: 3rem; }
 		}
 	}
 

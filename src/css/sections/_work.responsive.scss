@@ -82,6 +82,11 @@
 				max-width: 40rem;
 				transform: scale(.9);
 			}
+
+			.rebranding {
+				figure.background { padding-top: 12rem; }
+				.headline-container { top: 0rem; }
+			}
 		}
 
 		.cross-reference {
@@ -238,6 +243,11 @@
 
 				&:nth-child(2n) { margin: 4rem auto 4rem 0; }
 				&:nth-child(2n+1) { margin: 4rem 0 4rem auto; }
+			}
+
+			.rebranding {
+				figure.background { padding-top: 0; }
+				.text-container { top: 30% !important; }
 			}
 		}
 
