@@ -3,14 +3,14 @@ title: 'rebranding: <br> the “truth”'
 subtitle: Holistic and human-centered approach to rebranding, from research and insight generation to concept to deliverable.
 code: rebranding
 type: work
-tags: [mcommerce, mobile, design]
+tags: [branding, mobile, design]
 images:
   background: poster.jpg
 snapshot:
-  overview: Holistic and human centered approach to product and service design, from research and insight generation to concept to deliverable.
-  role: product lead
-  team: business opration <br> ux research <br> ux design <br> engineering <br> a/b testing <br> data insights
-  timeline: September 2017 - December 2017
+  overview: "Branding, is as much a science as an art. When done right, every visual and verbal choice is informed and made with intention and purpose. This is a rebranding effort that goes much deeper than tweaking a company's identity or message. It is designed to tell the full story–ranging from the Yieldmo's founding principles to its future potential. The goal is to evoke specific reactions from core constituents: potential clients, investors, media and recruits."
+  role: User Experience Lead
+  team: Marketing <br> Design <br> UX Research <br> Engineering <br> Operations
+  timeline: June 2017 - December 2017
 productURL: https://www.yieldmo.com
 related: [rapt, zine, mcommerce]
 vimeo: https://vimeo.com/250196245
@@ -20,54 +20,64 @@ draft: true
 
 ## the challenge
 
+By 2017, Yieldmo has been around for 5 years and earned applaudable recognition within the ad tech industry. Moreover, Yieldmo is on the path to proving the true power of engagement—all the nuanced micro-interactions between humans and their phones that Yieldmo alone measures.
+
+The challenge is not to redefine who Yieldmo is, but rather to reinforce the brand so the company's mission and core values are communciated in an unequivocal manner. Additionally, all of these components should be "living" and will continue to evolve in line with the company's products, performance and in-market experience.
+
+<div><iframe src="https://player.vimeo.com/video/252188195?title=0&byline=0&portrait=0" width="1152" height="693" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 
 ## the research
 
+In this project, Design and Marketing worked together closely to conducted thorough research that spanned 6 months. The rigorious process involved multiple workshops, interviews, and field studies. Everyone in the company was invited to participate in that process via surveys, brainstorms, and many one-on-ones.
 
-This will essentially be our "soft-launch;" we'll share both the new brand direction and what went into our decisions. Branding, as many of you know, is as much a science as an art. When done right, every visual and verbal choice is informed and made with intention and purpose. Our goal is to evoke specific reactions from core constituents: potential clients, investors, media and recruits. It is designed to tell our full story - ranging from our founding principles to our future potential. Of course, all of these components are "living" and will continue to evolve in line with our products, performance and our experience in-market.
+Inspired by [Simon Sinek](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)'s work, one of the branding exercises employed the "Why" and "How" framework that pushes participants to think deep about the company's mission.
 
-What's next? A few days after we share the new direction with you, we'll be going live with our new mini-website. This will have the new look and feel of the new brand and will include all the fundamentals. A more robust, fulsome Yieldmo.com will launch in early Jan. At our Nov 7. meeting, we'll also lay out the additional re-brand components (new decks, decor, etc) and timing for each.
+<div><img src="/work/rebranding/branding-exercise.jpg"></div>
+
+The team also complied in-depth brand marketing research, including key insights.
+
+<div><img src="/work/rebranding/brand-marketing-1.jpg"></div>
+
+
+## core values
+
+The team have identified 5 adjectives that define how Yieldmo wants itself to be perceived, all of which are reflected in its visual/verbal representation: 
+
+- Transformative
+- Proven
+- Trustworthy
+- Tenacious
+- Human-centric
+
+<div><img src="/work/rebranding/5-adjectives.jpg"></div>
+
 
 ## the story
 
-The team conducted diligent groundwork
+After all the diligent groundwork, at this point the story was already on the horizon. It didn't take long to form a coherent and powerful narrative.
 
-As promised, attached is the copy of the Yieldmo story from the rebrand presentation we gave yesterday. 
+The story is called "Truth."
 
-Our story is called "Truth."
+This represents a new visual and verbal articulation for Yieldmo. This serves as the source of inspiration to combat the villain in the Yieldmo story -- which has been identified as "ignorance." That is, marketers' ignorance caused by insufficient insight into campaigns and ultimately, their customers.
 
-For those that were unable to attend, this is essentially our "vision board' or, what an actor might call their backstory.  This represents a new visual and verbal articulation for Yieldmo. This serves as the source of inspiration we use to combat the villain in the Yieldmo story -- which we have identified as "ignorance." That is, marketers' ignorance caused by insufficient insight into campaigns and ultimately, their customers. 
-
-We've identified 5 adjectives that define how we want Yieldmo to be perceived, all of which are reflected in our visual/verbal representation: 
-Transformative
-Proven
-Trustworthy
-Tenacious
-Human-centric
-A 6-month-long and quite involved process led to these descriptors and the creation of our story. Every Yieldmate was invited to participate in that process via surveys, brainstorms, and many one-on-ones. Please know how grateful we are for your contributions. 
-
-Of course, our work is not done. It is just getting started. Now armed with the tools we need, it will be the job of marketing - and really EVERY Yieldmate -- to make sure it resonates. Every expression of our brand and products must flow from this, whether it is the website, or the way we all describe the company to others. It all has to feel connected, and this is what grounds us.
+<div><img src="/work/rebranding/the-truth-1.jpg"></div>
+<div><img src="/work/rebranding/the-truth-2.jpg"></div>
+<div><img src="/work/rebranding/the-truth-3.jpg"></div>
 
 
 ## design patterns
 
-the dramatic swerves as shown here can imply volatility and/or a downhill trajectory. The thin lines in our "Insights Current" design are intended to appear in multiples, alluding to the massive, energetic data set we're working with here - the reduction in number and this particular application make them lose their purpose.
+To support the story and more importantly, the core principles underpin it. We created several design patterns as visual metaphors. 
 
-## S is for "Swipe, Scroll..."
+These patterns are derived from the simplest shapes: waves, dots, spotlights, and lines. Yet with creative combinations and motions, they expressively reflect the brand identity and are used concertedly throughout all aspects of the branding execution: website, posters, and peripheral goods.
 
-In this role, you will apply your passion for brand, craft, and design fidelity to guide research and design processes
+<div><img src="/work/rebranding/brand-patterns.jpg"></div>
 
-Yieldmo is on the path to proving the true power of engagement—all the nuanced micro-interactions between humans and their phones that Yieldmo alone measures. In a test with a Top 3 U.S. health insurance provider, Yieldmo's data science team recently proved that highly engaged audience segments showed a significantly higher click-through rate.* To be sure, this test was just one critical step toward tapping into the actionable insights within our platform, but it was as powerful as it was promising.
 
-Only Yieldmo has this depth of information because, as our ad formats engage customers across mobile content, they collect numerous, privacy-safe data points—in fact, more than 200 billion each month. The talent of our data science team allows them to then apply powerful machine learning algorithms to this massive dataset to determine exactly which factors have the greatest impact on conversions. This knowledge allows Yieldmo clients to target specific audiences, and their lookalikes, for maximum performance and efficiency.
+## the website
 
-## Pop Quiz:
+A lot of screenshots...
 
-Please include your answer to the following question in your cover letter.
 
-1. What do you think is the most well designed digital experience in the world right now?
 
-2. What do you like about it? If you could make it even better, what would you do?
-
-Please keep your answer to less than 300 words + any images.

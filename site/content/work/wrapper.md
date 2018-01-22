@@ -21,3 +21,5 @@ Often, the Wrapper is paired with an in-content format. This allows for messagin
 threading design and business thinking together to deliver inventive, durable and thoughtful, solutions from concept to launch.
 
 Consider the moments of engagement, or touch-points, between people and brands, as well as the ideas, emotions and memories these moments create
+
+In this role, you will apply your passion for brand, craft, and design fidelity to guide research and design processes
