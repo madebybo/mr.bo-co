@@ -134,6 +134,10 @@
 			margin: 1em auto; 
 			padding-left: 2.5em;
 			font-size: .9em;
+		
+			&:last-child {
+				margin-bottom: 2rem;
+			}
 		}
 
 		> ul,
@@ -197,6 +201,16 @@
 	  	bottom: 4em;
 	  	text-align: center;
 	  }
+
+		.vimeo {
+			position: relative;
+
+	 		iframe { 
+				position: absolute !important;
+				left: 0 !important;
+				top: 0 !important;
+	 		}
+		}
 	}
 
 	.related {

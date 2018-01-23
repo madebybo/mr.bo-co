@@ -17,7 +17,7 @@ snapshot:
 productURL: https://formats.yieldmo.com/#/build/zine
 related: [lookbook, mcommerce]
 tags: [video, mobile, design]
-weight: 2
+weight: 9
 draft: false
 ---
 

@@ -13,7 +13,7 @@ snapshot:
 productURL: http://adformatlab.yieldmo.com/rapt/
 related: [panorama, spray]
 tags: [interaction, data, visualization, design, research]
-weight: 6
+weight: 5
 draft: false
 ---
 

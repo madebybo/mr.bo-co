@@ -14,7 +14,7 @@ snapshot:
   timeline: March 2016 - April 2016
 related: [mgestures, zine]
 tags: [interaction, design, research, mobile]
-weight: 9
+weight: 4
 draft: false
 ---
 
@@ -140,4 +140,5 @@ The result:
 - Significantly increased revenue increase owing to the implementation.
 - Well-received thought pieces within the industry.
 
-<div><iframe src="https://player.vimeo.com/video/250844959?title=0&byline=0&portrait=0" width="1152" height="646" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<div class="vimeo" style="padding-bottom: 56.25%"><iframe src="https://player.vimeo.com/video/250844959?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+

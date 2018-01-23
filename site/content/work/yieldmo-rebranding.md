@@ -15,7 +15,7 @@ productURL: https://www.yieldmo.com
 related: [rapt, zine, mcommerce]
 vimeo: https://vimeo.com/250196245
 weight: 2
-draft: true
+draft: false
 ---
 
 ## the challenge
@@ -24,7 +24,7 @@ By 2017, Yieldmo has been around for 5 years and earned applaudable recognition 
 
 The challenge is not to redefine who Yieldmo is, but rather to reinforce the brand so the company's mission and core values are communciated in an unequivocal manner. Additionally, all of these components should be "living" and will continue to evolve in line with the company's products, performance and in-market experience.
 
-<div><iframe src="https://player.vimeo.com/video/252188195?title=0&byline=0&portrait=0" width="1152" height="693" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<div class="vimeo" style="padding-bottom: 60%;"><iframe src="https://player.vimeo.com/video/252188195?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 
 ## the research
@@ -38,6 +38,7 @@ Inspired by [Simon Sinek](https://www.ted.com/talks/simon_sinek_how_great_leader
 The team also complied in-depth brand marketing research, including key insights.
 
 <div><img src="/work/rebranding/brand-marketing-1.jpg"></div>
+<div><img src="/work/rebranding/brand-marketing-4.jpg"></div>
 
 
 ## core values
@@ -64,6 +65,9 @@ This represents a new visual and verbal articulation for Yieldmo. This serves as
 <div><img src="/work/rebranding/the-truth-1.jpg"></div>
 <div><img src="/work/rebranding/the-truth-2.jpg"></div>
 <div><img src="/work/rebranding/the-truth-3.jpg"></div>
+<div><img src="/work/rebranding/the-truth-4.jpg"></div>
+<div><img src="/work/rebranding/the-truth-5.jpg"></div>
+<div><img src="/work/rebranding/the-truth-6.jpg"></div>
 
 
 ## design patterns
@@ -77,7 +81,14 @@ These patterns are derived from the simplest shapes: waves, dots, spotlights, an
 
 ## the website
 
-A lot of screenshots...
+<div><img src="/work/rebranding/website-1.jpg"></div>
+<div><img src="/work/rebranding/website-2.jpg"></div>
+<div><img src="/work/rebranding/website-3.jpg"></div>
+<div><img src="/work/rebranding/website-4.jpg"></div>
+<div><img src="/work/rebranding/website-5.jpg"></div>
 
 
+## the outcome
+
+Since launch, the refreshed brand received noticeable accolades from both internal employees and external clients. Within the first 2 months, the website has seen 400%-600% boost in traffic and it has been referenced by multiple credible sources for its powerful branding articulation.
 

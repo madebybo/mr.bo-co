@@ -16,7 +16,7 @@ snapshot:
   timeline: April 2016 - August 2016
 related: [spray, mcommerce]
 tags: [mcommerce, mobile, design]
-weight: 5
+weight: 7
 draft: false
 ---
 

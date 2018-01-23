@@ -16,7 +16,7 @@ snapshot:
   timeline: April 2016 - August 2016
 productURL: https://formats.yieldmo.com/#/build/lookbook
 related: [mcommerce, zine]
-weight: 4
+weight: 6
 draft: false
 ---
 

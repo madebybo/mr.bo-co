@@ -32,7 +32,7 @@
   <div class="content clearfix">
     {{ .Content }}
 
-    {{ with .Params.tags }}
+    {{ with .Params.disable_tags }}
     <div class="tags metadata">
       <strong>tags: </strong>{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
     </div>

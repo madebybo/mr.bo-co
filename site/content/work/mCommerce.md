@@ -14,7 +14,7 @@ snapshot:
   timeline: November 2015 - Feburary 2016
 related: [lookbook, mgestures, zine]
 tags: [mcommerce, mobile, design]
-weight: 9
+weight: 8
 draft: false
 ---
 

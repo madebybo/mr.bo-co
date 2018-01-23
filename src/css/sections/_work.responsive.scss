@@ -206,6 +206,10 @@
 				margin-left: 50%;
 				width: 50%;
 				padding: 0 4rem 0 0;
+
+				&:last-child {
+					margin-bottom: 4rem;
+				}				
 			}
 
 			> ul,
