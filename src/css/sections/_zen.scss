@@ -1,0 +1,50 @@
+/* ==========================================================================
+   The success page
+   ========================================================================== */
+
+.section-wrapper.zen {
+  min-height: calc(100vh - 4rem - 12rem);
+
+  .message-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $content-width-mobile-s;
+    margin: auto;
+
+    .headline {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Medium to Large Phones & Tablets
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-wrapper.zen {
+    min-height: calc(100vh - 4rem - 14rem);
+  }
+}
+
+@media (--tablet) {
+  .section-wrapper.zen {
+    .message-container {
+      width: $content-width-mobile-l;
+    }    
+  }
+}
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-wrapper.zen {
+    min-height: calc(100vh - 4rem - 16rem);
+  }
+}
