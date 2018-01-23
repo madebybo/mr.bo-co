@@ -8,6 +8,10 @@
 			width: $content-width-mobile-m; 
 		}
 	}
+
+	.section-wrapper.success {
+		min-height: calc(100vh - 4rem - 14rem);
+	}
 }
 
 @media (--mobile-l) {
@@ -24,7 +28,13 @@
 			width: $content-width-tablet; 
 			font-size: 1.5rem;
 		}
-	}	
+	}
+
+	.section-wrapper.success {
+		.message-container {
+			width: $content-width-mobile-l;
+		}		
+	}
 }
 
 /* ==========================================================================
@@ -36,5 +46,9 @@
 		.contact-form { 
 			width: 36rem;
 		}
-	}		
+	}
+
+	.section-wrapper.success {
+		min-height: calc(100vh - 4rem - 16rem);
+	}
 }

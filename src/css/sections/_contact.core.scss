@@ -13,6 +13,10 @@
 }
 
 
+/* ==========================================================================
+   Input fields
+   ========================================================================== */
+
 .input {
 	position: relative;
 	z-index: 1;
@@ -83,7 +87,7 @@
 
 .input.submit {
 	margin: 2em 0;
-	/* text-align: center; */
+	overflow: visible;
 
 	input {
 		padding: .7em 1em .5em 1em;
@@ -194,4 +198,27 @@
 .message .input__field--manami:focus + .input__label--manami .input__label-content--manami,
 .message.input--filled .input__label--manami .input__label-content--manami {
 	/* transform: translate3d(0, 7.8em, 0) scale3d(0.75, 0.75, 1);	 */
+}
+
+
+/* ==========================================================================
+   The success page
+   ========================================================================== */
+
+.section-wrapper.success {
+	min-height: calc(100vh - 4rem - 12rem);
+
+	.message-container {
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: $content-width-mobile-s;
+		margin: auto;
+
+		.headline {
+			margin-bottom: 2rem;
+		}
+	}
 }

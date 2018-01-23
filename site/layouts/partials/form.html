@@ -1,6 +1,4 @@
 <form name="contact" class="contact-form" action="{{ .Site.BaseURL }}" netlify>
-  <!-- <input type=hidden name="retURL" value="{{ .Site.BaseURL }}"> -->
-
   <h3 class="headline">hello</h3>
   <!-- TODO: different languages alternate -->
 
@@ -19,7 +17,7 @@
 
   <div class="input select input--manami">
     <select class="input__field input__field--manami" id="purpose" name="purpose">
-      <option disabled selected>purpose of inquiry</option>
+      <option value="" disabled selected>purpose of inquiry</option>
       <option value="speaking engagement">speaking engagement</option>
       <option value="consulting / teaching">consulting / teaching</option>
       <option value="collaboration">collaboration</option>
@@ -41,4 +39,3 @@
     <input type="submit" value="submit" name="">
   </div>
 </form>
-<!-- https://tympanus.net/Development/SelectInspiration/index2.html -->

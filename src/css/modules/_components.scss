@@ -311,13 +311,16 @@ footer {
   .footer-inner {
     position: relative;
     width: $content-width-mobile-s;
-    margin: 0 auto;
+    height: 100%;
+    margin: 2rem auto;
 
     figure.wordmark {
       float: right;
-      margin: 2rem 0;
 
-      img { width: 8rem; }
+      img { 
+        width: auto;
+        height: 8rem; 
+      }
     }
 
     .trademark-line {
@@ -325,15 +328,15 @@ footer {
       font-size: .75rem;
       position: absolute;
       left: 0;
-      bottom: 2rem;
+      bottom: 0;
       color: $classic-grey;
       text-align: left;
       font-weight: 100;
     }
 
-		@media (--mobile-m)  { width: $content-width-mobile-m; margin: 1rem auto; }
+		@media (--mobile-m)  { width: $content-width-mobile-m; margin: 3rem auto; }
 		@media (--mobile-l)  { width: $content-width-mobile-l; }
-		@media (--tablet)    { width: $content-width-tablet; margin: 2rem auto; }
+		@media (--tablet)    { width: $content-width-tablet; }
 		@media (--desktop-s) { width: $content-width-desktop-s; margin: 4rem auto; }
 		@media (--desktop-m) { width: $content-width-desktop-m; }
   }
