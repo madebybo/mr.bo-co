@@ -33,8 +33,6 @@ Like any brand new medium, simply showcasing the technology engages early adopte
 
 <div><img src="/work/panorama/360-video-user-flow.png"></div>
 
-<!-- <div><img src="/work/panorama/preview-tactic-flow.jpg"></div> -->
-
 <div class="double clearfix">
 	<img style="padding: 0 3%;" src="/work/panorama/preview-tactic-flow.jpg">
 	<img style="vertical-align: bottom;" src="/work/panorama/engagement-tactic-screens.jpg">
