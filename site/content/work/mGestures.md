@@ -102,4 +102,4 @@ One of our inventions, the Stack format, has been granted design patent for its 
 
 <a target="_blank" href="https://patents.google.com/patent/USD785643S1/en"><b>See Patent</b></a>
 
-<div><img src="/work/mgestures/stack-patent.jpg"></div>
+<div><img src="/work/mgestures/stack-patent.png"></div>
