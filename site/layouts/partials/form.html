@@ -1,38 +1,38 @@
-<form name="contact" class="contact-form" action="{{ .Site.BaseURL }}" netlify>
-  <input type=hidden name="retURL" value="{{ .Site.BaseURL }}">
+<form name="contact" class="contact-form" data-action="{{ .Site.BaseURL }}" netlify>
+  <!-- <input type=hidden name="retURL" value="{{ .Site.BaseURL }}"> -->
 
   <h3 class="headline">hello</h3>
   <!-- TODO: different languages alternate -->
 
   <div class="input input--manami">
-    <input class="input__field input__field--manami" type="text" id="input-32" />
-    <label class="input__label input__label--manami" for="input-32">
+    <input class="input__field input__field--manami" type="text" id="name" name="name">
+    <label class="input__label input__label--manami" for="name">
       <span class="input__label-content input__label-content--manami">name</span>
     </label>
   </div>
   <div class="input input--manami">
-    <input class="input__field input__field--manami" type="email" id="input-33" />
-    <label class="input__label input__label--manami" for="input-33">
+    <input class="input__field input__field--manami" type="email" id="email" name="email">
+    <label class="input__label input__label--manami" for="email">
       <span class="input__label-content input__label-content--manami">email</span>
     </label>
   </div>
 
   <div class="input select input--manami">
-    <select class="input__field input__field--manami">
+    <select class="input__field input__field--manami" id="purpose" name="purpose">
       <option value="" disabled selected>purpose of inquiry</option>
       <option value="1">speaking engagement</option>
       <option value="2">consulting / teaching</option>
       <option value="3">collaboration</option>
       <option value="4">others</option>
     </select>
-    <label class="input__label input__label--manami" for="input-33">
+    <label class="input__label input__label--manami" for="purpose">
       <span class="input__label-content input__label-content--manami">purpose of inquiry</span>
-    </label>    
+    </label>
   </div>
 
   <div class="input message input--manami">
-    <textarea class="input__field input__field--manami" id="input-34" /></textarea>
-    <label class="input__label input__label--manami" for="input-34">
+    <textarea class="input__field input__field--manami" id="message" name="message"></textarea>
+    <label class="input__label input__label--manami" for="message">
       <span class="input__label-content input__label-content--manami">message</span>
     </label>
   </div>
