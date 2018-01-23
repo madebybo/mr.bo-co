@@ -1,4 +1,4 @@
-<form name="contact" class="contact-form" data-action="{{ .Site.BaseURL }}" netlify>
+<form name="contact" class="contact-form" action="{{ .Site.BaseURL }}" netlify>
   <!-- <input type=hidden name="retURL" value="{{ .Site.BaseURL }}"> -->
 
   <h3 class="headline">hello</h3>
@@ -19,11 +19,11 @@
 
   <div class="input select input--manami">
     <select class="input__field input__field--manami" id="purpose" name="purpose">
-      <option value="" disabled selected>purpose of inquiry</option>
-      <option value="1">speaking engagement</option>
-      <option value="2">consulting / teaching</option>
-      <option value="3">collaboration</option>
-      <option value="4">others</option>
+      <option disabled selected>purpose of inquiry</option>
+      <option value="speaking engagement">speaking engagement</option>
+      <option value="consulting / teaching">consulting / teaching</option>
+      <option value="collaboration">collaboration</option>
+      <option value="others">others</option>
     </select>
     <label class="input__label input__label--manami" for="purpose">
       <span class="input__label-content input__label-content--manami">purpose of inquiry</span>
