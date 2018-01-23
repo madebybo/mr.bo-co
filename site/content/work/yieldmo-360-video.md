@@ -15,7 +15,7 @@ snapshot:
   role: co-inventor, design lead
   patent: Method for Generating an Interactive 360° Video Advertisement (us 62/474,549)
   timeline: March 2017 - August 2017
-related: [windowplay, zine]
+related: [mgestures, zine]
 tags: ["video", "mobile", "design"]
 weight: 3
 draft: false
