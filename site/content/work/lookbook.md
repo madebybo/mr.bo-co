@@ -61,8 +61,8 @@ The team conducted a [comsumer research](https://www.surveymonkey.com/r/Lookbook
 The research provided qualitative data to understand consumer behavior on a large scale (259 U.S.-based respondents). It was highly valuable in informing design iterations and a/b testing directions. 
 
 <div class="double clearfix">
-	<img src="/work/lookbook/mturk-1.jpg">
-	<img style="vertical-align: bottom;" src="/work/lookbook/mturk-3.jpg">
+	<img src="/work/lookbook/mturk-1.png">
+	<img style="vertical-align: bottom;" src="/work/lookbook/mturk-2.png">
 </div>
 
 
@@ -73,7 +73,7 @@ Combined with the insights from MTurk, the team also run numberous A/B tests to 
 - Idea 1: Format is coming into view, hotspots are already on there, pulsating. Hotspots continue to pulsate as user continues to scroll.
 - Idea 2: Format is coming into view, but there are no hotspots. As user continutes to scroll, the hotspots are intruduced and pulsating.
 
-<div><img src="/work/lookbook/ab-test.jpg"></div>
+<div><img src="/work/lookbook/ab-test.png"></div>
 
 
 ## future iteration
@@ -83,4 +83,4 @@ Since we designed initial Lookbook concepts, there has been validation of this t
 Leveraging ethnographic insights and robust testing techniques, we also designed two concepts for future iteration:
 
 <div><img src="/work/lookbook/slider.jpg"></div>
-<div><img src="/work/lookbook/payment.jpg"></div>
+<div><img src="/work/lookbook/payment.png"></div>
