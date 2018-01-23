@@ -60,10 +60,10 @@ Visualizing user attitudes and behaviors in a behavior map helps the design team
 
 We also documented the process and translated some ideas to forms that are easier to comprehend. Below you will find detailed summaries to our user interviews. In addition to that, there are also the synthesis about our framework and associated insights.
 
-<div><img src="/work/mcommerce/deck-1.jpg"></div>
-<div><img src="/work/mcommerce/deck-2.jpg"></div>
-<div><img src="/work/mcommerce/deck-3.jpg"></div>
-<div><img src="/work/mcommerce/deck-4.jpg"></div>
+<div><img src="/work/mcommerce/deck-1.png"></div>
+<div><img src="/work/mcommerce/deck-2.png"></div>
+<div><img src="/work/mcommerce/deck-3.png"></div>
+<div><img src="/work/mcommerce/deck-4.png"></div>
 
 ## uncover patterns
 
