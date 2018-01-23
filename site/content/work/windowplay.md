@@ -38,7 +38,7 @@ We began by digging deeper about following two questions:
 
 After several interviews and contextual inquiry sessions, it became clear that the secret sauce lies in Yieldmo's proprietary "scroll-to-reveal" interaction pattern. Such interactions provide a native way to break out of an in-content ad unit’s confined real estate without resorting to obnoxious pop-ups or fullscreen takeovers.
 
-<div><img src="/work/windowplay/x-ray-sequence.jpg"></div>
+<div><img src="/work/windowplay/x-ray-sequence.png"></div>
 
 When it comes to consuming video on mobile, one key principle is to minimize disruption. Specifically, that means:
 
@@ -54,7 +54,7 @@ The design team went great length in exploring various factors that could affect
 
 The interplay of aforementioned factors made it possible for highly complex user flows. We made sure all critical user scenarios are accounted for.
 
-<div><img src="/work/windowplay/user-flows.jpg"></div>
+<div><img src="/work/windowplay/user-flows.png"></div>
 
 ## versatility
 
