@@ -3,20 +3,20 @@
   <!-- TODO: different languages alternate -->
 
   <div class="input input--manami">
-    <input class="input__field input__field--manami" type="text" id="name" name="name">
+    <input required class="input__field input__field--manami" type="text" id="name" name="name">
     <label class="input__label input__label--manami" for="name">
-      <span class="input__label-content input__label-content--manami">name</span>
+      <span class="input__label-content input__label-content--manami">name*</span>
     </label>
   </div>
   <div class="input input--manami">
-    <input class="input__field input__field--manami" type="email" id="email" name="email">
+    <input required class="input__field input__field--manami" type="email" id="email" name="email">
     <label class="input__label input__label--manami" for="email">
-      <span class="input__label-content input__label-content--manami">email</span>
+      <span class="input__label-content input__label-content--manami">email*</span>
     </label>
   </div>
 
   <div class="input select input--manami">
-    <select class="input__field input__field--manami" id="purpose" name="purpose">
+    <select required class="input__field input__field--manami" id="purpose" name="purpose">
       <option value="" disabled selected>purpose of inquiry</option>
       <option value="speaking engagement">speaking engagement</option>
       <option value="consulting / teaching">consulting / teaching</option>
@@ -24,14 +24,14 @@
       <option value="others">others</option>
     </select>
     <label class="input__label input__label--manami" for="purpose">
-      <span class="input__label-content input__label-content--manami">purpose of inquiry</span>
+      <span class="input__label-content input__label-content--manami">purpose of inquiry*</span>
     </label>
   </div>
 
   <div class="input message input--manami">
-    <textarea class="input__field input__field--manami" id="message" name="message"></textarea>
+    <textarea required class="input__field input__field--manami" id="message" name="message"></textarea>
     <label class="input__label input__label--manami" for="message">
-      <span class="input__label-content input__label-content--manami">message</span>
+      <span class="input__label-content input__label-content--manami">message*</span>
     </label>
   </div>
 
