@@ -37,8 +37,8 @@ Inspired by [Simon Sinek](https://www.ted.com/talks/simon_sinek_how_great_leader
 
 The team also complied in-depth brand marketing research, including key insights.
 
-<div><img src="/work/rebranding/brand-marketing-1.jpg"></div>
-<div><img src="/work/rebranding/brand-marketing-4.jpg"></div>
+<div><img src="/work/rebranding/brand-marketing-1.png"></div>
+<div><img src="/work/rebranding/brand-marketing-4.png"></div>
 
 
 ## core values
@@ -62,11 +62,11 @@ The story is called "Truth."
 
 This represents a new visual and verbal articulation for Yieldmo. This serves as the source of inspiration to combat the villain in the Yieldmo story -- which has been identified as "ignorance." That is, marketers' ignorance caused by insufficient insight into campaigns and ultimately, their customers.
 
-<div><img src="/work/rebranding/the-truth-1.jpg"></div>
-<div><img src="/work/rebranding/the-truth-2.jpg"></div>
+<div><img src="/work/rebranding/the-truth-1.png"></div>
+<div><img src="/work/rebranding/the-truth-2.png"></div>
 <div><img src="/work/rebranding/the-truth-3.jpg"></div>
-<div><img src="/work/rebranding/the-truth-4.jpg"></div>
-<div><img src="/work/rebranding/the-truth-5.jpg"></div>
+<div><img src="/work/rebranding/the-truth-4.png"></div>
+<div><img src="/work/rebranding/the-truth-5.png"></div>
 <div><img src="/work/rebranding/the-truth-6.jpg"></div>
 
 
