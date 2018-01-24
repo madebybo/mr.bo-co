@@ -9,7 +9,7 @@ images:
     - mcommerce-poster.jpg
 snapshot:
   overview: In addition to the well-known fact that mobile has become the hub of everyone's digital life. Commerce on mobile is thriving at an even more staggering pace. One does not need to look at the annual record-breaking holiday sales distribution to be impressed. In fact, mobile commerce has taken the center stage long before people have realized. <br><br> This project attempts to formulate a mature, comprehensive framework for understanding mCommerce, as well as developing tools and design components for future product developments.
-  team: Design Research <br> UX Prototype <br> Analytics <br> Product Management 
+  team: Design Research <br> UX Prototype <br> Analytics <br> Product Management
   role: Project Co-lead
   timeline: November 2015 - Feburary 2016
 related: [lookbook, mgestures, zine]
