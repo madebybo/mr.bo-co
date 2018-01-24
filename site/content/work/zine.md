@@ -11,7 +11,7 @@ images:
 snapshot:
   overview: Zine lets customers immerse themselves in branded content or product details. Customers can swipe through headlines displayed on top of brand imagery or videos and expand each to reveal more content. And this format is never tricky—an easily accessible "X" neatly folds your content away and keeps Zine user-friendly.
   team: Business Operation <br> UX Research <br> UX Design <br> Engineering <br> Marketing <br> Data Insights
-  role: Co-inventor, Design Lead
+  role: Co-Inventor, Design Lead
   patent: Methods for Serving Interactive Content to a User (us 15/677,259)
   timeline: Feburary 2016 - April 2016
 productURL: https://formats.yieldmo.com/#/build/zine
@@ -23,15 +23,15 @@ draft: false
 
 ## the challenge
 
-Brand content marketing is an untapped opportunity on mobile. The media has seen increasing number of brands that would like to show thought leadership, showcase corporate responsibility efforts, or distribute high quality sponsored content.
+Brand content marketing is an untapped opportunity for mobile. The media has seen increasing number of brands that would like to show thought leadership, showcase corporate responsibility efforts, or distribute high quality sponsored content.
 
-Most of quality advertisers (Goldman, Fidelity, Netflix, GE, IBM) are completely underserved by content distribution channels like outbrain, taboola, sharethrough. This is an area where a mobile marketplace can position itself as the go-to solution for high end brands with content that readers actually enjoy.
+Most of the quality advertisers (Goldman, Fidelity, Netflix, GE, IBM) are completely underserved by content distribution channels like Outbrain, Taboola, Sharethrough. This is an area where a mobile marketplace can position itself as the go-to solution for high-end brands with content that readers actually enjoy.
 
 <div><img src="/work/zine/recipe-expanded-perspective.png"></div>
 
 ## ideation
 
-Some goals, requirements and constraints to work within:
+We identified some key goals, requirements, and constraints to work within:
 
 - Create a format that positions advertiser's content as thought leaders/increases brand perception
 - Bring some of the content (images/text/videos) forward to better entice the user to read more
@@ -61,6 +61,3 @@ The invention that is covered in the Zine format has been filed for design paten
 
 <div><img src="/work/zine/patent-2.png"></div>
 <div><img src="/work/zine/patent-3.png"></div>
-
-
-

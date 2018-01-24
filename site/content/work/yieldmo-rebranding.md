@@ -7,8 +7,8 @@ tags: [branding, mobile, design]
 images:
   background: poster.jpg
 snapshot:
-  overview: "Branding, is as much a science as an art. When done right, every visual and verbal choice is informed and made with intention and purpose. This is a rebranding effort that goes much deeper than tweaking a company's identity or message. It is designed to tell the full story–ranging from the Yieldmo's founding principles to its future potential. The goal is to evoke specific reactions from core constituents: potential clients, investors, media and recruits."
-  role: User Experience Lead
+  overview: "Branding is as much a science as an art. When done right, every visual and verbal choice is informed and made with intention and purpose. This is a rebranding effort that goes much deeper than tweaking a company's identity or message. It is designed to tell the full story–ranging from the Yieldmo's founding principles to its future potential. The goal is to evoke specific reactions from core constituents: potential clients, investors, media, and recruits."
+  role: Experience Design Lead
   team: Marketing <br> Design <br> UX Research <br> Engineering <br> Operations
   timeline: June 2017 - December 2017
 productURL: https://www.yieldmo.com
@@ -22,20 +22,20 @@ draft: false
 
 By 2017, Yieldmo has been around for 5 years and earned applaudable recognition within the ad tech industry. Moreover, Yieldmo is on the path to proving the true power of engagement—all the nuanced micro-interactions between humans and their phones that Yieldmo alone measures.
 
-The challenge is not to redefine who Yieldmo is, but rather to reinforce the brand so the company's mission and core values are communciated in an unequivocal manner. Additionally, all of these components should be "living" and will continue to evolve in line with the company's products, performance and in-market experience.
+The challenge is not to redefine who Yieldmo is, but rather to reinforce the brand. In doing so, the company's mission and core values are communicated in an unequivocal manner. Additionally, all of these components should be "living" and will continue to evolve in line with the company's products, performance, and in-market experience.
 
 <div class="vimeo" style="padding-bottom: 60%;"><iframe src="https://player.vimeo.com/video/252188195?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 
 ## the research
 
-In this project, Design and Marketing worked together closely to conducted thorough research that spanned 6 months. The rigorious process involved multiple workshops, interviews, and field studies. Everyone in the company was invited to participate in that process via surveys, brainstorms, and many one-on-ones.
+In this project, Design and Marketing worked together closely to conduct thorough research that spanned 6 months. The rigorous process involved multiple workshops, interviews, and field studies. Everyone in the company was invited to participate in that process via surveys, brainstorms, and many one-on-ones.
 
-Inspired by [Simon Sinek](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)'s work, one of the branding exercises employed the "Why" and "How" framework that pushes participants to think deep about the company's mission.
+Inspired by [Simon Sinek](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)'s work, one of the branding exercises employed the "Why" and "How" framework that pushes participants to think deeply about the company's mission.
 
 <div><img src="/work/rebranding/branding-exercise.jpg"></div>
 
-The team also complied in-depth brand marketing research, including key insights.
+The team also compiled in-depth brand marketing research, including key insights.
 
 <div><img src="/work/rebranding/brand-marketing-1.png"></div>
 <div><img src="/work/rebranding/brand-marketing-4.png"></div>
@@ -43,7 +43,7 @@ The team also complied in-depth brand marketing research, including key insights
 
 ## core values
 
-The team have identified 5 adjectives that define how Yieldmo wants itself to be perceived, all of which are reflected in its visual/verbal representation: 
+The team has identified 5 adjectives that define how Yieldmo wants itself to be perceived, all of which are reflected in its visual/verbal representation: 
 
 - Transformative
 - Proven
@@ -56,7 +56,7 @@ The team have identified 5 adjectives that define how Yieldmo wants itself to be
 
 ## the story
 
-After all the diligent groundwork, at this point the story was already on the horizon. It didn't take long to form a coherent and powerful narrative.
+After all the diligent groundwork, at this point, the story was already on the horizon. It didn't take long to form a coherent and powerful narrative.
 
 The story is called "Truth."
 
