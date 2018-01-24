@@ -2,127 +2,32 @@
    Common Style for the Teaching & Talks List Page
    ========================================================================== */
 
-.section-wrapper.bospeak {
-	width: $content-width-mobile-s;
-	margin-left: auto;
-	margin-right: auto;
+.bospeak.list {
+	overflow: hidden;
 
-	.summary-bospeak {
-		position: relative;
-		margin: 4em 0 6em 0;
-		font-size: .8rem;
+	.marquee.mod {
+		.fixed-holder { color: $primary-white; }
+		.background-insert { background: $primary-black; }
+	}
 
-	  &:after {
-	  	content: "▾";
-	  	display: block;
-	  	position: absolute;
-	  	width: 100%;
-	  	bottom: 0;
-	  	text-align: center;
-	  	transform: translateY(2rem);
-	  }
-
-	  &:last-child:after {
-	  	content: "●";
-	  }
-
-		.featured {
+	.section-wrapper-inner {
+		.summary-headers {
+			width: $content-width-mobile-s;
+			margin-left: auto;
+			margin-right: auto;
 			position: relative;
-
-			.headline {
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				text-align: left;
-				z-index: 1;
-			}
-
-			figure.poster {
-				position: relative;
-				width: calc(100% - 1rem);
-				box-shadow: $box-shadow-marquee;
-
-				&:after {
-					content: "";
-					position: absolute;
-					width: 50%;
-					height: 100%;
-					opacity: 0.75;
-				}
-			}
+			z-index: 1;
 		}
 
-		.summary {
-			display: block;
-			margin: 2rem 1rem;
-			width: calc(100% - 1rem);
-			text-decoration: none;
-		}
-	}
-
-	.summary-bospeak:nth-child(2n+1) {
-		.featured {
-			.headline { right: 0; }
-			figure.poster { float: left; }
-			figure.poster:after { right: 0; }
-		}
-
-		.summary { margin-left: 0; }
-	}
-
-	.summary-bospeak:nth-child(2n) {
-		.featured {
-			.headline { left: 0; }
-			figure.poster { float: right; }
-			figure.poster:after { left: 0; }
-		}
-
-		.summary { margin-right: 0; }
-	}
-}
-
-/* ==========================================================================
-   Individual Styling for Each Item
-   ========================================================================== */
-
-.section-wrapper.bospeak .hcd {
-	.featured {
-	}
-}
-
-.section-wrapper.bospeak .vdf {
-	.featured {
-	}
-}
-
-.section-wrapper.bospeak .hci {
-	.featured {
-		figure.poster:after {
-			background-color: #a88a8b;
-		}
-	}
-}
-
-.section-wrapper.bospeak .h4d {
-	.featured {
-		figure.poster:after {
-			background-color: rgb(120, 120, 120);
-		}
-	}
-}
-
-.section-wrapper.bospeak .browser {
-	.featured {
-		figure.poster:after {
-			background-color: #45b2e5;
-		}
-	}
-}
-
-.section-wrapper.bospeak .dic {
-	.featured {
-		figure.poster:after {
-			background-color: #FDDA00;
+		.background-insert {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			top: 0;
+			z-index: 0;
+			background-size: 100% auto;
+			opacity: .2;
 		}
 	}
 }

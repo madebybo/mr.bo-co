@@ -1,4 +1,5 @@
 <!-- this goes inside of a range .Data.Pages loop -->
+{{ $code := .Params.code }}
 <div class="summary-bospeak {{ .Params.code }} clearfix">
   
   <div class="featured clearfix">
@@ -7,9 +8,9 @@
     </a>
 
     {{ with .Params.images.poster }}
-      <figure class="poster"><img src='/bospeak/{{ . }}'></figure>
+      <figure class="poster"><img src='/bospeak/{{ $code }}/{{ . }}'></figure>
     {{ end }}
   </div>
 
-  <a class="summary" data-href="{{ .Permalink }}">{{ .Summary }}</a>
+  <a class="summary" data-href="{{ .Permalink }}"><p>{{ .Params.description }}</p></a>
 </div>

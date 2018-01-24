@@ -1,12 +1,12 @@
 ---
 title: teaching & talks
 code: bospeak
-date: 2017-10-02T17:51:26-04:00
+marqueeHeadline: teaching & talks
 weight: 3
 draft: false
 ---
-some content in here
 
-{{< speakerdeck ad022c6532ff4575944e3580460d74a6 >}}
-
-http://www.canopyu.com/
+<div class="quote">
+	<p class="content">Between stimulus and response, there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom.</p>
+	<p class="author">- Viktor E. Frankl</p>
+</div>

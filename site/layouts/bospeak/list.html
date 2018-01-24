@@ -1,7 +1,15 @@
 {{ define "main" }}
 <div class="section-wrapper {{ .Params.code }} list clearfix">
-  {{ range .Data.Pages }}
-    {{ .Render "summary"}}
-  {{ end }}
+	{{ partial "marquee" . }}
+	
+	<div class="section-wrapper-inner">
+		<div class="summary-headers clearfix">
+	  {{ range .Data.Pages }}
+	    {{ .Render "summary"}}
+	  {{ end }}
+		</div>
+
+		<div class="background-insert"></div>
+	</div>
 </div>
 {{ end }}

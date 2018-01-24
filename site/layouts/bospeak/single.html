@@ -1,6 +1,13 @@
 {{ define "main" }}
 <div class="section-wrapper bospeak single clearfix">
-	<h4 class="headline">{{ .Title | safeHTML }}</h4>
-  {{ .Content }}
+  <div class="summary-header-wrapper">
+    {{ .Render "summary"}}
+  </div>
+  
+  <div class="nav-back"><a href="/bospeak">teaching & talks</a></div>
+
+  <div class="content clearfix">
+    {{ .Content }}
+  </div>
 </div>
 {{ end }}

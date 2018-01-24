@@ -3,44 +3,26 @@
    ========================================================================== */
 
 @media (--mobile-m) {
-	.section-wrapper.bospeak {
-		width: $content-width-mobile-m;	
-
-		.summary-bospeak {
-			.featured {
-				figure.poster {
-					width: calc(100% - 1.5rem);
-				}
-			}
-
-			.summary {
-				margin: 2rem 1.5rem;
-			}
+	.bospeak.list {
+		.section-wrapper-inner .summary-headers {
+			width: $content-width-mobile-m;	
 		}
 	}
 }
 
 @media (--mobile-l) {
-	.section-wrapper.bospeak {
-		width: $content-width-mobile-l;	
-
-		.summary-bospeak {
-			.featured {
-				figure.poster {
-					width: calc(100% - 2rem);
-				}
-			}
-
-			.summary {
-				margin: 2rem;
-			}
+	.bospeak.list {
+		.section-wrapper-inner .summary-headers {
+			width: $content-width-mobile-l;	
 		}
 	}
 }
 
 @media (--tablet) {
-	.section-wrapper.bospeak {
-		width: $content-width-tablet;	
+	.bospeak.list {
+		.section-wrapper-inner .summary-headers {
+			width: $content-width-tablet;
+		}
 	}
 }
 
@@ -49,42 +31,9 @@
    ========================================================================== */
 
 @media (--desktop-s) {
-	.section-wrapper.bospeak {
-		width: $content-width-desktop-s;
-
-		.summary-bospeak {
-			.featured {
-				width: 60%;
-			}
-
-			.summary {
-				width: 35%;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-
-				p { font-size: 1.1rem; }
-			}
-
-			&:nth-child(2n+1) {
-				.featured {
-					margin: 0 0 0 auto;
-				}
-
-				.summary {
-					left: 0;
-				}
-			}
-
-			&:nth-child(2n) {
-				.featured {
-					margin: 0 auto 0 0;
-				}
-
-				.summary {
-					right: 0;
-				}
-			}
+	.bospeak.list {
+		.section-wrapper-inner .summary-headers {
+			width: $content-width-desktop-s;
 		}
 	}
 }
