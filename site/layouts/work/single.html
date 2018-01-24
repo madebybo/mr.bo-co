@@ -17,7 +17,7 @@
     <div class="snapshot-inner clearfix">
     {{ with .Params.snapshot }}
       {{ range $index, $element := . }}
-      <div class="metadata">
+      <div class="metadata {{ $index }}">
         <h6>{{ $index }}</h6>
         <p>{{ $element | safeHTML }}</p>
       </div>
