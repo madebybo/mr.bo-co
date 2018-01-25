@@ -3,9 +3,9 @@ title: line, shape, <br> composition
 code: shape
 images:
   poster: cover.jpg
-description: "Diving into the world of circle, triangle, and square. What does the Symphony No. 5 by Beethoven tell us about proportion?"
+description: "This is part one of the four-lecture series: Visual Design Fundamentals. In this lecture, we dive into the world of Circle, Triangle, and Square. What does the Symphony No. 5 by Beethoven tell us about proportion?"
 author: mr. bo
-tags: ["teaching"]
+tags: [teaching]
 draft: false
 weight: 2
 ---

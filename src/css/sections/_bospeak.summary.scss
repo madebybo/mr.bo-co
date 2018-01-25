@@ -55,7 +55,7 @@
 	}
 }
 
-.summary-bospeak:nth-child(2n+1) {
+.summary-bospeak:nth-child(2n) {
 	.featured {
 		.headline { right: 0; }
 		figure.poster { float: left; }
@@ -65,7 +65,7 @@
 	.summary { margin-left: 0; }
 }
 
-.summary-bospeak:nth-child(2n) {
+.summary-bospeak:nth-child(2n+1) {
 	.featured {
 		.headline { left: 0; }
 		figure.poster { float: right; }
@@ -88,6 +88,14 @@
 	.featured {
 		figure.poster:after {
 			background: #eaeaea;
+		}
+	}
+}
+
+.imagery {
+	.featured {
+		figure.poster:after {
+			background: #727876;
 		}
 	}
 }
@@ -157,6 +165,17 @@
 	}
 }
 
+@media (--tablet) {
+	.summary-bospeak {
+		margin: 6rem 0;
+
+		&:after {
+			font-size: 1rem;
+			transform: translateY(3rem);
+		}
+	}
+}
+
 
 /* ==========================================================================
    iPad Landscape and Beyond
@@ -164,12 +183,14 @@
 
 @media (--desktop-s) {
 	.summary-bospeak {
+		margin: 6rem 0 8rem 0;
+
 		.featured {
-			width: 60%;
+			width: 65%;
 		}
 
 		.summary {
-			width: 35%;
+			width: 27%;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
@@ -180,6 +201,7 @@
 		&:nth-child(2n+1) {
 			.featured {
 				margin: 0 0 0 auto;
+				padding-left: 1rem;
 			}
 
 			.summary {
@@ -190,11 +212,17 @@
 		&:nth-child(2n) {
 			.featured {
 				margin: 0 auto 0 0;
+				padding-right: 1rem;
 			}
 
 			.summary {
 				right: 0;
 			}
+		}
+
+		&:after {
+			font-size: 1.2rem;
+			transform: translateY(4.5rem);
 		}
 	}
 }

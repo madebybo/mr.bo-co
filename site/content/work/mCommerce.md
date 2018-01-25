@@ -1,5 +1,6 @@
 ---
-title: mCommerce <br> research
+title: mCommerce research
+preTitle: mCommerce <br> research
 subtitle: "A deeper dive into the inevitable yet simple question: How do people shop on mobile?"
 code: mcommerce
 type: work

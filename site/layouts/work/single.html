@@ -7,7 +7,9 @@
   <div class="nav-back"><a href="/work">work</a></div>
 
   <div class="project-header">
-    <h3 class="headline">{{ .Title | safeHTML }}</h3>
+    <h3 class="headline">
+      {{ if .Params.preTitle }}{{ .Params.preTitle | safeHTML }}{{ else }}{{ .Title | safeHTML }}{{ end }}
+    </h3>
     <div class="neo-quote mod">
       <p>{{ .Params.subtitle }}</p>
     </div>

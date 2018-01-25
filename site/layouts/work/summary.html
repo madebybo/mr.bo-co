@@ -10,7 +10,9 @@
 
   <div class="headline-container text-container">
     <a href="{{ .Permalink }}">
-      <h3 class="headline">{{ .Title | safeHTML }}</h3>
+      <h3 class="headline">
+        {{ if .Params.preTitle }}{{ .Params.preTitle | safeHTML }}{{ else }}{{ .Title | safeHTML }}{{ end }}
+      </h3>
     </a>
   </div>
 

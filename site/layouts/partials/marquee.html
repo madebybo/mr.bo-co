@@ -1,7 +1,9 @@
 <div class="marquee mod">
   <div class="fixed-holder clearfix">
-    <h1 class="headline">{{ .Title }}</h1>
-    <div class="blurb">{{ .Content }}</div>
+  	<div class="content-container">
+	    <h1 class="headline">{{ .Title }}</h1>
+	    <div class="blurb">{{ .Content }}</div>  		
+  	</div>
   </div>
 
   <figure class="background-insert" style="background-image: url({{ .Params.marqueeImage }});"></figure>

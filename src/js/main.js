@@ -10,7 +10,8 @@ $(function() {
       bespokeScroll: require('./sections/_bespokeScroll'),
       aboutDisplay: require('./sections/_aboutDisplay'),
       selectedWork: require('./sections/_selectedWork'),
-      contactPage: require('./sections/_contactPage')
+      contactPage: require('./sections/_contactPage'),
+      boSpeak: require('./sections/_boSpeak')
     },
 
     // TODO: use throttle for scroll and touchmove?
@@ -43,8 +44,12 @@ $(function() {
         this.sections.contactPage.init();
       }
 
-      if (window.section === 'work' ) {
+      if (window.section === 'work') {
         this.sections.selectedWork.init();
+      }
+
+      if (window.section === 'bospeak') {
+        this.sections.boSpeak.init();
       }
     }
   };

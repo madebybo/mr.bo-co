@@ -34,9 +34,20 @@
 	.bospeak.list {
 		.section-wrapper-inner .summary-headers {
 			width: $content-width-desktop-s;
+
+			.notification {
+				margin: 6rem 0;
+				text-align: center;
+				font-size: 1.4rem;
+			}
 		}
 	}
 }
 
 @media (--desktop-m) {
+	.bospeak.list {
+		.section-wrapper-inner .summary-headers {
+			width: $content-width-desktop-m;
+		}
+	}
 }

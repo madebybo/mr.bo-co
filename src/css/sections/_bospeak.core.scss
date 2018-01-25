@@ -17,6 +17,17 @@
 			margin-right: auto;
 			position: relative;
 			z-index: 1;
+
+			.notification {
+				margin: 4rem 0;
+				font-family: $header-font;
+				color: color($classic-grey lightness(75%));
+				font-size: 1.2rem;
+				font-style: italic;
+				font-weight: 100;
+
+				a { color: $classic-grey; }
+			}
 		}
 
 		.background-insert {

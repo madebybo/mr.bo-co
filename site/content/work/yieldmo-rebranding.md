@@ -1,5 +1,6 @@
 ---
-title: 'rebranding: <br> the “truth”'
+title: 'rebranding: the “truth”'
+preTitle: 'rebranding: <br> the “truth”'
 subtitle: Holistic and human-centered approach to rebranding, from research and insight generation to concept to deliverable.
 code: rebranding
 type: work

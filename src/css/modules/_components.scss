@@ -156,6 +156,12 @@
 		z-index: 1;
 		width: $content-width-mobile-s;
 
+		.content-container {
+			position: relative;
+			top: calc(50% - 6rem);
+			transform: translateY(-40%);
+		}
+
 		.headline {
 			position: relative;
 			text-align: left;
