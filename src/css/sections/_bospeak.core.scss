@@ -40,6 +40,16 @@
 			background-size: 100% auto;
 			opacity: .2;
 		}
+
+		.cross-reference {
+			position: relative;
+			margin: 0 auto;
+			padding: 1rem 0 3rem 0;
+			width: $content-width-mobile-s;
+
+			.headline { text-align: left; }
+			.learn-more { margin-top: 2rem; }
+		}
 	}
 }
 

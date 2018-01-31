@@ -323,25 +323,66 @@ footer {
     figure.wordmark {
       float: right;
 
-      img { 
-        width: auto;
-        height: 8rem; 
+      svg {
+        height: 6rem;
+
+        path { fill: $primary-white; }
+
+        @media (--mobile-m)  { height: 8rem; }
+        @media (--desktop-s) { height: 9rem; }
+        @media (--desktop-m) { height: 10rem; }
       }
     }
 
+    .platforms {
+    	position: absolute;
+    	left: 0;
+    	bottom: 0;
+
+    	a {
+    		display: inline-block;
+    		
+    		&:nth-child(2) { 
+    			margin: 0 .5rem; 
+
+    			@media (--desktop-m) { margin: 0 .75rem; }
+    		}
+
+	    	svg {
+	    		width: 1.5rem;
+	    		height: 1.5rem;
+
+	    		path { fill: $primary-white; }
+
+	    		@media (--desktop-m) { width: 2rem; height: 2rem; }
+	    	}
+
+	    	&:hover {
+	    		svg {
+	    			transform: scale(1.1);
+	    		}
+	    	}
+    	}
+    }
+
     .trademark-line {
+    	display: none;
       font-family: $content-font;
-      font-size: .75rem;
+      font-size: .8rem;
       position: absolute;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: 0;
       color: $classic-grey;
       text-align: left;
       font-weight: 100;
+
+      @media (--desktop-s) { display: block; }
+      @media (--desktop-m) { font-size: .9rem; }
     }
 
-		@media (--mobile-m)  { width: $content-width-mobile-m; margin: 3rem auto; }
-		@media (--mobile-l)  { width: $content-width-mobile-l; }
+		@media (--mobile-m)  { width: $content-width-mobile-l; margin: 2rem auto; }
+		@media (--mobile-l)  { width: $content-width-mobile-l; margin: 3rem auto; }
 		@media (--tablet)    { width: $content-width-tablet; }
 		@media (--desktop-s) { width: $content-width-desktop-s; margin: 4rem auto; }
 		@media (--desktop-m) { width: $content-width-desktop-m; }
