@@ -12,6 +12,6 @@ draft: false
 showFeaturedContent: false
 ---
 
-Bo Wang was the Senior Design Technologist for [Yieldmo](https://en.wikipedia.org/wiki/Yieldmo) in New York, where he managed projects that include buidling design infrastructure for products that are used by millions of users. <span>Having extensive experience in leading the research, strategy and ideation of complex design challenges, he enjoys and thrives in finding solutions through ambiguity.</span>
+Bo Wang is the Product Design Lead for [Signpost](https://en.wikipedia.org/wiki/Signpost_(company)), where he is building a world-class UX team in AI-powered CRM. Previously he managed projects that aim at establishing design infrastructure for products that are used by millions of users. <span>Having extensive experience in leading the research, strategy, and ideation of complex design challenges, he enjoys and thrives on finding solutions through ambiguity.</span>
 
-While in design practice, Bo is a strong advocate for user-centered design especially in fast-paced environments. He strives to foster a design culture that brings together user experience, business objectives, and technical capabilities.
+While in design practice, Bo is a strong advocate for user-centered design, especially in fast-paced environments. He strives to foster a design culture that brings together user experience, business objectives, and technical capabilities.
