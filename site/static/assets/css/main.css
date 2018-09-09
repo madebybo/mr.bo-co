@@ -1,7 +1,7 @@
 body { margin: 0; }
 
 header {
-	border: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 header .container {
@@ -49,4 +49,35 @@ header .container {
 
 .signup img {
 	margin-top: 60px;
+}
+
+
+.footer {
+	background: #000;
+	position: relative;
+}
+
+.footer-inner {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.footer .text-wrapper {
+	margin-left: 320px;
+	width: 600px;
+	color: #fff;
+}
+
+.footer img {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+
+.footer .text-wrapper p {
+	font-size: .8em;
+
 }
