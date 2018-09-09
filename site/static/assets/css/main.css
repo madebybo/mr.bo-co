@@ -125,3 +125,24 @@ header .container {
 		width: auto;
 	}
 }
+
+@media (max-width: 379px) {
+	header .container {height: 30px;}
+	header .container img { height: 30px; }
+	header .container h3 { line-height: 30px; font-size: 1em }
+
+	.content .text-wrapper,
+	.content.content img,
+	.signup,
+	.signup img {
+		width: 300px;
+	}
+	
+	.content .text-wrapper h1 {
+		font-size: 1.7em;
+	}
+
+	.footer .text-wrapper {
+		margin: 0 30px;
+	}
+}
