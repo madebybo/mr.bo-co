@@ -36,6 +36,10 @@ header .container {
         transform: translateY(-50%);
 }
 
+.content .text-wrapper h1 {
+	text-align: center;
+}
+
 .content.section-odd .text-wrapper {left: 0; }
 .content.section-even .text-wrapper {right: 0; }
 .content.section-odd img { float: right; }
@@ -80,4 +84,44 @@ header .container {
 .footer .text-wrapper p {
 	font-size: .8em;
 
+}
+
+
+@media (max-width: 960px) {
+	header .container {
+		margin: 20px 30px;
+	}
+
+	.content {
+		height: auto;
+	}
+
+	.content .text-wrapper {
+		position: static;
+		transform: none;
+		margin: 0 auto;
+	}
+
+	.content.content img {
+		float: none;
+		margin: 50px auto;
+		display: block;
+	}
+
+	.signup {
+		margin-top: 150px;
+	}
+
+	.footer img {
+		position: static;
+		transform: none;
+		margin: 0 auto 60px auto;
+		display: block;
+		width: 160px;
+	}
+
+	.footer .text-wrapper {
+		margin: 0 60px;
+		width: auto;
+	}
 }
