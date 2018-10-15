@@ -1,5 +1,5 @@
 ---
-title: 同感隐私政策
+title: 同感Live隐私政策
 code: privacy
 weight: 1
 ---
