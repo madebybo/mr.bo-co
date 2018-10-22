@@ -93,6 +93,7 @@ header .container {
 	}
 
 	.content {
+		margin: 100px 30px;
 		height: auto;
 	}
 
